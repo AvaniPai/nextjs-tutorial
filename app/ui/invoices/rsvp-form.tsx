@@ -41,17 +41,16 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
 
         {/* Party Names */}
         <div className="mb-4">
-          <label htmlFor="party_size" className="mb-2 block text-sm font-medium">
+          <label htmlFor="party_names" className="mb-2 block text-sm font-medium">
             Please fill in the names for each member of your party.
           </label>
           <div className="relative mt-2 rounded-md">
             <div className="relative">
               <input
-                id="amount"
-                name="party_size"
-                type="number"
-                step="0.01"
-                placeholder="1"
+                id="guest_names"
+                name="party_names"
+                type="text"
+                placeholder="FirstName, LastName (e.g. Avani Pai)"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
               />
               <UserGroupIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
@@ -75,7 +74,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="pending"
+                  htmlFor="rsvp-no"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
                 >
                   No
@@ -90,7 +89,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="paid"
+                  htmlFor="rsvp-yes"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
                 >
                   Yes <CheckIcon className="h-4 w-4" />
@@ -116,7 +115,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="pending"
+                  htmlFor="rsvp-no"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
                 >
                   No
@@ -131,7 +130,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="paid"
+                  htmlFor="rsvp-yes"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
                 >
                   Yes <CheckIcon className="h-4 w-4" />
@@ -157,7 +156,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="pending"
+                  htmlFor="rsvp-no"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
                 >
                   No
@@ -172,7 +171,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="paid"
+                  htmlFor="rsvp-yes"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
                 >
                   Yes <CheckIcon className="h-4 w-4" />
@@ -198,7 +197,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="pending"
+                  htmlFor="rsvp-no"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
                 >
                   No
@@ -213,7 +212,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="paid"
+                  htmlFor="rsvp-yes"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
                 >
                   Yes <CheckIcon className="h-4 w-4" />
@@ -239,7 +238,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="pending"
+                  htmlFor="rsvp-no"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
                 >
                   No
@@ -254,7 +253,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
-                  htmlFor="paid"
+                  htmlFor="rsvp-yes"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
                 >
                   Yes <CheckIcon className="h-4 w-4" />
