@@ -12,9 +12,11 @@ import { Button } from '@/app/ui/button';
 import { createInvoice } from '@/app/lib/actions';
 import { useFormState } from 'react-dom';
 
-export default function Form({ customers }: { customers: CustomerField[] }) {
+//export default function Form({ customers }: { customers: CustomerField[] }) {
+export default function Form() {
   const initialState = { message: null, errors: {} };
   const [state, dispatch] = useFormState(createInvoice, initialState);
+  const userType = "C";
 
   return (
     <form action={dispatch}>
@@ -59,6 +61,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
         </div>
 
         {/* Mehendi */}
+        {userType == "A" && 
         <fieldset>
           <legend className="mb-2 block text-sm font-medium">
             Will you and your party be attending the Bridal Mehendi on Wednesday, August 28th at 6:00pm?
@@ -98,8 +101,10 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
             </div>
           </div>
         </fieldset>
+        }
 
         {/* Haldi */}
+        { userType == "B" && 
         <fieldset>
           <legend className="mb-2 block text-sm font-medium">
             Will you and your party be attending the Haldi on Thursday, August 29th at 10:30am?
@@ -139,6 +144,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
             </div>
           </div>
         </fieldset>
+        }
 
         {/* Sangeet */}
         <fieldset>

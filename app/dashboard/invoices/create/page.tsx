@@ -1,4 +1,4 @@
-import Form from '@/app/ui/invoices/rsvp-form';
+import Form from '@/app/ui/invoices/create-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
  
@@ -11,7 +11,7 @@ export default async function Page() {
         breadcrumbs={[
           { label: 'Invoices', href: '/dashboard/invoices' },
           {
-            label: 'RSVP',
+            label: 'Create Invoice',
             href: '/dashboard/invoices/create',
             active: true,
           },
