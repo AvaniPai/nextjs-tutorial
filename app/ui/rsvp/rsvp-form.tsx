@@ -13,9 +13,10 @@ import { createInvoice } from '@/app/lib/actions';
 import { useFormState } from 'react-dom';
 
 //export default function Form({ customers }: { customers: CustomerField[] }) {
-export default function Form() {
+export default function Form( {}) {
   const initialState = { message: null, errors: {} };
   const [state, dispatch] = useFormState(createInvoice, initialState);
+  //const [state, dispatch] = useFormState(updateUserRSVP, initialState);
   const userType = "C";
 
   return (
