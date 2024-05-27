@@ -17,7 +17,7 @@ export default function Form( {}) {
   const initialState = { message: null, errors: {} };
   const [state, dispatch] = useFormState(createInvoice, initialState);
   //const [state, dispatch] = useFormState(updateUserRSVP, initialState);
-  const userType = "C";
+  const userType = "A";
 
   return (
     <form action={dispatch}>
@@ -105,7 +105,7 @@ export default function Form( {}) {
         }
 
         {/* Haldi */}
-        { userType == "B" && 
+        { userType == "A" && 
         <fieldset>
           <legend className="mb-2 block text-sm font-medium">
             Will you and your party be attending the Haldi on Thursday, August 29th at 10:30am?

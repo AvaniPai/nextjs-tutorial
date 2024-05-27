@@ -128,3 +128,6 @@ export async function getUserEmail(){
   return userEmail;
 
 }
+
+
+// updateUserRSVP
