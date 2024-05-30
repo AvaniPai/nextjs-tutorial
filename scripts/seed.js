@@ -5,6 +5,7 @@ const {
   revenue,
   users,
 } = require('../app/lib/placeholder-data.js');
+const { guest_test } = require('../app/lib/test-data-small.js');
 const bcrypt = require('bcrypt');
 
 async function seedUsers(client) {
@@ -13,10 +14,12 @@ async function seedUsers(client) {
     // Create the "users" table if it doesn't exist
     const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS users (
-        id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+        guest_id VARCHAR(225) NOT NULL PRIMARY KEY,
         name VARCHAR(255) NOT NULL,
         email TEXT NOT NULL UNIQUE,
-        password TEXT NOT NULL
+        password TEXT NOT NULL,
+	      isInvitedToHaldi BOOLEAN NOT NULL,
+        lastRSVPUpdateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `;
 
