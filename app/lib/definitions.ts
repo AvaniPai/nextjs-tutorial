@@ -86,3 +86,21 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+export type SimpleGuest = {
+  guest_id: string;
+  name: string;
+  email: string;
+  password: string;
+};
+
+export type InvitedEvents = {
+  guest_id: string;
+  haldi: boolean;
+  mehendi: boolean;
+  sangeet: boolean;
+  muhurtham: boolean;
+  reception: boolean;
+  shinzenshiki: boolean;
+  hiroen: boolean;
+};
