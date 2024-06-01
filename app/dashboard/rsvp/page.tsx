@@ -1,13 +1,14 @@
-import Form from '@/app/ui/rsvp/rsvp-form';
+import RSVPForm from '@/app/ui/rsvp/rsvp-form';
 import { getUserEmail } from '@/app/lib/actions';
+import { getInvitedEvents } from '@/app/lib/data';
 
-export default function Page() {
-    //const currUserEmail  = getUserEmail();
-    //const invitedEvents = getInvitedEvents(userId/userEmail);
+export default async function Page() {
+    const currUserEmail  = await getUserEmail();
+    const invitedEvents = await getInvitedEvents(currUserEmail);
      
     return (
         <main>
-            <Form />
+            <RSVPForm invites={invitedEvents}/>
         </main>
     )
 }

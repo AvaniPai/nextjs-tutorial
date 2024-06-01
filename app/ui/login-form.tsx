@@ -12,6 +12,7 @@ import { authenticate } from '@/app/lib/actions';
 
 export default function LoginForm() {
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
+  console.log(errorMessage);
 
   return (
     <form action={dispatch} className="space-y-3">
