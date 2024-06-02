@@ -248,7 +248,7 @@ export async function getInvitedEvents(userEmail: string) {
     `
     // above will return a QueryResult object with type InvitedEvents
     // referencing rows will result in a list of InvitedEvents objects
-    console.log(data.rows[0].guest_id);
+    console.log("Current User's Email", userEmail);
 
     return data.rows[0];
     
