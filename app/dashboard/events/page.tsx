@@ -42,31 +42,28 @@ export default function Page() {
     ];
 
     return (
-        <main>
-            <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+        <main className="h-full">
+            {/* <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
                 Events
-            </h1>
-            <div className="bg-gray-100 md-100 h-1000 px-10 py-5 m-10" >
-                
+            </h1> */}
+            <div className="md-100 py-1 h-screen md:py-5 md:h-full" >
                 {events.map((event) => (
-                    <div key={event.name} className={event.bg_color}>
-                        <div className="grid gap-6 grid-cols-3 p-3 m-10">
-                            <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-                                <Image
-                                    src={event.imgPath}
-                                    width={1000}
-                                    height={1000}
-                                    className="styles.imagehidden md:block"
-                                    alt="Screenshots of the dashboard project showing desktop version"
-                                />
-                            </div>
-                            <div>
-                                <h2>{event.name}</h2>
-                                <p>Date: {event.date}</p>
-                            </div>
-                            <div>
-                                <p>Description: {event.description}</p>
-                            </div>
+                    <div key={event.name} className={`${event.bg_color} grid gap-6 grid-cols-2 h-3/6 md:grid-cols-3 mb-2 md:p-3 md:m-10`}>
+                        <div className="hidden items-center justify-center h-full bg-gray-100 md:block">
+                            {/* <Image
+                                src={event.imgPath}
+                                width={1000}
+                                height={1000}
+                                className="styles.imagehidden md:flex"
+                                alt="Screenshots of the dashboard project showing desktop version"
+                            /> */}
+                        </div>
+                        <div>
+                            <h2>{event.name}</h2>
+                            <p>Date: {event.date}</p>
+                        </div>
+                        <div>
+                            <p>Description: {event.description}</p>
                         </div>
                     </div>
             ))}

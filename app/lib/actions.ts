@@ -241,10 +241,3 @@ const validatedFields = RSVPFormSchema.safeParse({
   revalidatePath('/dashboard/rsvp');
   redirect('/dashboard/events');
 }
-
-function convertResponseToBoolean(response: string) {
-  if (response == "yes" ) {
-    return true;
-  }
-  return false;
-}
