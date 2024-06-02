@@ -15,7 +15,7 @@ export default function SideNav() {
           href="/"
         >
           <Image
-            src="/AS.png"
+            src="/as_logo_white.png"
             width={150}
             height={150}
             className="styles.image"
