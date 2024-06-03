@@ -15,32 +15,32 @@ import clsx from 'clsx';
 const links = [
   { 
     name: 'Home', 
-    href: '/dashboard', 
+    href: '/wedding', 
     icon: HomeIcon 
   },
   {
     name: 'RSVP',
-    href: '/dashboard/rsvp',
+    href: '/wedding/rsvp',
     icon: DocumentDuplicateIcon,
   },
   {
     name: 'Events', 
-    href: '/dashboard/events',
+    href: '/wedding/events',
     icon: UserGroupIcon    
   },
   {
     name: 'Accommodations', 
-    href: '/dashboard/accommodations',
+    href: '/wedding/accommodations',
     icon: UserGroupIcon    
   },
   {
     name: 'Gift Registry', 
-    href: '/dashboard/gift-registry',
+    href: '/wedding/gift-registry',
     icon: UserGroupIcon
   },
   {
     name: 'TravelTips', 
-    href: '/dashboard/travel-tips',
+    href: '/wedding/travel-tips',
     icon: UserGroupIcon
   }
 ];

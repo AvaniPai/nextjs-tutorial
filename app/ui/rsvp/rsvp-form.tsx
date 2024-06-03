@@ -1,11 +1,9 @@
 'use client';
 
-import { CustomerField, InvitedEvents } from '@/app/lib/definitions';
+import { InvitedEvents } from '@/app/lib/definitions';
 import Link from 'next/link';
 import {
   CheckIcon,
-  ClockIcon,
-  CurrencyDollarIcon,
   UserGroupIcon,
 } from '@heroicons/react/24/outline';
 import { Button } from '@/app/ui/button';
@@ -451,7 +449,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
       </div>
       <div className="mt-6 flex justify-end gap-4">
         <Link
-          href="/dashboard/events"
+          href="/wedding/events"
           className="flex h-10 items-center rounded-lg bg-gray-100 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
         >
           Cancel

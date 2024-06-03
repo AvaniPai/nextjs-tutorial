@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import NavLinks from '@/app/ui/dashboard/nav-links';
+import NavLinks from '@/app/ui/wedding/nav-links';
 // import AcmeLogo from '@/app/ui/acme-logo';
 import { lusitana } from '@/app/ui/fonts';
 import { PowerIcon } from '@heroicons/react/24/outline';
@@ -15,7 +15,7 @@ export default function SideNav() {
           href="/"
         >
           <Image
-            src="/AS.png"
+            src="/as_logo_white.png"
             width={150}
             height={150}
             className="styles.image"
