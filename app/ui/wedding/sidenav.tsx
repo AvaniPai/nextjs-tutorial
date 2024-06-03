@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import NavLinks from '@/app/ui/wedding/nav-links';
 // import AcmeLogo from '@/app/ui/acme-logo';
-import { lusitana } from '@/app/ui/fonts';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import { signOut } from '@/auth';
 import Image from 'next/image';
@@ -11,7 +10,7 @@ export default function SideNav() {
   return (
     <div className="flex h-full flex-row items-center bg-white border-b-8 border-gray-300 md:px-3 md:py-4">
         <Link
-          className="hidden rounded-md md:flex bg-gray-100 ml-20"
+          className="hidden rounded-md md:flex bg-gray-100 ml10"
           href="/"
         >
           <Image
@@ -19,7 +18,7 @@ export default function SideNav() {
             width={150}
             height={150}
             className="styles.image"
-            alt="Screenshots of the dashboard project showing desktop version"
+            alt="Avani and Shusuke Wedding Invitation Logo"
           />
         </Link>
       <div className="flex grow flex-row justify-center space-x-2 py-2 md:space-x-10 md:py-8">

@@ -16,32 +16,26 @@ const links = [
   { 
     name: 'Home', 
     href: '/wedding', 
-    icon: HomeIcon 
   },
   {
     name: 'RSVP',
     href: '/wedding/rsvp',
-    icon: DocumentDuplicateIcon,
   },
   {
     name: 'Events', 
     href: '/wedding/events',
-    icon: UserGroupIcon    
   },
   {
     name: 'Accommodations', 
     href: '/wedding/accommodations',
-    icon: UserGroupIcon    
   },
   {
     name: 'Gift Registry', 
     href: '/wedding/gift-registry',
-    icon: UserGroupIcon
   },
   {
-    name: 'TravelTips', 
+    name: 'Travel Tips', 
     href: '/wedding/travel-tips',
-    icon: UserGroupIcon
   }
 ];
 
@@ -51,7 +45,6 @@ export default function NavLinks() {
   return (
     <>
       {links.map((link) => {
-        const LinkIcon = link.icon;
         return (
           <Link
             key={link.name}
@@ -63,7 +56,6 @@ export default function NavLinks() {
               },
         )}
           >
-            <LinkIcon className="w-6" />
             <p className="hidden md:block">{link.name}</p>
           </Link>
         );
