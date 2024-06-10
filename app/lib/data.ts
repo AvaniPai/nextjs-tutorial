@@ -7,7 +7,12 @@ export async function getInvitedEvents(userEmail: string) {
   try {
     console.log('Fetching invited events for guest...');
     const data = await sql<InvitedEvents>`
-    SELECT guest_id, isinvitedtohaldi AS haldi, isinvitedtomehendi AS mehendi, isinvitedtosangeet AS sangeet, isinvitedtomuhurtham AS muhurtham, isinvitedtoreception AS reception, isinvitedtoshinzenshiki AS shinzenshiki, isinvitedtohiroen AS hiroen
+    SELECT guest_id, 
+           receptiononly AS reception_only,
+           sangeetreceptiononly AS sangeet_reception_only,
+           sanmuhrec AS sanmuhrec,
+           allevents AS all_events,
+           allusjapan AS all_us_japan
     FROM guest_test
     WHERE email = ${userEmail};
     `

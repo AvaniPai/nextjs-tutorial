@@ -4,14 +4,19 @@ import Image from 'next/image';
 
 export default function EventBlock({ invites }: { invites: InvitedEvents}){
 	var events = [];
+	const mehendi = invites.all_events || invites.all_us_japan;
+	const haldi = invites.all_events || invites.all_us_japan;
+	const sangeet = invites.sangeet_reception_only || invites.sanmuhrec || invites.all_events || invites.all_us_japan;
+	const muhurtham = invites.sanmuhrec || invites.all_events || invites.all_us_japan ;
+	const reception = invites.sangeet_reception_only || invites.sanmuhrec || invites.reception_only || invites.all_events || invites.all_us_japan ;
 
 	return (
 		<div className="">
-			{invites.mehendi && <MehendiEventBlock />}
-			{invites.haldi && <HaldiEventBlock />}
-			{invites.sangeet && <SangeetEventBlock />}
-			{invites.muhurtham && <MuhurthamEventBlock />}
-			{invites.reception && <ReceptionEventBlock />}
+			{mehendi && <MehendiEventBlock />}
+			{haldi && <HaldiEventBlock />}
+			{sangeet && <SangeetEventBlock />}
+			{muhurtham && <MuhurthamEventBlock />}
+			{reception && <ReceptionEventBlock />}
 		</div>
 	
 	)
