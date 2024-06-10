@@ -10,22 +10,11 @@ export default async function Page() {
      
     return (
         <main>
-            <div className="grid grid-cols-2 grid-rows-2">
-                <div className="row-span-2">
-                    <Image 
-                    src={'/avani_and_shusuke/kanazawa_cafe.png'}
-                    width={1478}
-                    height={1108}
-                    className="md:flex size-full"
-                    alt='A picture of Avani and Shusuke in 2019, at a cafe in Kanazawa City in Ishikawa Prefecture.'
-                    />
-                </div>
-                <div className={`${birthstonebounce.className}`}>
-                    <h1 className="text-6xl text-center">We hope you can join us!</h1>
-                </div>
-                <div>
-                    <h1>Please scroll down to RSVP.</h1>
-                </div>
+            <div className={`${birthstonebounce.className} antialiased bg-[url('/sakura_border.png')] bg-contain container flex flex-col justify-evenly p-4 mx-auto max-width`}>
+                <h1 className="text-8xl text-center mb-4">We hope you can join us!</h1>
+                <h1 className="text-2xl text-center"><br/>Kindly respond by July 6, 2024.</h1>
+            </div>
+            <div>
             </div>
             <RSVPForm invites={invitedEvents}/>
         </main>

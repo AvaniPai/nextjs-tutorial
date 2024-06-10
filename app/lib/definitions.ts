@@ -10,11 +10,9 @@ export type SimpleGuest = {
 
 export type InvitedEvents = {
   guest_id: string;
-  haldi: boolean;
-  mehendi: boolean;
-  sangeet: boolean;
-  muhurtham: boolean;
-  reception: boolean;
-  shinzenshiki: boolean;
-  hiroen: boolean;
+  reception_only: boolean;
+  sangeet_reception_only: boolean;
+  sanmuhrec: boolean;
+  all_events: boolean;
+  all_us_japan: boolean;
 };

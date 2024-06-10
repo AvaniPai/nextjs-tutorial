@@ -7,32 +7,56 @@ import { auth, signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 
 const RSVPFormSchema = z.object({
-  partySize: z.coerce.number().gt(0, { message: 'Please enter a number larger than 0.'}),
   partyNames: z.string().min(1, {
     message: "This field is required.",
   }),
-  isAttendingMehendi: z.enum(['yes','no','not_invited'], {
+  isAttendingMehendi: z.enum(['yes', 'no', 'not_invited'], {
     invalid_type_error: "Please select 'Yes' or 'No'."
   }),
-  isAttendingHaldi: z.enum(['yes','no','not_invited'], {
+  isAttendingHaldi: z.enum(['yes', 'no', 'not_invited'], {
     invalid_type_error: "Please select 'Yes' or 'No'."
   }),
-  isAttendingSangeet: z.enum(['yes','no','not_invited'], {
+  isAttendingSangeet: z.enum(['yes', 'no', 'not_invited'], {
     invalid_type_error: "Please select 'Yes' or 'No'."
   }),
-  isAttendingMuhurtham: z.enum(['yes','no','not_invited'], {
+  isAttendingMuhurtham: z.enum(['yes', 'no', 'not_invited'], {
     invalid_type_error: "Please select 'Yes' or 'No'."
   }),
-  isAttendingReception: z.enum(['yes','no','not_invited'], {
+  isAttendingReception: z.enum(['yes', 'no', 'not_invited'], {
     invalid_type_error: "Please select 'Yes' or 'No'."
   }),
-  isAttendingShinzenshiki: z.enum(['yes','no','not_invited'], {
+  isAttendingShinzenshiki: z.enum(['yes', 'no', 'not_invited'], {
     invalid_type_error: "Please select 'Yes' or 'No'."
   }),
-  isAttendingHiroen: z.enum(['yes','no','not_invited'], {
+  isAttendingHiroen: z.enum(['yes', 'no', 'not_invited'], {
     invalid_type_error: "Please select 'Yes' or 'No'."
   }),
+  allergies: z.string()
 });
+
+const PartySizeFormSchema = z.object({
+  mehendiPartySize: z.coerce.number().positive({
+    message: "Please provide the number of people attending this event."
+  }),
+  haldiPartySize: z.coerce.number().positive({ 
+    message: "Please provide the number of people attending this event."
+  }),
+  sangeetPartySize: z.coerce.number().positive({ 
+    message: "Please provide the number of people attending this event."
+  }),
+  muhurthamPartySize: z.coerce.number().positive({ 
+    message: "Please provide the number of people attending this event." 
+  }),
+  receptionPartySize: z.coerce.number().positive({ 
+    message: "Please provide the number of people attending this event." 
+  }),
+  shinzenshikiPartySize: z.coerce.number().positive({ 
+    message: "Please provide the number of people attending this event." 
+  }),
+  hiroenPartySize: z.coerce.number().positive({ 
+    message: "Please provide the number of people attending this event." 
+  }),
+})
 
 export type State = {
   errors?: {
@@ -45,15 +69,22 @@ export type State = {
 
 export type RSVPState = {
   errors?: {
-    partySize?: string[];
     partyNames?: string[];
     isAttendingMehendi?: string[];
+    mehendiPartySize?: string[];
     isAttendingHaldi?: string[];
+    haldiPartySize?: string[];
     isAttendingSangeet?: string[];
+    sangeetPartySize?: string[];
     isAttendingMuhurtham?: string[];
+    muhurthamPartySize?: string[];
     isAttendingReception?: string[];
+    receptionPartySize?: string[];
     isAttendingShinzenshiki?: string[];
+    shinzenshikiPartySize?: string[];
     isAttendingHiroen?: string[];
+    hiroenPartySize?: string[];
+    allergies?: string[];
   };
   message?: string | null;
 };
@@ -93,64 +124,102 @@ export async function getUserEmail() {
   }
 }
 
-
 export async function updateUserRSVP(guest_id: string, prevState: RSVPState, formData: FormData) {
-const validatedFields = RSVPFormSchema.safeParse({
-          partySize: formData.get('party_size'),
-          partyNames: formData.get('party_names'),
-          isAttendingMehendi: formData.has('mehendi') ? formData.get('mehendi') : "not_invited",
-          isAttendingHaldi: formData.has('haldi') ? formData.get('haldi') : "not_invited",
-          isAttendingSangeet: formData.has('sangeet') ? formData.get('sangeet') : "not_invited",
-          isAttendingMuhurtham: formData.has('muhurtham') ? formData.get('muhurtham') : "not_invited",
-          isAttendingReception: formData.has('reception') ? formData.get('reception') : "not_invited",
-          isAttendingShinzenshiki: formData.has('shinzenshiki') ? formData.get('shinzenshiki') : "not_invited",
-          isAttendingHiroen: formData.has('hiroen') ? formData.get('hiroen') : "not_invited",
+  const validatedFields = RSVPFormSchema.safeParse({
+    partyNames: formData.get('party_names'),
+    isAttendingMehendi: formData.has('mehendi') ? formData.get('mehendi') : "not_invited",
+    isAttendingHaldi: formData.has('haldi') ? formData.get('haldi') : "not_invited",
+    isAttendingSangeet: formData.has('sangeet') ? formData.get('sangeet') : "not_invited",
+    isAttendingMuhurtham: formData.has('muhurtham') ? formData.get('muhurtham') : "not_invited",
+    isAttendingReception: formData.has('reception') ? formData.get('reception') : "not_invited",
+    isAttendingShinzenshiki: formData.has('shinzenshiki') ? formData.get('shinzenshiki') : "not_invited",
+    isAttendingHiroen: formData.has('hiroen') ? formData.get('hiroen') : "not_invited",
+    allergies: formData.get('allergies')
   });
 
   if (!validatedFields.success) {
     console.log('error validating form fields');
-    return { errors: validatedFields.error.flatten().fieldErrors,
-             message: 'Missing or incorrect fields. Failed to update RSVP status.'
-    } 
+    console.log('error: ', validatedFields.error.message)
+    return {
+      errors: validatedFields.error.flatten().fieldErrors,
+      message: 'Missing or incorrect fields. Failed to update RSVP status.'
+    }
   }
 
   const {
-          partySize,
-          partyNames, 
-          isAttendingMehendi, 
-          isAttendingHaldi, 
-          isAttendingSangeet, 
-          isAttendingMuhurtham, 
-          isAttendingReception, 
-          isAttendingShinzenshiki, 
-          isAttendingHiroen 
+    partyNames,
+    isAttendingMehendi,
+    isAttendingHaldi,
+    isAttendingSangeet,
+    isAttendingMuhurtham,
+    isAttendingReception,
+    isAttendingShinzenshiki,
+    isAttendingHiroen,
+    allergies
   } = validatedFields.data;
 
+  const validatedPartySize = PartySizeFormSchema.safeParse({
+    mehendiPartySize: isAttendingMehendi == "yes" ? formData.get("mehendi_party_size") : 1,
+    haldiPartySize: isAttendingHaldi == "yes" ? formData.get("haldi_party_size") : 1,
+    sangeetPartySize: isAttendingSangeet == "yes" ? formData.get("sangeet_party_size") : 1,
+    muhurthamPartySize: isAttendingMuhurtham == "yes" ? formData.get("muhurtham_party_size") : 1,
+    receptionPartySize: isAttendingReception == "yes" ? formData.get("reception_party_size") : 1,
+    shinzenshikiPartySize: isAttendingShinzenshiki == "yes" ? formData.get("shinzenshiki_party_size") : 1,
+    hiroenPartySize: isAttendingHiroen == "yes" ? formData.get("hiroen_party_size") : 1
+  })
+
+  if (!validatedPartySize.success) {
+    console.log('error validating party size fields.');
+    console.log('error: ', validatedPartySize.error.message)
+    return {
+      errors: validatedPartySize.error.flatten().fieldErrors,
+      message: 'Missing or incorrect fields. Failed to update RSVP status.'
+    }
+  }
+
+  const {
+    mehendiPartySize,
+    haldiPartySize,
+    sangeetPartySize,
+    muhurthamPartySize,
+    receptionPartySize,
+    shinzenshikiPartySize,
+    hiroenPartySize
+  } = validatedPartySize.data;
+
   const rsvpUpdatedDate = new Date().toISOString().split('T')[0];
+  const finalAllergies = allergies == "" ? "none" : allergies
 
   try {
     await sql`
     UPDATE guest_test
     SET isattendingmehendi = ${isAttendingMehendi}, 
+        mehendipartysize = ${mehendiPartySize},
         isattendinghaldi =  ${isAttendingHaldi},
+        haldipartysize = ${haldiPartySize},
         isattendingsangeet = ${isAttendingSangeet},
+        sangeetpartysize = ${sangeetPartySize},
         isattendingmuhurtham = ${isAttendingMuhurtham},
+        muhurthampartysize = ${muhurthamPartySize},
         isattendingreception = ${isAttendingReception},
+        receptionpartysize = ${receptionPartySize},
         isattendingshinzenshiki = ${isAttendingShinzenshiki},
+        shinzenshikipartysize = ${shinzenshikiPartySize},
         isattendinghiroen = ${isAttendingHiroen},
-        partysize = ${partySize},
+        hiroenpartysize = ${hiroenPartySize},
         partymembers = ${partyNames},
-        lastrsvpupdatetime = ${rsvpUpdatedDate}
+        lastrsvpupdatetime = ${rsvpUpdatedDate},
+        allergies = ${finalAllergies}
     WHERE guest_id = ${guest_id}
     `;
   } catch (error) {
     console.log('Ruh roh');
     console.log(error);
-    return { 
+    return {
       message: 'There was in issue with submitting your response. Please refresh the page and try again. Thank you.',
     }
   }
 
   revalidatePath('/wedding/rsvp');
-  redirect('/wedding/events');
+  redirect('/wedding');
 }
