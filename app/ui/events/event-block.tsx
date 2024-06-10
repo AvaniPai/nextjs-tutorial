@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 	var event_list = [];
 
-	if (invites.mehendi) {
+	if ( invites.all_events || invites.all_us_japan ) {
 		const mehendiEvent = {
 			name: 'Mehendi',
 			date: 'August 28th, 2024',
@@ -15,7 +15,7 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 		}
 		event_list.push(mehendiEvent);
 	}
-	if (invites.haldi) {
+	if ( invites.all_events || invites.all_us_japan ) {
 		const haldiEvent = {
 			name: 'Haldi',
 			date: 'August 28th, 2024',
@@ -25,7 +25,7 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 		}
 		event_list.push(haldiEvent);
 	}
-	if (invites.sangeet) {
+	if (invites.sangeet_reception_only || invites.sanmuhrec || invites.all_events || invites.all_us_japan) {
 		const Event = {
 			name: 'Sangeet',
 			date: 'August 30th, 2024',
@@ -35,7 +35,7 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 		}
 		event_list.push(Event);
 	}
-	if (invites.muhurtham) {
+	if ( invites.sanmuhrec || invites.all_events || invites.all_us_japan ) {
 		const Event = {
 			name: 'Muhurtham',
 			date: 'August 31st, 2024',
@@ -45,7 +45,7 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 		}
 		event_list.push(Event);
 	}
-	if (invites.reception) {
+	if ( invites.sangeet_reception_only || invites.sanmuhrec || invites.reception_only || invites.all_events || invites.all_us_japan ) {
 		const Event = {
 			name: 'Reception',
 			date: 'August 31st, 2024',
@@ -55,7 +55,7 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 		}
 		event_list.push(Event);
 	}
-	if (invites.shinzenshiki) {
+	if ( invites.all_us_japan ) {
 		const Event = {
 			name: 'Shinzenshiki',
 			date: 'November 30th, 2024',
@@ -65,7 +65,7 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 		}
 		event_list.push(Event);
 	}
-	if (invites.hiroen) {
+	if ( invites.all_us_japan ) {
 		const Event = {
 			name: 'Hiroen',
 			date: 'November 30th, 2024',

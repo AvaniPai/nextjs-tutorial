@@ -16,7 +16,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
   const haldi = invites.all_events || invites.all_us_japan;
   const sangeet = invites.all_events || invites.all_us_japan || invites.sangeet_reception_only || invites.sanmuhrec;
   const muhurtham = invites.all_events || invites.all_us_japan || invites.sanmuhrec;
-  const reception = invites.all_events || invites.all_us_japan || invites.reception_only;
+  const reception = invites.all_events || invites.all_us_japan || invites.reception_only || invites.sangeet_reception_only || invites.sanmuhrec;
   const shinzenshiki = invites.all_us_japan;
   const hiroen = invites.all_us_japan;
 
