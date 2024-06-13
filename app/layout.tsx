@@ -1,5 +1,5 @@
 import '@/app/ui/global.css';
-import { arapey } from '@/app/ui/fonts';
+import { bellefair } from '@/app/ui/fonts';
 
 export default function RootLayout({
   children,
@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ `${arapey.className} antialiased`}>{children}</body>
+      <body className={ `${bellefair.className} antialiased`}>{children}</body>
     </html>
   );
 }
