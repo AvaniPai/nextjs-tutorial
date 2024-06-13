@@ -29,7 +29,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you attend the Bridal Mehendi on Wednesday, August 28th at 6:00pm CST?
+                Will you attend the Bridal Mehendi on Wednesday, August 28<sup>th</sup> at 6:00pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -108,7 +108,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you and your party be attending the Haldi on Thursday, August 29th at 10:30am CST?
+                Will you and your party be attending the Haldi on Thursday, August 29<sup>th</sup> at 10:30am CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -187,7 +187,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you and your party be attending the Sangeet on Friday, August 30th at 6:00pm CST?
+                Will you and your party be attending the Sangeet on Friday, August 30<sup>th</sup> at 6:00pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -266,7 +266,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you and your party be attending the Muhurtham (Hindu wedding ceremony) on Saturday, August 31st at 11:00am CST?
+                Will you and your party be attending the Muhurtham (Hindu wedding ceremony) on Saturday, August 31<sup>st</sup> at 11:00am CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -345,7 +345,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you and your party be attending the Reception on Saturday, August 31st at 7:30pm CST?
+                Will you and your party be attending the Reception on Saturday, August 31<sup>st</sup> at 7:30pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -447,7 +447,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you and your party be attending the Shinzenshiki (Japanese Shinto Wedding) on Saturday, November 30th at 2:00pm CST?
+                Will you and your party be attending the Shinzenshiki (Japanese Shinto Wedding) on Saturday, November 30<sup>th</sup> at 2:00pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -526,7 +526,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-6">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you and your party be attending the Hiroen (Japanese Wedding Reception) on Saturday, November 30th at 5:30pm CST?
+                Will you and your party be attending the Hiroen (Japanese Wedding Reception) on Saturday, November 30<sup>th</sup> at 5:30pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">

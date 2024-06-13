@@ -20,12 +20,12 @@ export default function Page() {
                 <br />
                 <div className="w-96 text-center mb-6">
                     <article className="text-lg">Wedding Guest Special Rate: $139-$159/night</article><br/>
-                    <article className="text-lg">We have secured a room block at the Chicago Marriot Naperville in Naperville, IL.
-                         Rooms are available from starting from Tuesday, August 27th until Monday, September 1st.
+                    <article className="text-lg">We have secured a room block at the Chicago Marriott Naperville in Naperville, IL.
+                         Rooms are available from starting from Tuesday, August 27<sup>th</sup> until Monday, September 1<sup>st</sup>.
                     </article>
                     <br/>
-                    <article className="text-pretty text-lg">The hotel is about a 5 minute drive (or a 30 minute walk if you're up for it!) from the Crawford, where the Muhurtham and Reception will be held.
-                        If you choose to book a room at the Marriot, please visit our affiliate link by clicking on the button below.
+                    <article className="text-pretty text-lg">The hotel is about a 5 minute drive (or a 30 minute walk if you&apos;re up for it!) from The Crawford, where the Muhurtham and Reception will be held.
+                        If you choose to book a room at the Marriott, please visit our affiliate link by clicking on the button below.
                     </article>
                 </div>
 
