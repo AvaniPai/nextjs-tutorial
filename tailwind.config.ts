@@ -17,6 +17,7 @@ const config: Config = {
           500: '#0070F3',
           600: '#2F6FEB',
         },
+        'sakura': '#fff0f3',
       },
     },
     keyframes: {

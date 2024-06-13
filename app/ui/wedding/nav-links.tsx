@@ -14,7 +14,7 @@ import clsx from 'clsx';
 // Depending on the size of the application, this would be stored in a database.
 const links = [
   { 
-    name: 'Home', 
+    name: 'HOME', 
     href: '/wedding', 
   },
   {
@@ -22,19 +22,19 @@ const links = [
     href: '/wedding/rsvp',
   },
   {
-    name: 'Events', 
+    name: 'EVENTS', 
     href: '/wedding/events',
   },
   {
-    name: 'Accommodations', 
+    name: 'ACCOMODATIONS', 
     href: '/wedding/accommodations',
   },
   {
-    name: 'Gift Registry', 
+    name: 'GIFT REGISTRY', 
     href: '/wedding/gift-registry',
   },
   {
-    name: 'Travel Tips', 
+    name: 'TRAVEL TIPS', 
     href: '/wedding/travel-tips',
   }
 ];
