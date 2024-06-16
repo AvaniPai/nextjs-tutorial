@@ -18,7 +18,7 @@ export default function Page() {
                     </article>
                     <br/>
                     <article className="text-pretty text-lg">As you may know, we currently reside in Tokyo, Japan, and therefore are not accepting any physical gifts, as it is rather difficult for us
-                        to transport it back home. In lieu of physical gifts, we have set up two monetary funds via the Hitch'd gift registry platform.
+                        to transport it back home. In lieu of physical gifts, we have set up two monetary funds via the Hitch@apos;d gift registry platform.
                     </article>
                     <br/>
                     <article className="text-pretty text-lg">The first is a honeymoon fund and the second is a charity fund. If you choose to make a contribution, you are more than welcome to pick one or the other or even split your contribution between the two funds.
