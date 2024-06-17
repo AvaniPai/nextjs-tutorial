@@ -8,7 +8,7 @@ import { quicksand } from '../fonts';
 
 export default function SideNav() {
   return (
-    <div className={`${quicksand.className} flex h-full flex-row items-center bg-white border-b-8 border-gray-300 md:px-3 md:py-4`}>
+    <div className={`${quicksand.className} flex h-full flex-row items-center bg-white shadow-md md:px-3 md:py-4`}>
         <div className="flex justify-center">
         <Link
           className="hidden rounded-md md:block ml10"
@@ -21,7 +21,7 @@ export default function SideNav() {
             className="styles.image pl-10"
             alt="Avani and Shusuke Wedding Invitation Logo"
           />
-          <h1>Avani and Shusuke&apos;s Wedding</h1>
+          <h1>Avani & Shusuke&apos;s Wedding</h1>
           <h2 className="pl-12">August 2024</h2>
         </Link>
         </div>
