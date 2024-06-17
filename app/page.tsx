@@ -9,7 +9,7 @@ export default function LoginPage() {
                src="/as_logo_white.png"
                width={200}
                height={200}
-               alt="Avani and Shusuke's wedding logo"
+               alt="Avani and Shusuke&apos;s wedding logo"
                className="place-self-center sm:w-50 sm:h-50"
                />
         <LoginForm />

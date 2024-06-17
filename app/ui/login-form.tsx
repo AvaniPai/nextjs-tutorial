@@ -17,7 +17,7 @@ export default function LoginForm() {
     <form action={dispatch} className="space-y-3">
       <div className="flex-1 rounded-lg border-4 border-yellow-800 border-double px-6 pb-4 pt-8">
         <h1 className=" mb-3 text-xl text-center">
-          Welcome to Avani and Shusuke's Wedding Website!
+          Welcome to Avani and Shusuke&apos;s Wedding Website!
         </h1>
         <div className="w-full">
           <div>
