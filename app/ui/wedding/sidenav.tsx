@@ -18,11 +18,11 @@ export default function SideNav() {
             src="/as_logo_white.png"
             width={150}
             height={150}
-            className="styles.image pl-10"
+            className="styles.image"
             alt="Avani and Shusuke Wedding Invitation Logo"
           />
-          <h1>Avani & Shusuke&apos;s Wedding</h1>
-          <h2 className="pl-12">August 2024</h2>
+            <h1 className="text-center">Avani & Shusuke</h1>
+            <h1 className="text-center">August 2024</h1>
         </Link>
         </div>
       <div className="flex grow flex-row justify-center space-x-2 py-2 md:space-x-10 md:py-8">
@@ -34,9 +34,8 @@ export default function SideNav() {
             await signOut();
           }}
         >
-          <button className="flex h-[100px] w-full grow items-center justify-center gap-2 rounded-md p-3 text-2xl font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
-            <PowerIcon className="w-6" />
-            <div className="hidden md:block">Sign Out</div>
+          <button className="flex h-[100px] w-full grow items-center justify-center gap-2 rounded-md p-3 text-2xl font-semibold hover:bg-rose-100 hover:text-rose-600 md:flex-none md:justify-start md:p-2 md:px-3 text-darksakura">
+            <div className="hidden md:block">SIGN OUT</div>
           </button>
         </form>
       </div>
