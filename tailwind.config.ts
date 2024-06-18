@@ -18,6 +18,9 @@ const config: Config = {
           600: '#2F6FEB',
         },
         'sakura': '#fff0f3',
+        'darksakura': '#ffb9c4',
+        'sage': '#9fb393',
+        'darksage': '#56694a',
       },
     },
     keyframes: {
