@@ -108,7 +108,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you and your party be attending the Haldi on Thursday, August 29<sup>th</sup> at 10:30am CST?
+                Will you and your party be attending the Haldi on Thursday, August 29<sup>th</sup> at 10:00am CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -266,7 +266,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you and your party be attending the Muhurtham (Hindu wedding ceremony) on Saturday, August 31<sup>st</sup> at 11:00am CST?
+                Will you and your party be attending the Muhurtham (Hindu wedding ceremony) on Saturday, August 31<sup>st</sup> at 10:45am CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -345,7 +345,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8">
             <fieldset className="mb-2">
               <legend className="mb-2 block font-medium">
-                Will you and your party be attending the Reception on Saturday, August 31<sup>st</sup> at 7:30pm CST?
+                Will you and your party be attending the Reception on Saturday, August 31<sup>st</sup> at 6:00pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">

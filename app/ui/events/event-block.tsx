@@ -63,15 +63,15 @@ export function MehendiEventBlock() {
 				<div>
 					<p className="text-2xl">Program</p>
 					<div className="grid grid-cols-2 text-xl">
-						<p>06:00 to 06:30pm</p>
+						<p>6:00 to 6:30pm</p>
 						<p>Arrival of guests</p>
-						<p>06:00 to 08:00pm</p>
-						<p>Mehendi for bride & groom</p>
-						<p>07:00 to 10:00pm</p>
+						<p>6:00 to 8:00pm</p>
+						<p>Mehendi for Bride & Groom</p>
+						<p>7:00 to 10:00pm</p>
 						<p>Mehendi for Squad & family members</p>
-						<p>07:00 to  08:30pm</p>
+						<p>7:00 to 8:30pm</p>
 						<p>Dinner & Drinks</p>
-						<p>08:30  to  10:00pm</p>
+						<p>8:30 to 10:00pm</p>
 						<p>Music & Dance</p>
 					</div>
 				</div>
@@ -115,7 +115,7 @@ export function HaldiEventBlock() {
 						<p className="flex items-center justify-center">Location</p>
 					</div>
 					<div className="grid grid-rows-2">
-						<p>Thursday August 29th at 10:00 AM</p>
+						<p>Thursday August 29<sup>th</sup> at 10:00 AM</p>
 						<div>
 							<p>712 Kaiser Court</p>
 							<p>Naperville IL 60565</p>
@@ -142,7 +142,7 @@ export function HaldiEventBlock() {
 						<p>Haldi ceremony</p>
 						<p>11:45 to 01:00pm</p>
 						<p>Music & Dance</p>
-						<p>01:00 to 02:30pm</p>
+						<p>1:00 to 2:30pm</p>
 						<p>Lunch</p>
 					</div>
 				</div>
@@ -186,7 +186,7 @@ export function SangeetEventBlock() {
 						<p className="flex items-center justify-center">Location</p>
 					</div>
 					<div className="grid grid-rows-2">
-						<p>Friday August 30th at 6:00PM</p>
+						<p>Friday August 30<sup>th</sup> at 6:00PM</p>
 						<div>
 							<p>Apollo Room, The Matrix Club</p>
 							<p>808 S Route 59, Naperville IL 60540</p>
@@ -205,17 +205,17 @@ export function SangeetEventBlock() {
 				<div>
 					<p className="text-2xl">Program</p>
 					<div className="grid grid-cols-2 text-xl">
-						<p>06:00 to 10:00pm</p>
+						<p>6:00 to 10:00pm</p>
 						<p>Open Bar</p>
-						<p>06:00 to 06:30pm</p>
+						<p>6:00 to 6:30pm</p>
 						<p>Arrival of guests</p>
-						<p>06:30 to 07:15pm</p>
+						<p>6:30 to 7:15pm</p>
 						<p>Performances</p>
-						<p>07:15 to  08:15pm</p>
+						<p>7:15 to 8:15pm</p>
 						<p>Dinner</p>
-						<p>07:30  to  10:00pm</p>
+						<p>7:30 to 10:00pm</p>
 						<p>Mehendi for interested guests</p>
-						<p>08:15  to  10:00pm</p>
+						<p>8:15 to 10:00pm</p>
 						<p>Music & Dance</p>
 					</div>
 				</div>
@@ -257,7 +257,7 @@ export function MuhurthamEventBlock() {
 						<p className="flex items-center justify-center">Location</p>
 					</div>
 					<div className="grid grid-rows-2">
-						<p>Saturday August 31st at 10:45 AM</p>
+						<p>Saturday August 31<sup>st</sup> at 10:45 AM</p>
 						<div>
 							<p>The Crawford</p>
 							<p>119 Shuman Blvd, Naperville IL 60563</p>
@@ -282,11 +282,11 @@ export function MuhurthamEventBlock() {
 						<p>Light snack & beverages</p>
 						<p>11:30 to 12:00pm</p>
 						<p>Baraat</p>
-						<p>12:00 to  1:30pm</p>
+						<p>12:00 to 1:30pm</p>
 						<p>Lagnam</p>
-						<p>1:30  to  2:30pm</p>
+						<p>1:30 to 2:30pm</p>
 						<p>Lunch</p>
-						<p>2:30  to  3:30pm</p>
+						<p>2:30 to 3:30pm</p>
 						<p>Photo Shoot</p>
 					</div>
 				</div>
@@ -332,7 +332,7 @@ export function ReceptionEventBlock() {
 						<p className="flex items-center justify-center">Location</p>
 					</div>
 					<div className="grid grid-rows-2">
-						<p>Saturday August 31st at 06:00pm</p>
+						<p>Saturday August 31<sup>st</sup> at 06:00pm</p>
 						<div>
 							<p>The Crawford</p>
 							<p>119 Shuman Blvd, Naperville IL 60563 </p>
@@ -351,15 +351,15 @@ export function ReceptionEventBlock() {
 				<div>
 					<p className="text-2xl">Program</p>
 					<div className="grid grid-cols-2 text-xl">
-						<p>06:00 to 06:15 pm</p>
+						<p>6:00 to 6:15pm</p>
 						<p>Arrival of guests</p>
-						<p>06:15 to 07:15pm</p>
+						<p>6:15 to 7:15pm</p>
 						<p>Cocktails</p>
-						<p>07:15 to 08:00pm</p>
+						<p>7:15 to 8:00pm</p>
 						<p>Reception</p>
-						<p>08:00 to 09:00pm</p>
+						<p>8:00 to 9:00pm</p>
 						<p>Dinner</p>
-						<p>09:00 to 10:00pm</p>
+						<p>9:00 to 10:00pm</p>
 						<p>Photo Shoot</p>
 						<p>10:00 to 12:00pm</p>
 						<p>Music & Dance</p>
