@@ -26,9 +26,9 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
 
         {/* Mehendi */}
         {mehendi &&
-          <div className="mb-8">
+          <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
-              <legend className="mb-2 block font-medium">
+              <legend className="mb-2 block">
                 Will you attend the Bridal Mehendi on Wednesday, August 28<sup>th</sup> at 6:00pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
@@ -44,7 +44,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="mehendi-rsvp-no"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 text-stone-600 font-medium "
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 text-stone-600  "
                     >
                       Regretfully, no
                     </label>
@@ -59,7 +59,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="mehendi-rsvp-yes"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 text-stone-600 font-medium"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 text-stone-600 "
                     >
                       Joyfully, yes
                     </label>
@@ -76,7 +76,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </fieldset>
             <div className="mb-4">
-              <label htmlFor="mehendi_amount" className="mb-2 block font-medium">
+              <label htmlFor="mehendi_amount" className="mb-2 block ">
                 Please enter the number of guests in your party (including yourself), who will be attending the Bridal Mehendi.
               </label>
               <div className="relative mt-2 rounded-md">
@@ -105,9 +105,9 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
 
         {/* Haldi */}
         {haldi &&
-          <div className="mb-8">
+          <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
-              <legend className="mb-2 block font-medium">
+              <legend className="mb-2 block ">
                 Will you and your party be attending the Haldi on Thursday, August 29<sup>th</sup> at 10:00am CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
@@ -123,7 +123,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="haldi-rsvp-no"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5py-1.5 text-stone-600 font-medium "
+                      className="ml-2 flex cursor-pointer items-center gap-1.5py-1.5 text-stone-600  "
                     >
                       Regretfully, no
                     </label>
@@ -138,7 +138,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="haldi-rsvp-yes"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Joyfully, yes
                     </label>
@@ -155,7 +155,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </fieldset>
             <div className="mb-4">
-              <label htmlFor="haldi_amount" className="mb-2 block font-medium">
+              <label htmlFor="haldi_amount" className="mb-2 block ">
                 Please enter the number of guests in your party (including yourself), who will be attending the Haldi.
               </label>
               <div className="relative mt-2 rounded-md">
@@ -184,9 +184,9 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
 
         {/* Sangeet */}
         {sangeet &&
-          <div className="mb-8">
+          <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
-              <legend className="mb-2 block font-medium">
+              <legend className="mb-2 block ">
                 Will you and your party be attending the Sangeet on Friday, August 30<sup>th</sup> at 6:00pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
@@ -202,7 +202,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="sangeet-rsvp-no"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Regretfully, no
                     </label>
@@ -217,7 +217,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="sangeet-rsvp-yes"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Joyfully, yes
                     </label>
@@ -234,7 +234,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </fieldset>
             <div className="mb-4">
-              <label htmlFor="sangeet_amount" className="mb-2 block font-medium">
+              <label htmlFor="sangeet_amount" className="mb-2 block ">
                 Please enter the number of guests in your party (including yourself), who will be attending the Sangeet.
               </label>
               <div className="relative mt-2 rounded-md">
@@ -263,9 +263,9 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
 
         {/* Muhurtham */}
         {muhurtham &&
-          <div className="mb-8">
+          <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
-              <legend className="mb-2 block font-medium">
+              <legend className="mb-2 block ">
                 Will you and your party be attending the Muhurtham (Hindu wedding ceremony) on Saturday, August 31<sup>st</sup> at 10:45am CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
@@ -281,7 +281,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="muhurtham-rsvp-no"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Regretfully, no
                     </label>
@@ -296,7 +296,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="muhurtham-rsvp-yes"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Joyfully, yes
                     </label>
@@ -313,7 +313,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </fieldset>
             <div className="mb-4">
-              <label htmlFor="muhurtham_amount" className="mb-2 block font-medium">
+              <label htmlFor="muhurtham_amount" className="mb-2 block ">
                 Please enter the number of guests in your party (including yourself), who will be attending the Muhurtham.
               </label>
               <div className="relative mt-2 rounded-md">
@@ -342,9 +342,9 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
 
         {/* Reception */}
         {reception &&
-          <div className="mb-8">
+          <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
-              <legend className="mb-2 block font-medium">
+              <legend className="mb-2 block ">
                 Will you and your party be attending the Reception on Saturday, August 31<sup>st</sup> at 6:00pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
@@ -360,7 +360,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="reception-rsvp-no"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Regretfully, no
                     </label>
@@ -375,7 +375,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="reception-rsvp-yes"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Joyfully, yes
                     </label>
@@ -392,7 +392,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </fieldset>
             <div className="mb-2">
-              <label htmlFor="reception_amount" className="mb-2 block font-medium">
+              <label htmlFor="reception_amount" className="mb-2 block ">
                 Please enter the number of guests in your party (including yourself), who will be attending the Reception.
               </label>
               <div className="relative mt-2 rounded-md">
@@ -417,7 +417,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </div>
             <div >
-              <label htmlFor="guest_names" className="mb-2 block font-medium">
+              <label htmlFor="guest_names" className="mb-2 block ">
                 Please fill in the names for each member of your party.
               </label>
               <div className="relative mt-2 rounded-md">
@@ -444,9 +444,9 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
 
         {/* Shinzenshiki */}
         {shinzenshiki &&
-          <div className="mb-8">
+          <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
-              <legend className="mb-2 block font-medium">
+              <legend className="mb-2 block ">
                 Will you and your party be attending the Shinzenshiki (Japanese Shinto Wedding) on Saturday, November 30<sup>th</sup> at 2:00pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
@@ -462,7 +462,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="shinzenshiki-rsvp-no"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Regretfully, no
                     </label>
@@ -477,7 +477,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="shinzenshiki-rsvp-yes"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Joyfully, yes
                     </label>
@@ -494,7 +494,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </fieldset>
             <div className="mb-4">
-              <label htmlFor="shinzenshiki_amount" className="mb-2 block font-medium">
+              <label htmlFor="shinzenshiki_amount" className="mb-2 block ">
                 Please enter the number of guests in your party (including yourself), who will be attending the Shinzenshiki.
               </label>
               <div className="relative mt-2 rounded-md">
@@ -523,9 +523,9 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
 
         {/* Hiroen */}
         {hiroen &&
-          <div className="mb-6">
+          <div className="mb-6 text-sm md:text-xl">
             <fieldset className="mb-2">
-              <legend className="mb-2 block font-medium">
+              <legend className="mb-2 block ">
                 Will you and your party be attending the Hiroen (Japanese Wedding Reception) on Saturday, November 30<sup>th</sup> at 5:30pm CST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
@@ -541,7 +541,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="hiroen-rsvp-no"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Regretfully, no
                     </label>
@@ -556,7 +556,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                     />
                     <label
                       htmlFor="hiroen-rsvp-yes"
-                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5 font-medium text-stone-600"
+                      className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
                       Joyfully, yes
                     </label>
@@ -573,7 +573,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </fieldset>
             <div className="mb-4">
-              <label htmlFor="hiroen_amount" className="mb-2 block font-medium">
+              <label htmlFor="hiroen_amount" className="mb-2 block ">
                 Please enter the number of guests in your party (including yourself), who will be attending the Hiroen.
               </label>
               <div className="relative mt-2 rounded-md">
@@ -601,8 +601,8 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
         }
 
         {/* Allergies */}
-        <div className="mb-6">
-          <label htmlFor="allergy_info" className="mb-2 block font-medium">
+        <div className="mb-6 text-sm md:text-xl">
+          <label htmlFor="allergy_info" className="mb-2 block ">
             If you have any food allergies, please enter them here. Note: We are not asking about food preferences, but about allergies that can put you at harm.<br /> Please refrain from answering this question if you do not have any food allergies.
           </label>
           <div className="relative mt-2 rounded-md">
@@ -634,7 +634,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
       <div className="mt-6 flex justify-end gap-4">
         <Link
           href="/wedding/events"
-          className="flex h-10 items-center rounded-lg bg-stone-200 px-4 text-sm font-medium text-stone-600 transition-colors hover:bg-gray-200"
+          className="flex h-10 items-center rounded-lg bg-stone-200 px-4 text-sm  text-stone-600 transition-colors hover:bg-gray-200"
         >
           Cancel
         </Link>

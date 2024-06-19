@@ -14,21 +14,21 @@ export default function Page() {
                     height={400}
                     alt="cute illustration of a blue hotel building"
                 />
-                <h1 className={`mt-4 text-xl whitespace-pre`}>CHICAGO MARRIOTT NAPERVILLE </h1>
-                <h1 className="text-xl">1801 N NAPER BLVD NAPERVILLE, IL 60565 USA</h1>
-                <h1 className="text-xl">+1 (630) 505-4900</h1>
+                <h1 className={`mt-4 text-xs sm:text-xl whitespace-pre`}>CHICAGO MARRIOTT NAPERVILLE </h1>
+                <h1 className="text-xs sm:text-xl">1801 N NAPER BLVD NAPERVILLE, IL 60565 USA</h1>
+                <h1 className="text-xs sm:text-xl">+1 (630) 505-4900</h1>
                 <br />
-                <div className="w-96 text-center mb-6">
-                    <article className="text-lg">Wedding Guest Special Rate: $139-$159/night</article><br />
-                    <article className="text-lg">We have secured a room block at the Chicago Marriott Naperville in Naperville, IL.
+                <div className="max-w-md text-center mb-6 text-pretty sm:text-xl">
+                    <article>Wedding Guest Special Rate:<br className="sm:hidden"/> $139-$159/night</article><br />
+                    <article>We have secured a room block at the Chicago Marriott Naperville in Naperville, IL.
                         Rooms are available starting from Tuesday, August 27<sup>th</sup> until Monday, September 2<sup>nd</sup>.
                     </article>
                     <br/>
-                    <article className="text-pretty text-lg">The hotel is about a 5 minute drive (or a 30 minute walk if you&apos;re up for it!) from The Crawford, where the Muhurtham and Reception will be held.
+                    <article>The hotel is about a 5 minute drive (or a 30 minute walk if you&apos;re up for it!) from The Crawford, where the Muhurtham and Reception will be held.
                         We will also be arranging transport between the hotel and the respective venues for wedding events taking place on Friday, August 30<sup>th</sup> and Saturday, August 31<sup>st</sup>.
                     </article>
                     <br/>
-                    <article className="text-pretty text-lg">
+                    <article>
                         If you choose to book a room at the Marriott, please visit our affiliate link by clicking on the button below.
                     </article>
                 </div>
@@ -37,13 +37,24 @@ export default function Page() {
                     className="flex h-10 items-center rounded-lg bg-teal-600 px-4 text-md font-medium text-white transition-colors hover:bg-teal-500 mb-4"
                     target="_blank" rel="noopener noreferrer"
                 >Book a Room</a>
-
-                <GoogleMapsEmbed
-                    apiKey="AIzaSyAnvgcJPM0khBrQhHEyDDA1LGbFVbGSd60"
-                    width={600}
-                    height={250}
-                    mode="place"
-                    q="Chicago+Marriott+Naperville+Naperville,Illinois,USA" />
+                <div className="hidden sm:block">
+                    <GoogleMapsEmbed
+                        apiKey="AIzaSyAnvgcJPM0khBrQhHEyDDA1LGbFVbGSd60"
+                        width={600}
+                        height={250}
+                        mode="place"
+                        q="Chicago+Marriott+Naperville+Naperville,Illinois,USA"
+                    />
+                </div>
+                <div className="block sm:hidden">
+                    <GoogleMapsEmbed
+                        apiKey="AIzaSyAnvgcJPM0khBrQhHEyDDA1LGbFVbGSd60"
+                        width={300}
+                        height={250}
+                        mode="place"
+                        q="Chicago+Marriott+Naperville+Naperville,Illinois,USA"
+                    />
+                </div>
             </div>
         </main>
     );
