@@ -19,19 +19,24 @@ export default function Page() {
                 <h1 className="text-xl">+1 (630) 505-4900</h1>
                 <br />
                 <div className="w-96 text-center mb-6">
-                    <article className="text-lg">Wedding Guest Special Rate: $139-$159/night</article><br/>
+                    <article className="text-lg">Wedding Guest Special Rate: $139-$159/night</article><br />
                     <article className="text-lg">We have secured a room block at the Chicago Marriott Naperville in Naperville, IL.
-                         Rooms are available from starting from Tuesday, August 27<sup>th</sup> until Monday, September 1<sup>st</sup>.
+                        Rooms are available starting from Tuesday, August 27<sup>th</sup> until Monday, September 2<sup>nd</sup>.
                     </article>
                     <br/>
                     <article className="text-pretty text-lg">The hotel is about a 5 minute drive (or a 30 minute walk if you&apos;re up for it!) from The Crawford, where the Muhurtham and Reception will be held.
+                        We will also be arranging transport between the hotel and the respective venues for wedding events taking place on Friday, August 30<sup>th</sup> and Saturday, August 31<sup>st</sup>.
+                    </article>
+                    <br/>
+                    <article className="text-pretty text-lg">
                         If you choose to book a room at the Marriott, please visit our affiliate link by clicking on the button below.
                     </article>
                 </div>
 
-                <Link href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1715624267227&key=GRP&app=resvlink"
+                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1715624267227&key=GRP&app=resvlink"
                     className="flex h-10 items-center rounded-lg bg-teal-600 px-4 text-md font-medium text-white transition-colors hover:bg-teal-500 mb-4"
-                >Book a Room</Link>
+                    target="_blank" rel="noopener noreferrer"
+                >Book a Room</a>
 
                 <GoogleMapsEmbed
                     apiKey="AIzaSyAnvgcJPM0khBrQhHEyDDA1LGbFVbGSd60"
