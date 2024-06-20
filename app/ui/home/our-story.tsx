@@ -51,10 +51,10 @@ export function OurStoryBlock1(){
 				<br/>
 				<article className="text-pretty">Avani, who was mid-conversation with a fellow cross-country club teammate, looked back and recognized the speaker. He was another teammate she had met earlier that month.</article>
 				<br/>
-				<article className="text-pretty">&quot;Oh, you&#39;re that person who asked me if I was Indian, and then raan away after I said &apos;Yes&apos;. What&apos;s you&apos;re name, by the way? &quot;</article>
+				<article className="text-pretty">&quot;Oh, you&#39;re that person who asked me if I was Indian, and then ran away after I said &apos;Yes&apos;. What&apos;s your name, by the way? &quot;</article>
 				<br/>
-				<article className="text-pretty">Avani learned that the teammate&apos;s name was Shingo and his eager, well-tanned friend standing beside was named Shusuke. Shingo explained in English that Shusuke was 
-					excited to meet international students and was wondering how he can become friends with them. Shusuke periodically chimed in with a "yeah!" and an exuberant high-five, much to Avani's amusement.
+				<article className="text-pretty">Avani learned that the teammate&apos;s name was Shingo and his eager, well-tanned friend standing beside him was named Shusuke. Shingo explained in English that Shusuke was 
+					excited to meet international students and was wondering how he can become friends with them. Shusuke periodically chimed in with a &quot;yeah!&quot; and an exuberant high-five, much to Avani&apos;s amusement.
 					Avani, herself eager to make friends with local Japanese students, invited them to join her and the other exchange students for lunch later that week, and the three of them exchanged phone numbers.
 				</article>
             </div>
@@ -67,7 +67,7 @@ export function OurStoryBlock2(){
 			<div className="text-center xl:p-10">
 				<article className="text-pretty">
 				 Fast-forward to a month later. Shusuke and Avani have become good friends (😉), often having lunch together in addition to hanging out during cross-country club and dance club a few times a week.
-				 Avani's friends in the dance club begain insisting that Shusuke had a crush on her, but she always scoffed in return. &quot;Me? The foreign girl who is gong back to her far-away country by the end
+				 Avani&apos;s friends in the dance club began insisting that Shusuke had a crush on her, but she always scoffed in return. &quot;Me? The foreign girl who is going back to her far-away country by the end
 				 of the summer? No way! &quot;
 				</article>
 				<br/>
@@ -127,7 +127,7 @@ export function OurStoryBlock3(){
 					for six years and convinced them that they want to spend the rest of their many years to come, together. In one country, in one home.
 				</article>
 				<br/>
-				<article className="text-pretty">So please, join us as we celebrate the beginning of our new light together 😊</article>
+				<article className="text-pretty">So please, join us as we celebrate the beginning of our new life together 😊</article>
 				<article className={` ${noto_serif_japanese.className}`}>さて、祝いましょう！</article>
             </div>
 		</div>

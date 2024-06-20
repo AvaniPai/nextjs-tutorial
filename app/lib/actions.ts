@@ -192,7 +192,7 @@ export async function updateUserRSVP(guest_id: string, prevState: RSVPState, for
 
   try {
     await sql`
-    UPDATE guest_test
+    UPDATE guests
     SET isattendingmehendi = ${isAttendingMehendi}, 
         mehendipartysize = ${mehendiPartySize},
         isattendinghaldi =  ${isAttendingHaldi},

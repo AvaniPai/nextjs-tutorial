@@ -30,7 +30,7 @@ export default function Page() {
                 </div>
 
                 <Link href="https://www.hitchd.com/bonvoyagesugirypai"
-                    className="flex h-10 items-center rounded-lg bg-yellow-900 px-4 text-md font-medium text-white transition-colors hover:bg-teal-500 mb-4"
+                    className="flex h-10 items-center rounded-lg bg-yellow-900 px-4 text-md font-medium text-white transition-colors hover:bg-yellow-800 mb-4"
                     target="_blank" rel="noopener noreferrer"
                 >Make a Contribution</Link>
 

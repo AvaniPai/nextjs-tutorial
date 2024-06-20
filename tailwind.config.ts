@@ -21,6 +21,10 @@ const config: Config = {
         'darksakura': '#ffb9c4',
         'sage': '#9fb393',
         'darksage': '#56694a',
+        'darkmaroon': '#640d14',
+        'maroon': '#800E13',
+        'harvestmoon': '#EACBAB',
+        'suedeboots': '#BD9774',
       },
     },
     keyframes: {
