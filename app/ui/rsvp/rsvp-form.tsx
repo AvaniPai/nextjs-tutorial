@@ -447,7 +447,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
-                Will you and your party be attending the Shinzenshiki (Japanese Shinto Wedding) on Saturday, November 30<sup>th</sup> at 2:00pm CST?
+                Will you and your party be attending the Shinzenshiki (Japanese Shinto Wedding) on Saturday, November 30<sup>th</sup> at 2:00pm JST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -526,7 +526,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-6 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
-                Will you and your party be attending the Hiroen (Japanese Wedding Reception) on Saturday, November 30<sup>th</sup> at 5:30pm CST?
+                Will you and your party be attending the Hiroen (Japanese Wedding Reception) on Saturday, November 30<sup>th</sup> at 5:30pm JST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">

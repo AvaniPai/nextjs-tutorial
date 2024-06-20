@@ -13,7 +13,7 @@ export async function getInvitedEvents(userEmail: string) {
            sanmuhrec AS sanmuhrec,
            allevents AS all_events,
            allusjapan AS all_us_japan
-    FROM guest_test
+    FROM guests
     WHERE email = ${userEmail};
     `
     // above will return a QueryResult object with type InvitedEvents
