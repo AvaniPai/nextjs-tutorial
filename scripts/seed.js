@@ -2,6 +2,9 @@ const { db } = require('@vercel/postgres');
 const {
   guest_table
 } = require('../app/lib/guests.js');
+const {
+	update_guest_list
+} = require('../app/lib/update_email_guests.js');
 const bcrypt = require('bcrypt');
 
 async function seedUsers(client) {
@@ -129,11 +132,32 @@ async function removeTable(client){
   }
 
 }
+
+async function updateTable(client){
+	try {
+		const updateGuests = await Promise.all(
+			update_guest_list.map(async (guest) => {
+				return client.sql`
+				UPDATE guests
+				SET email = ${guest.email}
+				WHERE guest_id = ${guest.guest_id}
+				`;
+			}),
+		);
+
+		console.log(`Updated users with lowercased emails.`);
+
+	} catch (error) {
+    	console.error('Error updating the table.', error);
+    	throw error;
+	}
+}
 async function main() {
   const client = await db.connect();
 
   //await removeTable(client);
-  await seedUsers(client);
+  //await seedUsers(client);
+  await updateTable(client);
 
   await client.end();
 }
