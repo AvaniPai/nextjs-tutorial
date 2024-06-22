@@ -7,9 +7,6 @@ import { auth, signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 
 const RSVPFormSchema = z.object({
-  partyNames: z.string().min(1, {
-    message: "This field is required.",
-  }),
   isAttendingMehendi: z.enum(['yes', 'no', 'not_invited'], {
     invalid_type_error: "Please select 'Yes' or 'No'."
   }),
@@ -55,6 +52,9 @@ const PartySizeFormSchema = z.object({
   }),
   hiroenPartySize: z.coerce.number().positive({ 
     message: "Please provide the number of people attending this event." 
+  }),
+  partyNames: z.string().min(1, {
+    message: "This field is required.",
   }),
 })
 
@@ -126,7 +126,6 @@ export async function getUserEmail() {
 
 export async function updateUserRSVP(guest_id: string, prevState: RSVPState, formData: FormData) {
   const validatedFields = RSVPFormSchema.safeParse({
-    partyNames: formData.get('party_names'),
     isAttendingMehendi: formData.has('mehendi') ? formData.get('mehendi') : "not_invited",
     isAttendingHaldi: formData.has('haldi') ? formData.get('haldi') : "not_invited",
     isAttendingSangeet: formData.has('sangeet') ? formData.get('sangeet') : "not_invited",
@@ -147,7 +146,6 @@ export async function updateUserRSVP(guest_id: string, prevState: RSVPState, for
   }
 
   const {
-    partyNames,
     isAttendingMehendi,
     isAttendingHaldi,
     isAttendingSangeet,
@@ -165,7 +163,8 @@ export async function updateUserRSVP(guest_id: string, prevState: RSVPState, for
     muhurthamPartySize: isAttendingMuhurtham == "yes" ? formData.get("muhurtham_party_size") : 1,
     receptionPartySize: isAttendingReception == "yes" ? formData.get("reception_party_size") : 1,
     shinzenshikiPartySize: isAttendingShinzenshiki == "yes" ? formData.get("shinzenshiki_party_size") : 1,
-    hiroenPartySize: isAttendingHiroen == "yes" ? formData.get("hiroen_party_size") : 1
+    hiroenPartySize: isAttendingHiroen == "yes" ? formData.get("hiroen_party_size") : 1,
+    partyNames: isAttendingReception == "yes" ? formData.get("party_names") : "not attending",
   })
 
   if (!validatedPartySize.success) {
@@ -184,7 +183,8 @@ export async function updateUserRSVP(guest_id: string, prevState: RSVPState, for
     muhurthamPartySize,
     receptionPartySize,
     shinzenshikiPartySize,
-    hiroenPartySize
+    hiroenPartySize,
+    partyNames
   } = validatedPartySize.data;
 
   const rsvpUpdatedDate = new Date().toISOString().split('T')[0];
