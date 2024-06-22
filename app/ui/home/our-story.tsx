@@ -50,7 +50,7 @@ export function OurStoryBlock1() {
 				/>
 			</div>
 			<div className="text-center bg-white md:p-5 my-2">
-				<article>A sizeable current of students flowed from every corner of Nagoya University's campus towards the subway station, under the sleepy gaze of the sun just barely peering over the horizon.</article>
+				<article>A sizeable current of students flowed from every corner of Nagoya University&apos;s campus towards the subway station, under the sleepy gaze of the sun just barely peering over the horizon.</article>
 				<br/>
 				<article className="text-pretty">&quot;Hey, they&apos;re speaking English! Wanna join them?&quot;</article>
 				<br/>
