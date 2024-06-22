@@ -4,8 +4,8 @@ import { noto_serif_japanese, quicksand } from '../fonts';
 export default function OurStory() {
 	return (
 		<div>
-			<h1 className={`  text-center text-4xl mb-8 underline decoration-gray-300 decoration-double`}>The Story Of How We Met</h1>
-			<div className="flex grid grid-rows-3 items-center justify-center mx-auto md:w-3/5 h-auto md:text-xl text-pretty">
+			<h1 className={`text-center text-xl md:text-4xl mb-8 underline decoration-gray-300 decoration-double`}>The Story Of How We Met</h1>
+			<div className="items-center justify-center mx-auto md:w-3/5 h-auto md:text-xl text-pretty space-y-2 md:space-y-8">
 				<OurStoryBlock1 />
 				<OurStoryBlock2 />
 				<OurStoryBlock3 />
@@ -16,7 +16,7 @@ export default function OurStory() {
 
 export function OurStoryBlock1() {
 	return (
-		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-gray-100 mb-2 xl:p-10">
+		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-gray-100  xl:p-10">
 			<div className="flex justify-center md:hidden">
 				<Image
 					src="/avani_and_shusuke/our_story_one.png"
@@ -33,7 +33,7 @@ export function OurStoryBlock1() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="hidden flex-col items-center md:flex">
+			<div className="hidden flex-col items-center justify-start space-y-4 md:flex">
 				<Image
 					src="/avani_and_shusuke/our_story_one.png"
 					width={400}
@@ -49,7 +49,7 @@ export function OurStoryBlock1() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="text-center bg-white md:p-5 my-2">
+			<div className="text-center bg-white md:p-5">
 				<article>A sizeable current of students flowed from every corner of Nagoya University&apos;s campus towards the subway station, under the sleepy gaze of the sun just barely peering over the horizon.</article>
 				<br/>
 				<article className="text-pretty">&quot;Hey, they&apos;re speaking English! Wanna join them?&quot;</article>
@@ -68,7 +68,7 @@ export function OurStoryBlock1() {
 }
 export function OurStoryBlock2() {
 	return (
-		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-gray-100 p-4 mb-2 xl:p-10">
+		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-gray-100  xl:p-10">
 			<div className="flex justify-center md:hidden">
 				<Image
 					src="/avani_and_shusuke/our_story_two.png"
@@ -85,7 +85,7 @@ export function OurStoryBlock2() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="text-center bg-white my-2 md:p-5">
+			<div className="text-center bg-white  md:p-5">
 				<article className="text-pretty">
 					Fast-forward to a month later. Shusuke and Avani have become good friends (😉), often having lunch together in addition to hanging out during cross-country club and dance club a few times a week.
 					Avani&apos;s friends in the dance club began insisting that Shusuke had a crush on her, but she always scoffed in return. &quot;Me? The foreign girl who is going back to her far-away country by the end
@@ -134,7 +134,7 @@ export function OurStoryBlock2() {
 }
 export function OurStoryBlock3() {
 	return (
-		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-gray-100 xl:p-10">
+		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-gray-100  xl:p-10">
 			<div className="hidden flex-col items-start justify-start md:flex">
 				<Image
 					src="/avani_and_shusuke/our_story_three.png"
@@ -153,7 +153,7 @@ export function OurStoryBlock3() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="text-center bg-white my-2 md:p-5">
+			<div className="text-center bg-white  md:p-5">
 				<article className="text-pretty">That summer was one of the happiest summers they had ever experienced. Who could imagine that two people born in different parts of the world and experiencing life in so many fundamentally
 					different ways could connect with each other so seamlessly? The love they shared for each other was indeed special, because it weathered them through the difficulties of long-distance dating
 					for six years and convinced them that they want to spend the rest of their many years to come, together. In one country, in one home.

@@ -39,20 +39,20 @@ export function MehendiEventBlock() {
 			<div className="items-center justify-center h-full flex">
 				<Image
 					src="/events/mehendi.png"
-					width={800}
-					height={800}
+					width={700}
+					height={700}
 					className="styles.image flex"
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-10 p-8 sm:px-20 sm:text-2xl text-base">
-				<h2 className="text-4xl">MEHENDI</h2>
+			<div className="space-y-10 p-8 px-20 text-2xl">
+				<h2 className="text-4xl ">MEHENDI</h2>
+					<p>
+						<a className="text-darksage">Date: </a>
+						Wednesday, August 28<sup>th</sup> at 6:00pm
+					</p>
 				<p>
-					<a className="text-bold text-darksage">Date: </a>
-					Wednesday, August 28<sup>th</sup> at 6:00pm
-				</p>
-				<p>
-					<a className="text-bold text-darksage">Location: </a> 
+					<a className="text-darksage">Location: </a> 
 					<a href="https://maps.app.goo.gl/dgZsd2o6BUWKvmy5A" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
 						712 Kaiser Court, Naperville, IL 60565
 					</a>
@@ -74,7 +74,7 @@ export function MehendiEventBlock() {
 					</div>
 				</div>
 				<p> 
-					<a className="text-bold text-darksage">Attire</a>
+					<a className="text-darksage">Attire</a>
 					<br/>
 					Traditional Indian attire in shades of green
 				</p>
@@ -107,18 +107,18 @@ export function MehendiEventBlock() {
 
 export function HaldiEventBlock() {
 	return (
-		<div className={"grid grid-cols-2 grid-rows-2 gap-4 mb-2"}>
-			<div className="hidden items-center justify-center h-full sm:flex">
+		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
+			<div className="items-center justify-center h-full flex">
 				<Image
 					src="/events/haldi.png"
-					width={500}
-					height={500}
+					width={700}
+					height={700}
 					className="styles.imagehidden md:flex border border-double border-amber-500 p-10 border-8"
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-10 p-8 sm:px-20 text-2xl">
-				<h2 className="text-4xl">HALDI</h2>
+			<div className="space-y-10 p-8 px-20 text-2xl">
+				<h2 className="text-4xl ">HALDI</h2>
 					<p>
 						<a className="text-amber-500">Date: </a> 
 						Thursday, August 29<sup>th</sup> at 10:30am
@@ -146,7 +146,7 @@ export function HaldiEventBlock() {
 					</div>
 				</div>
 				<p>
-					<a className="text-bold text-amber-500">Attire</a>
+					<a className="text-amber-500">Attire</a>
 					<br/>
 					Traditional Indian attire in shades of yellow & white combination
 				</p>
@@ -156,7 +156,7 @@ export function HaldiEventBlock() {
 					>Link to RSVP</Link>
 				</div>
 			</div>
-			<div className="col-span-2 text-2xl text-center overflow-y-auto mt-6">
+			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
 				<h2 className="text-4xl">Haldi - An Intimate Ritual to Bless the Bethrothed Couple</h2>
 				<br />
 				<p className="indent-8">
@@ -181,18 +181,18 @@ export function HaldiEventBlock() {
 
 export function SangeetEventBlock() {
 	return (
-		<div className={"grid grid-cols-2 grid-rows-2 gap-4 mb-2"}>
+		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
 			<div className="hidden items-center justify-center h-full sm:flex">
 				<Image
 					src="/events/sangeet.png"
-					width={800}
-					height={800}
+					width={700}
+					height={700}
 					className="styles.imagehidden sm:flex"
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-10 p-8 sm:px-20 text-2xl">
-				<h2 className="text-4xl">SANGEET</h2>
+			<div className="space-y-10 p-8 px-20 text-2xl">
+				<h2 className="text-4xl ">SANGEET</h2>
 				<p>
 					<a className="text-blue-600">Date: </a>
 					Friday, August 30<sup>th</sup> at 6:00pm
@@ -252,18 +252,18 @@ export function SangeetEventBlock() {
 }
 export function MuhurthamEventBlock() {
 	return (
-		<div className={"grid grid-cols-2 grid-cols-2 mb-2 gap-4"}>
+		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
 			<div className="hidden items-center justify-center h-full sm:flex">
 				<Image
 					src="/events/muhurtham.png"
-					width={800}
-					height={800}
+					width={700}
+					height={700}
 					className="styles.imagehidden sm:flex"
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-10 p-8 sm:px-20 text-2xl">
-				<h2 className="text-4xl">MUHURTHAM</h2>
+			<div className="space-y-10 p-8 sm:px-20 text-2xl">
+				<h2 className="text-4xl ">MUHURTHAM</h2>
 				<p>
 					<a className="text-darkmaroon">Date: </a>
 					Saturday, August 31<sup>st</sup> at 10:45am
@@ -332,18 +332,18 @@ export function MuhurthamEventBlock() {
 
 export function ReceptionEventBlock() {
 	return (
-		<div className={"grid gap-6 grid-cols-2 grid-rows-2 mb-2 gap-4"}>
+		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
 			<div className="hidden items-center justify-center h-full sm:flex">
 				<Image
 					src="/events/reception.png"
-					width={800}
-					height={800}
+					width={700}
+					height={700}
 					className="styles.imagehidden sm:flex"
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-10 p-8 sm:px-20 text-2xl">
-				<h2 className="text-4xl">RECEPTION</h2>
+			<div className="space-y-10 p-8 sm:px-20 text-2xl">
+				<h2 className="text-4xl ">RECEPTION</h2>
 				<p>
 					<a className="text-bold text-suedeboots">Date: </a>
 					Saturday August 31<sup>st</sup> at 6:00pm
@@ -383,7 +383,7 @@ export function ReceptionEventBlock() {
 				</div>
 			</div>
 			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
-				<p className="text-4xl">Reception - A Grand Celebration of Matrimonial Union</p>
+				<p className="text-4xl ">Reception - A Grand Celebration of Matrimonial Union</p>
 				<br/>
 				<p className="indent-8">
 					The wedding reception is the highlight of Indian weddings, held in the evening of the wedding day. This grand event marks the culmination of the wedding festivities, bringing together family, friends, and acquaintances from both sides to celebrate the newlywed couple. Set in a lavish venue adorned with beautiful decorations, the reception creates an elegant and festive ambiance.
@@ -408,7 +408,7 @@ export function ReceptionEventBlock() {
 export function JapanPlaceholders () {
 	return (
 		<div className="flex flex-col items-center justify-center text-2xl border rounded-lg border-8 border-darksakura">
-			<h1>SHINZENSHIKI & HIROEN (Reception)</h1>
+			<h1 className="">SHINZENSHIKI & HIROEN (Reception)</h1>
 			<h1 className="text-pretty">Date: November 30<sup>th</sup>, 2024 in Fukui Prefecture.</h1>
 			<article className="text-pretty">We appreciation your patience as we work out accomodation details and schedule for the ceremonies.</article>
 		</div>
@@ -428,7 +428,7 @@ export function MehendiEventBlockSm() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-2 py-3 text-sm">
+			<div className="justify-self-center space-y-2 py-3 text-sm">
 				<p className="text-sm">
 					<a className="text-bold text-darksage">Date: </a>
 					Wednesday, August 28<sup>th</sup> at 6:00pm
@@ -499,7 +499,7 @@ export function HaldiEventBlockSm() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-2 py-3 text-sm">
+			<div className="justify-self-center space-y-2 py-3 text-sm">
 					<p className="text-sm">
 						<a className="text-amber-500">Date: </a> 
 						Thursday, August 29<sup>th</sup> at 10:00am
@@ -572,7 +572,7 @@ export function SangeetEventBlockSm() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-2 py-3 text-sm">
+			<div className="justify-self-center space-y-2 py-3 text-sm">
 				<p>
 					<a className="text-blue-600">Date: </a>
 					Friday, August 30<sup>th</sup> at 6:00pm
@@ -643,7 +643,7 @@ export function MuhurthamEventBlockSm() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-2 py-3 text-sm">
+			<div className="justify-self-center space-y-2 py-3 text-sm">
 				<p>
 					<a className="text-darkmaroon">Date: </a>
 					Saturday, August 31<sup>st</sup> at 10:45am
@@ -722,7 +722,7 @@ export function ReceptionEventBlockSm() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="whitespace-pre-wrap justify-self-center space-y-2 py-3 text-sm">
+			<div className="justify-self-center space-y-2 py-3 text-sm">
 				<p>
 					<a className="text-bold text-suedeboots">Date: </a>
 					Saturday August 31<sup>st</sup> at 6:00pm
@@ -788,7 +788,7 @@ export function JapanPlaceholdersSm() {
 	return (
 		<div className="border rounded-lg border-8 border-darksakura">
 			<div className="flex justify-center text-center">
-				<h1>SHINZENSHIKI & HIROEN (Reception)</h1>
+				<h1 className="">SHINZENSHIKI & HIROEN (Reception)</h1>
 			</div>
 			<p className="text-pretty text-sm">Date: November 30<sup>th</sup>, 2024 in Fukui Prefecture.</p>
 			<article className="text-pretty text-sm">We appreciation your patience as we work out accomodation details and schedule for the ceremonies.</article>

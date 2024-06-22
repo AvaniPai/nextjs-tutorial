@@ -8,22 +8,26 @@ import { quicksand } from '../fonts';
 
 export default function SideNav() {
   return (
-    <div className={`${quicksand.className} flex h-full w-full flex-row items-center bg-white shadow-md md:px-3 md:py-4`}>
-        <div className="flex justify-center">
-        <Link
-          className="hidden rounded-md xl:block"
-          href="/"
-        >
-          <Image 
-            src="/as_logo_white.png"
-            width={150}
-            height={150}
-            className="styles.image"
-            alt="Avani and Shusuke Wedding Invitation Logo"
-          />
-            <h1 className="text-center">Avani & Shusuke</h1>
-            <h1 className="text-center">August 2024</h1>
-        </Link>
+    <div className={`${quicksand.className} flex h-full w-full flex-row items-center bg-white shadow-md md:px-3 md:py-1`}>
+        <div className="justify-center">
+          <Link
+            className="hidden rounded-md flex-row xl:flex"
+            href="/"
+          >
+            <Image 
+              src="/as_logo_white.png"
+              width={150}
+              height={150}
+              className="styles.image"
+              alt="Avani and Shusuke Wedding Invitation Logo"
+            />
+            <div className='flex items-center'>
+              <div>
+                <h1 className="text-center">Avani & Shusuke</h1>
+                <h1 className="text-center">August 2024</h1>
+              </div>
+            </div>
+          </Link>
         </div>
       <div className="flex flex-wrap grow flex-row justify-center space-x-2 py-2 md:space-x-10 md:py-8">
         <NavLinks />
