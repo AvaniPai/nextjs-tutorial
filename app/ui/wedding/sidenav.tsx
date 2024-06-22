@@ -11,7 +11,7 @@ export default function SideNav() {
     <div className={`${quicksand.className} flex h-full w-full flex-row items-center bg-white shadow-md md:px-3 md:py-4`}>
         <div className="flex justify-center">
         <Link
-          className="hidden rounded-md md:block ml10"
+          className="hidden rounded-md xl:block"
           href="/"
         >
           <Image 

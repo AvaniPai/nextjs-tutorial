@@ -16,29 +16,29 @@ export default function OurStory() {
 
 export function OurStoryBlock1() {
 	return (
-		<div className="md:grid md:grid-cols-2 w-full h-full justify-self-center">
-			<div className="flex items-center justify-center md:hidden">
+		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-red-100 mb-2 xl:p-10">
+			<div className="flex justify-center md:hidden">
 				<Image
 					src="/avani_and_shusuke/our_story_one.png"
-					width={200}
+					width={150}
 					height={200}
 					className="styles.image"
 					alt="Illustration of each wedding event."
 				/>
 				<Image
 					src="/avani_and_shusuke/our_story_one_b.png"
-					width={200}
+					width={150}
 					height={200}
 					className="styles.image"
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="hidden flex-col items-center justify-start md:flex">
+			<div className="hidden flex-col items-center md:flex">
 				<Image
 					src="/avani_and_shusuke/our_story_one.png"
 					width={400}
 					height={800}
-					className="styles.image hidden md:flex pb-4"
+					className="styles.image hidden md:flex"
 					alt="Illustration of each wedding event."
 				/>
 				<Image
@@ -49,7 +49,7 @@ export function OurStoryBlock1() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="text-center xl:p-10">
+			<div className="text-center bg-white md:p-5 my-2">
 				<article className="text-pretty">&quot;Hey, they&apos;re speaking English! Wanna join them?&quot;</article>
 				<br />
 				<article className="text-pretty">Avani, who was mid-conversation with a fellow cross-country club teammate, looked back and recognized the speaker. He was another teammate she had met earlier that month.</article>
@@ -66,8 +66,24 @@ export function OurStoryBlock1() {
 }
 export function OurStoryBlock2() {
 	return (
-		<div className="md:grid md:grid-cols-2 w-full h-full justify-self-center">
-			<div className="text-center xl:p-10">
+		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-blue-100 p-4 mb-2 xl:p-10">
+			<div className="flex justify-center md:hidden">
+				<Image
+					src="/avani_and_shusuke/our_story_two.png"
+					width={150}
+					height={200}
+					className="styles.image"
+					alt="Illustration of each wedding event."
+				/>
+				<Image
+					src="/avani_and_shusuke/our_story_two_b.png"
+					width={100}
+					height={200}
+					className="styles.image"
+					alt="Illustration of each wedding event."
+				/>
+			</div>
+			<div className="text-center bg-white my-2 md:p-5">
 				<article className="text-pretty">
 					Fast-forward to a month later. Shusuke and Avani have become good friends (😉), often having lunch together in addition to hanging out during cross-country club and dance club a few times a week.
 					Avani&apos;s friends in the dance club began insisting that Shusuke had a crush on her, but she always scoffed in return. &quot;Me? The foreign girl who is going back to her far-away country by the end
@@ -98,7 +114,7 @@ export function OurStoryBlock2() {
 					src="/avani_and_shusuke/our_story_two.png"
 					width={400}
 					height={600}
-					className="styles.image hidden md:flex pb-4"
+					className="styles.image hidden md:flex"
 					alt="Illustration of each wedding event."
 				/>
 				<Image
@@ -114,17 +130,26 @@ export function OurStoryBlock2() {
 }
 export function OurStoryBlock3() {
 	return (
-		<div className="md:grid md:grid-cols-2 w-full h-full justify-self-center">
-			<div className="hidden flex-col items-start justify-start md:flex pt-10">
+		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-gray-100 xl:p-10">
+			<div className="hidden flex-col items-start justify-start md:flex">
 				<Image
 					src="/avani_and_shusuke/our_story_three.png"
-					width={600}
+					width={500}
 					height={1100}
-					className="styles.image hidden md:flex pb-4"
+					className="styles.image hidden md:flex"
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="text-center xl:p-10">
+			<div className="flex justify-center md:hidden">
+				<Image
+					src="/avani_and_shusuke/our_story_one.png"
+					width={150}
+					height={200}
+					className="styles.image"
+					alt="Illustration of each wedding event."
+				/>
+			</div>
+			<div className="text-center bg-white my-2 md:p-5">
 				<article className="text-pretty">That summer was one of the happiest summers they had ever experienced. Who could imagine that two people born in different parts of the world and experiencing life in so many fundamentally
 					different ways could connect with each other so seamlessly? The love they shared for each other was indeed special, because it weathered them through the difficulties of long-distance dating
 					for six years and convinced them that they want to spend the rest of their many years to come, together. In one country, in one home.
