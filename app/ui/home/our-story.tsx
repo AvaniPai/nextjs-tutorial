@@ -4,7 +4,7 @@ import { noto_serif_japanese, quicksand } from '../fonts';
 export default function OurStory() {
 	return (
 		<div>
-			<h1 className={`  text-center text-4xl mb-8 underline decoration-suedeboots decoration-double`}>The Story Of How We Met</h1>
+			<h1 className={`  text-center text-4xl mb-8 underline decoration-gray-300 decoration-double`}>The Story Of How We Met</h1>
 			<div className="flex grid grid-rows-3 items-center justify-center mx-auto md:w-3/5 h-auto md:text-xl text-pretty">
 				<OurStoryBlock1 />
 				<OurStoryBlock2 />
@@ -16,7 +16,7 @@ export default function OurStory() {
 
 export function OurStoryBlock1() {
 	return (
-		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-red-100 mb-2 xl:p-10">
+		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-gray-100 mb-2 xl:p-10">
 			<div className="flex justify-center md:hidden">
 				<Image
 					src="/avani_and_shusuke/our_story_one.png"
@@ -50,15 +50,17 @@ export function OurStoryBlock1() {
 				/>
 			</div>
 			<div className="text-center bg-white md:p-5 my-2">
+				<article>A sizeable current of students flowed from every corner of Nagoya University&apos;s campus towards the subway station, under the sleepy gaze of the sun just barely peering over the horizon.</article>
+				<br/>
 				<article className="text-pretty">&quot;Hey, they&apos;re speaking English! Wanna join them?&quot;</article>
-				<br />
+				<br/>
 				<article className="text-pretty">Avani, who was mid-conversation with a fellow cross-country club teammate, looked back and recognized the speaker. He was another teammate she had met earlier that month.</article>
-				<br />
+				<br/>
 				<article className="text-pretty">&quot;Oh, you&#39;re that person who asked me if I was Indian, and then ran away after I said &apos;Yes&apos;. What&apos;s your name, by the way? &quot;</article>
-				<br />
+				<br/>
 				<article className="text-pretty">Avani learned that the teammate&apos;s name was Shingo and his eager, well-tanned friend standing beside him was named Shusuke. Shingo explained in English that Shusuke was
 					excited to meet international students and was wondering how he can become friends with them. Shusuke periodically chimed in with a &quot;yeah!&quot; and an exuberant high-five, much to Avani&apos;s amusement.
-					Avani, herself eager to make friends with local Japanese students, invited them to join her and the other exchange students for lunch later that week, and the three of them exchanged phone numbers.
+					Avani, herself eager to make friends with local Japanese students while she was studying abroad, invited them to join her and the other exchange students for lunch later that week, and the three of them exchanged phone numbers.
 				</article>
 			</div>
 		</div>
@@ -66,7 +68,7 @@ export function OurStoryBlock1() {
 }
 export function OurStoryBlock2() {
 	return (
-		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-blue-100 p-4 mb-2 xl:p-10">
+		<div className="md:grid md:grid-cols-2 w-full justify-self-center md:bg-gray-100 p-4 mb-2 xl:p-10">
 			<div className="flex justify-center md:hidden">
 				<Image
 					src="/avani_and_shusuke/our_story_two.png"
@@ -94,14 +96,16 @@ export function OurStoryBlock2() {
 					But on May 23<sup>rd</sup> 2017, Avani realized that her friends had been right.
 				</article>
 				<br />
-				<article className={` ${noto_serif_japanese.className}`}>「ちょっと待って下さい。心の準備をします。」</article>
-				<article> &#40;Please wait a moment, I need to prepare myself.&#41;</article>
+				<article>
+					<a className={` ${noto_serif_japanese.className}`}>「ちょっと待って下さい。心の準備をします。」</a> 
+					said Shusuke &#40;translation: Please wait a moment, I need to prepare myself&#41;.
+					</article>
 				<br />
-				<article className="text-pretty">&quot;I love you.&quot;</article>
+				<article className="text-pretty">&quot;I love you,&quot; he said confidently.</article>
 				<br />
-				<article className="text-pretty">Ohhhhhmmmmyyyyygo-</article>
+				<article className="text-pretty italic">Ohhhhhmmmmyyyyygo-</article>
 				<br />
-				<article className="text-pretty">&quot;Did you mean &apos;I like you?&apos; Because &apos;I love you&apos; means <article className={` ${noto_serif_japanese.className} inline`}>愛していますよ</article>
+				<article className="text-pretty">&quot;Did you mean &apos;I like you?&apos;&quot;Avani blurted out. &quot;Because &apos;I love you&apos; means <article className={` ${noto_serif_japanese.className} inline`}>愛していますよ</article>
 					and &apos;I like you&apos; means <p className={` ${noto_serif_japanese.className} inline`}>好きだよ</p>.&quot;
 				</article>
 				<br />
@@ -109,7 +113,7 @@ export function OurStoryBlock2() {
 					confessionary statement and asked if Avani would be his girlfriend, to which she agreed.
 				</article>
 			</div>
-			<div className="hidden flex-col items-center justify-start md:flex">
+			<div className="hidden flex-col items-center justify-start space-y-4 md:flex">
 				<Image
 					src="/avani_and_shusuke/our_story_two.png"
 					width={400}
@@ -142,7 +146,7 @@ export function OurStoryBlock3() {
 			</div>
 			<div className="flex justify-center md:hidden">
 				<Image
-					src="/avani_and_shusuke/our_story_one.png"
+					src="/avani_and_shusuke/our_story_three.png"
 					width={150}
 					height={200}
 					className="styles.image"
