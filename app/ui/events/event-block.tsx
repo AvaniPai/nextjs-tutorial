@@ -139,7 +139,7 @@ export function HaldiEventBlock() {
 						<p>Light Snacks & Beverages</p>
 						<p>11:00 to 11:45am</p>
 						<p>Haldi Ceremony</p>
-						<p>11:45 to 01:00pm</p>
+						<p>11:45 to 1:00pm</p>
 						<p>Music & Dance</p>
 						<p>1:00 to 2:30pm</p>
 						<p>Lunch</p>
@@ -250,6 +250,7 @@ export function SangeetEventBlock() {
 		</div>
 	)
 }
+
 export function MuhurthamEventBlock() {
 	return (
 		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
@@ -447,7 +448,7 @@ export function MehendiEventBlockSm() {
 						<p>6:00 to 8:00pm</p>
 						<p>Mehendi for Bride & Groom</p>
 						<p>7:00 to 10:00pm</p>
-						<p>Mehendi for Bridal Party & Family</p>
+						<p>Mehendi for Bridal Party, Family & Guests</p>
 						<p>7:00 to 8:30pm</p>
 						<p>Dinner & Drinks</p>
 						<p>8:30 to 10:00pm</p>
@@ -502,7 +503,7 @@ export function HaldiEventBlockSm() {
 			<div className="justify-self-center space-y-2 py-3 text-sm">
 					<p className="text-sm">
 						<a className="text-amber-500">Date: </a> 
-						Thursday, August 29<sup>th</sup> at 10:00am
+						Thursday, August 29<sup>th</sup> at 10:30am
 					</p>
 					<p>
 						<a className="text-amber-500">Location: </a> 
@@ -513,13 +514,13 @@ export function HaldiEventBlockSm() {
 				<div>
 					<p className="text-amber-500">Program:</p>
 					<div className="grid grid-cols-2">
-						<p>10:00 to 10:30am</p>
+						<p>10:30 to 10:45am</p>
 						<p>Arrival of Guests</p>
-						<p>10:00 to 11:00am</p>
+						<p>10:45 to 11:00am</p>
 						<p>Light Snacks & Beverages</p>
 						<p>11:00 to 11:45am</p>
 						<p>Haldi Ceremony</p>
-						<p>11:45 to 01:00pm</p>
+						<p>11:45 to 1:00pm</p>
 						<p>Music & Dance</p>
 						<p>1:00 to 2:30pm</p>
 						<p>Lunch</p>
@@ -661,13 +662,13 @@ export function MuhurthamEventBlockSm() {
 						<p>Arrival of Guests</p>
 						<p>11:00 to 11:30am</p>
 						<p>Light Snacks & Beverages</p>
-						<p>11:30 to 12:00pm</p>
+						<p>11:15 to 11:45pm</p>
 						<p>Baraat</p>
-						<p>12:00 to 1:30pm</p>
+						<p>11:45 to 1:15pm</p>
 						<p>Lagnam</p>
-						<p>1:30 to 2:30pm</p>
+						<p>1:15 to 2:15pm</p>
 						<p>Lunch</p>
-						<p>2:30 to 3:30pm</p>
+						<p>2:15 to 3:00pm</p>
 						<p>Photo Shoot</p>
 					</div>
 				</div>
