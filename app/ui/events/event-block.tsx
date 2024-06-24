@@ -448,7 +448,7 @@ export function MehendiEventBlockSm() {
 						<p>6:00 to 8:00pm</p>
 						<p>Mehendi for Bride & Groom</p>
 						<p>7:00 to 10:00pm</p>
-						<p>Mehendi for Bridal Party, Family, & Guests</p>
+						<p>Mehendi for Bridal Party, Family & Guests</p>
 						<p>7:00 to 8:30pm</p>
 						<p>Dinner & Drinks</p>
 						<p>8:30 to 10:00pm</p>
@@ -666,7 +666,7 @@ export function MuhurthamEventBlockSm() {
 						<p>Baraat</p>
 						<p>11:45 to 1:15pm</p>
 						<p>Lagnam</p>
-						<p>1:15 to 3:00pm</p>
+						<p>1:15 to 2:15pm</p>
 						<p>Lunch</p>
 						<p>2:15 to 3:00pm</p>
 						<p>Photo Shoot</p>
