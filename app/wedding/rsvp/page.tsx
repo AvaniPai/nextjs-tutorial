@@ -7,7 +7,8 @@ import { birthstonebounce } from '@/app/ui/fonts';
 export default async function Page() {
     const currUserEmail  = await getUserEmail();
     const invitedEvents = await getInvitedEvents(currUserEmail);
-     
+    //const hasResponded = await getUserResponse(currUserEmail);
+
     return (
         <main>
             <div className="bg-[url('/sakura_border.png')] bg-contain container flex flex-col justify-evenly p-4 mx-auto max-width">
