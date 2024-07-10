@@ -207,16 +207,16 @@ export function SangeetEventBlock() {
 					<p className="text-blue-600">Program:</p>
 					<br/>
 					<div className="grid grid-cols-2">
+						<p>6:00 to 6:15pm</p>
+						<p>Arrival of Guests</p>
 						<p>6:00 to 10:00pm</p>
 						<p>Open Bar</p>
-						<p>6:00 to 6:30pm</p>
-						<p>Arrival of Guests</p>
-						<p>6:30 to 7:15pm</p>
-						<p>Performances</p>
-						<p>7:15 to 8:15pm</p>
+						<p>6:30 to 7:30pm</p>
 						<p>Dinner</p>
-						<p>7:30 to 10:00pm</p>
+						<p>7:30 to 9:30pm</p>
 						<p>Mehendi (for interested guests)</p>
+						<p>7:30 to 8:15pm</p>
+						<p>Performances</p>
 						<p>8:15 to 10:00pm</p>
 						<p>Music & Dance</p>
 					</div>
@@ -281,16 +281,14 @@ export function MuhurthamEventBlock() {
 					<div className="grid grid-cols-2">
 						<p>10:45 to 11:00am</p>
 						<p>Arrival of Guests</p>
-						<p>11:00 to 11:15am</p>
+						<p>10:45 to 11:15am</p>
 						<p>Light Snacks & Beverages</p>
 						<p>11:15 to 11:45pm</p>
 						<p>Baraat</p>
 						<p>11:45 to 1:15pm</p>
-						<p>Lagnam</p>
+						<p>Lagnam / Ceremony</p>
 						<p>1:15 to 2:15pm</p>
 						<p>Lunch</p>
-						<p>2:15 to 3:00pm</p>
-						<p>Photo Shoot</p>
 					</div>
 				</div>
 				<p>
@@ -360,15 +358,13 @@ export function ReceptionEventBlock() {
 					<div className="grid grid-cols-2">
 						<p>6:00 to 6:15pm</p>
 						<p>Arrival of Guests</p>
-						<p>6:15 to 7:15pm</p>
+						<p>6:00 to 7:15pm</p>
 						<p>Cocktails</p>
 						<p>7:15 to 8:00pm</p>
 						<p>Reception</p>
 						<p>8:00 to 9:00pm</p>
 						<p>Dinner</p>
-						<p>9:00 to 10:00pm</p>
-						<p>Photo Shoot</p>
-						<p>10:00 to 12:00pm</p>
+						<p>9:00 to 12:00am</p>
 						<p>Music & Dance</p>
 					</div>
 				</div>
@@ -587,16 +583,16 @@ export function SangeetEventBlockSm() {
 				<div>
 					<p className="text-blue-600">Program:</p>
 					<div className="grid grid-cols-2">
+						<p>6:00 to 6:15pm</p>
+						<p>Arrival of Guests</p>
 						<p>6:00 to 10:00pm</p>
 						<p>Open Bar</p>
-						<p>6:00 to 6:30pm</p>
-						<p>Arrival of Guests</p>
-						<p>6:30 to 7:15pm</p>
-						<p>Performances</p>
-						<p>7:15 to 8:15pm</p>
+						<p>6:30 to 7:30pm</p>
 						<p>Dinner</p>
-						<p>7:30 to 10:00pm</p>
+						<p>7:30 to 9:30pm</p>
 						<p>Mehendi (for interested guests)</p>
+						<p>7:30 to 8:15pm</p>
+						<p>Performances</p>
 						<p>8:15 to 10:00pm</p>
 						<p>Music & Dance</p>
 					</div>
@@ -660,16 +656,14 @@ export function MuhurthamEventBlockSm() {
 					<div className="grid grid-cols-2">
 						<p>10:45 to 11:00am</p>
 						<p>Arrival of Guests</p>
-						<p>11:00 to 11:30am</p>
+						<p>11:45 to 11:15am</p>
 						<p>Light Snacks & Beverages</p>
-						<p>11:15 to 11:45pm</p>
+						<p>11:15 to 11:45am</p>
 						<p>Baraat</p>
 						<p>11:45 to 1:15pm</p>
-						<p>Lagnam</p>
+						<p>Lagnam / Ceremony</p>
 						<p>1:15 to 2:15pm</p>
 						<p>Lunch</p>
-						<p>2:15 to 3:00pm</p>
-						<p>Photo Shoot</p>
 					</div>
 				</div>
 				<p>
@@ -739,15 +733,13 @@ export function ReceptionEventBlockSm() {
 					<div className="grid grid-cols-2">
 						<p>6:00 to 6:15pm</p>
 						<p>Arrival of Guests</p>
-						<p>6:15 to 7:15pm</p>
+						<p>6:00 to 7:15pm</p>
 						<p>Cocktails</p>
 						<p>7:15 to 8:00pm</p>
 						<p>Reception</p>
 						<p>8:00 to 9:00pm</p>
 						<p>Dinner</p>
-						<p>9:00 to 10:00pm</p>
-						<p>Photo Shoot</p>
-						<p>10:00 to 12:00pm</p>
+						<p>9:00 to 12:00am</p>
 						<p>Music & Dance</p>
 					</div>
 				</div>
