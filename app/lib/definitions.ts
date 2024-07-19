@@ -16,3 +16,21 @@ export type InvitedEvents = {
   all_events: boolean;
   all_us_japan: boolean;
 };
+
+export type RSVPResults = {
+  name: string;
+	email: string;
+	guest_id: string;
+	hasrsvped: boolean;
+	isattendingmehendi: string;
+	mehendipartysize: number;
+	isattendinghaldi: string;
+	haldipartysize: number;
+	isattendingsangeet: string;
+	sangeetpartysize: number;
+	isattendingmuhurtham: string;
+	muhurthampartysize: number;
+	isattendingreception: string;	
+	receptionpartysize: number;
+	partymembers: string;
+};

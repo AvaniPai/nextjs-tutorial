@@ -189,6 +189,7 @@ export async function updateUserRSVP(guest_id: string, prevState: RSVPState, for
 
   const rsvpUpdatedDate = new Date().toISOString().split('T')[0];
   const finalAllergies = allergies == "" ? "none" : allergies
+  const rsvpStatus = true;
 
   try {
     await sql`
@@ -209,7 +210,8 @@ export async function updateUserRSVP(guest_id: string, prevState: RSVPState, for
         hiroenpartysize = ${hiroenPartySize},
         partymembers = ${partyNames},
         lastrsvpupdatetime = ${rsvpUpdatedDate},
-        allergies = ${finalAllergies}
+        allergies = ${finalAllergies},
+        hasrsvped = ${rsvpStatus}
     WHERE guest_id = ${guest_id}
     `;
   } catch (error) {

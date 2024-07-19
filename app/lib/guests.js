@@ -898,7 +898,7 @@ const guest_table = [
 	{
 		guest_id: "aswed32",
 		name: "Nachiketa Pai",
-		email: "nachipai@gmail.com",
+		email: "nachpai@gmail.com",
 		password: "fionashome301",
 		ReceptionOnly: false,
 		SangeetReceptionOnly: false,
@@ -3558,7 +3558,7 @@ const guest_table = [
 	{
 		guest_id: "aswed127",
 		name: "Srivats & Kritika",
-		email: "cricmaniac@gmail.com",
+		email: "crickmaniac@gmail.com",
 		password: "fionashome301",
 		ReceptionOnly: false,
 		SangeetReceptionOnly: true,
@@ -4310,7 +4310,7 @@ const guest_table = [
 		lastRSVPUpdateTime: "2024-05-26 10:00",
 		partyMembers: "avani",
 		allergies: "none"
-	},
+	}
 ]
 
 module.exports = {
