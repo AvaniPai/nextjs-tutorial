@@ -1,4 +1,5 @@
 import RSVPForm from '@/app/ui/rsvp/rsvp-form';
+import AnswerSummary from '@/app/ui/rsvp/rsvp-answers';
 import { getUserEmail } from '@/app/lib/actions';
 import { getInvitedEvents } from '@/app/lib/data';
 import Image from 'next/image';
@@ -14,6 +15,7 @@ export default async function Page() {
                 <h1 className={` ${birthstonebounce.className} text-2xl md:text-7xl text-center md:mb-4`}>We hope you can join us!</h1>
                 <h1 className="text-xl text-center"><br/>Kindly respond by July 31<sup>st</sup>, 2024</h1>
             </div>
+            <AnswerSummary></AnswerSummary>
             <RSVPForm invites={invitedEvents}/>
         </main>
     )
