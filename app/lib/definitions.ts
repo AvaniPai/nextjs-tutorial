@@ -18,9 +18,12 @@ export type InvitedEvents = {
 };
 
 export type RSVPResults = {
-  name: string;
-	email: string;
 	guest_id: string;
+	reception_only: boolean;
+	sangeet_reception_only: boolean;
+	sanmuhrec: boolean;
+	all_events: boolean;
+	all_us_japan: boolean;
 	hasrsvped: boolean;
 	isattendingmehendi: string;
 	mehendipartysize: number;
@@ -33,4 +36,9 @@ export type RSVPResults = {
 	isattendingreception: string;	
 	receptionpartysize: number;
 	partymembers: string;
+	isattendingshinzenshiki: string;
+	shinzenshikipartysize: number;
+	isattendinghiroen: string;
+	hiroenpartysize: number;
+	allergies: string;
 };

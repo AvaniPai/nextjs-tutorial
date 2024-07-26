@@ -20,6 +20,7 @@ const config: Config = {
         'sakura': '#fff0f3',
         'darksakura': '#ffb9c4',
         'sage': '#9fb393',
+        'lightsage': '#b5cda9',
         'darksage': '#56694a',
         'darkmaroon': '#640d14',
         'maroon': '#800E13',

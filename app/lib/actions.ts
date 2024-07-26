@@ -223,5 +223,5 @@ export async function updateUserRSVP(guest_id: string, prevState: RSVPState, for
   }
 
   revalidatePath('/wedding/rsvp');
-  redirect('/wedding');
+  redirect('/wedding/rsvp/submitted');
 }
