@@ -56,7 +56,7 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 					<p>Guests registered for the Reception: {rsvpResults.partymembers}</p>
 				</div>
 			}
-			<p>If you would like to alter your response, please fill out the form once again and hit "Submit".</p>
+			<p>If you would like to alter your response, please fill out the form once again and hit &quot;Submit&quot;.</p>
 		</div>
 	)
 }
