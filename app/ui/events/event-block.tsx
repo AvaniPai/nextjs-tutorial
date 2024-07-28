@@ -191,7 +191,7 @@ export function SangeetEventBlock() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="space-y-10 p-8 px-20 text-2xl">
+			<div className="space-y-6 p-8 px-20 text-xl">
 				<h2 className="text-4xl ">SANGEET</h2>
 				<p>
 					<a className="text-blue-600">Date: </a>
@@ -221,14 +221,41 @@ export function SangeetEventBlock() {
 						<p>Music & Dance</p>
 					</div>
 				</div>
-				<p>
-					<a className="text-bold text-blue-600">Attire</a>
-					<br/>
+				<div>
+					<p className="text-bold text-blue-600">Attire</p>
 					Traditional Indian attire in bright colors recommended
-				</p>
+				</div>
+				<div>
+					<a className="text-bold text-blue-600">Transportation Schedule</a>
+					<table className="border-collapse border border-slate-400 text-lg">
+						<thead>
+							<tr>
+								<th className="border border-slate-300 px-2">Departure Location</th>
+								<th className="border border-slate-300 px-2">Boarding Time</th>
+								<th className="border border-slate-300 px-2">Arrival Location</th>
+								<th className="border border-slate-300 px-2">Arrival Time</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td className="border border-slate-300 px-2">Chicago Marriott Naperville</td> 
+								<td className="border border-slate-300 px-2">5:25-5:30pm</td>
+								<td className="border border-slate-300 px-2">The Matrix Club</td>
+								<td className="border border-slate-300 px-2">5:45-5:50pm</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-2">The Matrix Club</td>
+								<td className="border border-slate-300 px-2">10:00pm</td>
+								<td className="border border-slate-300 px-2">Chicago Marriott Naperville</td>
+								<td className="border border-slate-300 px-2">10:20pm</td>
+							</tr>
+						</tbody>
+					</table>
+					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
+				</div>
 				<div>
 					<Link href="/wedding/rsvp"
-						className="py-4 items-center rounded-lg bg-blue-600 px-4 text-md font-medium text-white transition-colors hover:bg-blue-400 mb-4"
+						className="py-3 items-center rounded-lg bg-blue-600 px-3 text-md font-medium text-white transition-colors hover:bg-blue-400 mb-4"
 					>Link to RSVP</Link>
 				</div>
 			</div>
@@ -263,7 +290,7 @@ export function MuhurthamEventBlock() {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="space-y-10 p-8 sm:px-20 text-2xl">
+			<div className="space-y-6 p-8 sm:px-20 text-xl">
 				<h2 className="text-4xl ">MUHURTHAM</h2>
 				<p>
 					<a className="text-darkmaroon">Date: </a>
@@ -297,8 +324,36 @@ export function MuhurthamEventBlock() {
 					Traditional Indian attire is recommended
 				</p>
 				<div>
+					<a className="text-bold text-blue-600">Transportation Schedule</a>
+					<table className="border-collapse border border-slate-400 text-lg">
+						<thead>
+							<tr>
+								<th className="border border-slate-300 px-2">Departure Location</th>
+								<th className="border border-slate-300 px-2">Boarding Time</th>
+								<th className="border border-slate-300 px-2">Arrival Location</th>
+								<th className="border border-slate-300 px-2">Arrvial Time</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td className="border border-slate-300 px-2">Chicago Marriott Naperville</td> 
+								<td className="border border-slate-300 px-2">10:15-10:25am</td>
+								<td className="border border-slate-300 px-2">The Crawford</td>
+								<td className="border border-slate-300 px-2">10:30am</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-2">The Crawford</td>
+								<td className="border border-slate-300 px-2">2:30-2:45pm</td>
+								<td className="border border-slate-300 px-2">Chicago Marriott Naperville</td>
+								<td className="border border-slate-300 px-2">2:50pm</td>
+							</tr>
+						</tbody>
+					</table>
+					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
+				</div>
+				<div>
 					<Link href="/wedding/rsvp"
-						className="py-4 items-center rounded-lg bg-darkmaroon px-4 text-md font-medium text-white transition-colors hover:bg-maroon mb-4"
+						className="py-3 items-center rounded-lg bg-darkmaroon px-3 text-md font-medium text-white transition-colors hover:bg-maroon mb-4"
 					>Link to RSVP</Link>
 				</div>
 			</div>
@@ -373,6 +428,40 @@ export function ReceptionEventBlock() {
 					<br/>
 					Western attire. Optional Cocktail Sarees for women
 				</p>
+				<div>
+					<a className="text-bold text-blue-600">Transportation Schedule</a>
+					<table className="border-collapse border border-slate-400 text-lg">
+						<thead>
+							<tr>
+								<th className="border border-slate-300 px-2">Departure Location</th>
+								<th className="border border-slate-300 px-2">Boarding Time</th>
+								<th className="border border-slate-300 px-2">Arrival Location</th>
+								<th className="border border-slate-300 px-2">Arrival Time</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td className="border border-slate-300 px-2">Chicago Marriott Naperville</td> 
+								<td className="border border-slate-300 px-2">5:30-5:40pm</td>
+								<td className="border border-slate-300 px-2">The Crawford</td>
+								<td className="border border-slate-300 px-2">5:50pm</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-2">The Crawford</td>
+								<td className="border border-slate-300 px-2">10:15-10:25pm</td>
+								<td className="border border-slate-300 px-2">Chicago Marriott Naperville</td>
+								<td className="border border-slate-300 px-2">10:30pm</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-2">The Crawford</td>
+								<td className="border border-slate-300 px-2">12:00-12:10am</td>
+								<td className="border border-slate-300 px-2">Chicago Marriott Naperville</td>
+								<td className="border border-slate-300 px-2">12:20am</td>
+							</tr>
+						</tbody>
+					</table>
+					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
+				</div>
 				<div>
 					<Link href="/wedding/rsvp"
 						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
@@ -602,6 +691,32 @@ export function SangeetEventBlockSm() {
 					<br/>
 					Traditional Indian attire in bright colors recommended
 				</p>
+				<div>
+					<a className="text-bold text-blue-600">Transportation Schedule</a>
+					<table className="border-collapse border border-slate-400">
+						<tbody>
+							<tr>
+								<td className="border border-slate-300 px-1">Departure Location</td>
+								<td className="border border-slate-300 px-1">Boarding Time</td>
+								<td className="border border-slate-300 px-1">Arrival Location</td>
+								<td className="border border-slate-300 px-1">Arrival Time</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-1">Chicago Marriott Naperville</td> 
+								<td className="border border-slate-300 px-1">5:25-5:30pm</td>
+								<td className="border border-slate-300 px-1">The Matrix Club</td>
+								<td className="border border-slate-300 px-1"> 5:45-5:50pm</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-1">The Matrix Club</td>
+								<td className="border border-slate-300 px-1"> 10:00pm</td>
+								<td className="border border-slate-300 px-1">Chicago Marriott Naperville</td>
+								<td className="border border-slate-300 px-1"> 10:20pm</td>
+							</tr>
+						</tbody>
+					</table>
+					<a> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
+				</div>
 			</div>
 			<div className="text-sm overflow-y-auto text-center">
 				<h2 className="text-xl">Sangeet - A Joyous Pre-Wedding Celebration</h2>
@@ -671,6 +786,32 @@ export function MuhurthamEventBlockSm() {
 					<br/>
 					Traditional Indian attire is recommended
 				</p>
+				<div>
+					<a className="text-bold text-blue-600">Transportation Schedule</a>
+					<table className="border-collapse border border-slate-400">
+						<tbody>
+							<tr>
+								<td className="border border-slate-300 px-1">Departure Location</td>
+								<td className="border border-slate-300 px-1">Boarding Time</td>
+								<td className="border border-slate-300 px-1">Arrival Location</td>
+								<td className="border border-slate-300 px-1">Arrvial Time</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-1">Chicago Marriott Naperville</td> 
+								<td className="border border-slate-300 px-1">10:15-10:25am</td>
+								<td className="border border-slate-300 px-1">The Crawford</td>
+								<td className="border border-slate-300 px-1">10:30am</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-1">The Crawford</td>
+								<td className="border border-slate-300 px-1">2:30-2:45pm</td>
+								<td className="border border-slate-300 px-1">Chicago Marriott Naperville</td>
+								<td className="border border-slate-300 px-1">2:50pm</td>
+							</tr>
+						</tbody>
+					</table>
+					<a> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
+				</div>
 			</div>
 			<div className="text-sm overflow-y-auto text-center">
 				<h2 className="text-xl">Muhurtham - The Auspicious Moment in South Indian Weddings</h2>
@@ -748,6 +889,38 @@ export function ReceptionEventBlockSm() {
 					<br/>
 					Western attire. Optional Cocktail Sarees for women
 				</p>
+				<div>
+					<a className="text-bold text-blue-600">Transportation Schedule</a>
+					<table className="border-collapse border border-slate-400">
+						<tbody>
+							<tr>
+								<td className="border border-slate-300 px-1">Departure Location</td>
+								<td className="border border-slate-300 px-1">Boarding Time</td>
+								<td className="border border-slate-300 px-1">Arrival Location</td>
+								<td className="border border-slate-300 px-1">Arrival Time</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-1">Chicago Marriott Naperville</td> 
+								<td className="border border-slate-300 px-1">5:30-5:40pm</td>
+								<td className="border border-slate-300 px-1">The Crawford</td>
+								<td className="border border-slate-300 px-1">5:50pm</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-1">The Crawford</td>
+								<td className="border border-slate-300 px-1">10:15-10:25pm</td>
+								<td className="border border-slate-300 px-1">Chicago Marriott Naperville</td>
+								<td className="border border-slate-300 px-1">10:30pm</td>
+							</tr>
+							<tr>
+								<td className="border border-slate-300 px-1">The Crawford</td>
+								<td className="border border-slate-300 px-1">12:00-12:10am</td>
+								<td className="border border-slate-300 px-1">Chicago Marriott Naperville</td>
+								<td className="border border-slate-300 px-1">12:20am</td>
+							</tr>
+						</tbody>
+					</table>
+					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
+				</div>
 			</div>
 			<div className="text-sm overflow-y-auto text-center">
 				<p className="text-xl">Reception - A Grand Celebration of Matrimonial Union</p>
