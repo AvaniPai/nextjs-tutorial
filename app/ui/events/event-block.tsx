@@ -241,17 +241,17 @@ export function SangeetEventBlock() {
 								<td className="border border-slate-300 px-2">Chicago Marriott Naperville</td> 
 								<td className="border border-slate-300 px-2">5:25-5:30pm</td>
 								<td className="border border-slate-300 px-2">The Matrix Club</td>
-								<td className="border border-slate-300 px-2"> 5:45-5:50pm</td>
+								<td className="border border-slate-300 px-2">5:45-5:50pm</td>
 							</tr>
 							<tr>
 								<td className="border border-slate-300 px-2">The Matrix Club</td>
-								<td className="border border-slate-300 px-2"> 10:00pm</td>
+								<td className="border border-slate-300 px-2">10:00pm</td>
 								<td className="border border-slate-300 px-2">Chicago Marriott Naperville</td>
-								<td className="border border-slate-300 px-2"> 10:20pm</td>
+								<td className="border border-slate-300 px-2">10:20pm</td>
 							</tr>
 						</tbody>
 					</table>
-					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying "Pai-Sugimoto Wedding".</a>
+					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
 				</div>
 				<div>
 					<Link href="/wedding/rsvp"
@@ -349,7 +349,7 @@ export function MuhurthamEventBlock() {
 							</tr>
 						</tbody>
 					</table>
-					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying "Pai-Sugimoto Wedding".</a>
+					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
 				</div>
 				<div>
 					<Link href="/wedding/rsvp"
@@ -460,7 +460,7 @@ export function ReceptionEventBlock() {
 							</tr>
 						</tbody>
 					</table>
-					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying "Pai-Sugimoto Wedding".</a>
+					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
 				</div>
 				<div>
 					<Link href="/wedding/rsvp"
@@ -715,7 +715,7 @@ export function SangeetEventBlockSm() {
 							</tr>
 						</tbody>
 					</table>
-					<a> There will be a large coach bus, waiting in the parking lot, with a sign saying "Pai-Sugimoto Wedding".</a>
+					<a> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
 				</div>
 			</div>
 			<div className="text-sm overflow-y-auto text-center">
@@ -810,7 +810,7 @@ export function MuhurthamEventBlockSm() {
 							</tr>
 						</tbody>
 					</table>
-					<a> There will be a large coach bus, waiting in the parking lot, with a sign saying "Pai-Sugimoto Wedding".</a>
+					<a> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
 				</div>
 			</div>
 			<div className="text-sm overflow-y-auto text-center">
@@ -919,7 +919,7 @@ export function ReceptionEventBlockSm() {
 							</tr>
 						</tbody>
 					</table>
-					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying "Pai-Sugimoto Wedding".</a>
+					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
 				</div>
 			</div>
 			<div className="text-sm overflow-y-auto text-center">
