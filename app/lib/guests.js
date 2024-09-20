@@ -783,5 +783,4 @@ lastRSVPUpdateTime:"2024-05-26 10:00",
 partyMembers:"avani",
 allergies:"none"
 },
-}
 ]
