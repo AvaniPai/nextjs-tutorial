@@ -15,7 +15,7 @@ import clsx from 'clsx';
 const links = [
   { 
     name: 'HOME', 
-    href: '/wedding', 
+    href: '/wedding/home', 
   },
   {
     name: 'RSVP',
