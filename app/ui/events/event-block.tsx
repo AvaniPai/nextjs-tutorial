@@ -15,10 +15,21 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 	return (
 		<div className="">
 			<div className="hidden xl:block">
-				{shinzenshiki && <JapanPlaceholders/>}
+				{mehendi && <MehendiEventBlock />}
+				{haldi && <HaldiEventBlock />}
+				{sangeet && <SangeetEventBlock />}
+				{muhurtham && <MuhurthamEventBlock />}
+				{reception && <ReceptionEventBlock />}
+				{shinzenshiki && <ShinzensikiEventBlock/>}
+				{shinzenshiki && <HiroenEventBlock/>}
 			</div>
 			<div className="block xl:hidden">
-				{shinzenshiki && <JapanPlaceholdersSm/>}
+				{mehendi && <MehendiEventBlockSm />}
+				{haldi && <HaldiEventBlockSm />}
+				{sangeet && <SangeetEventBlockSm />}
+				{muhurtham && <MuhurthamEventBlockSm />}
+				{reception && <ReceptionEventBlockSm />}
+				{/* {shinzenshiki && <HiroenEventBlockSm/>} */}
 			</div>
 		</div>
 	)
@@ -481,14 +492,173 @@ export function ReceptionEventBlock() {
 	)
 }
 
-export function JapanPlaceholders () {
+export function ShinzensikiEventBlock () {
 	return (
-		<div className="flex flex-col items-center justify-center text-2xl border rounded-lg border-8 border-darksakura">
-			<h1 className="">SHINZENSHIKI & HIROEN (Reception)</h1>
-			<h1 className="text-pretty">Date: November 30<sup>th</sup>, 2024 in Fukui Prefecture.</h1>
-			<article className="text-pretty">We appreciation your patience as we work out accomodation details and schedule for the ceremonies.</article>
+		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
+			<div className="hidden items-center justify-center h-full sm:flex">
+				<Image
+					src="/events/shinzenshiki.png"
+					width={700}
+					height={700}
+					className="styles.imagehidden sm:flex"
+					alt="Illustration of each wedding event."
+				/>
+			</div>
+			<div className="space-y-10 p-8 sm:px-20 text-2xl">
+				<h2 className="text-4xl ">SHINZENSHIKI</h2>
+				<p>
+					<a className="text-bold text-suedeboots">Date: </a>
+					Saturday Novemver 30<sup>th</sup> at 2:00pm
+				</p>
+				<p><a className="text-bold text-suedeboots">Location: </a>
+					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+						1 Chome-8-25 Asuwa, Fukui, 918-8007
+					</a>
+				</p>
+				<div>
+					<p className="text-suedeboots">Program:</p>
+					<br/>
+					<div className="grid grid-cols-2">
+						<p>6:00 to 6:15pm</p>
+						<p>Arrival of Guests</p>
+					</div>
+				</div>
+				<p>
+					<a className="text-bold text-suedeboots">Attire</a>
+					<br/>
+					Western attire. Optional Cocktail Sarees for women
+				</p>
+				<div>
+					<Link href="/wedding/rsvp"
+						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
+					>Link to RSVP</Link>
+				</div>
+			</div>
+			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
+				<p className="text-4xl ">Reception - A Grand Celebration of Matrimonial Union</p>
+				<br/>
+				<p className="indent-8">
+					The wedding reception is the highlight of Indian weddings, held in the evening of the wedding day. This grand event marks the culmination of the wedding festivities, bringing together family, friends, and acquaintances from both sides to celebrate the newlywed couple. Set in a lavish venue adorned with beautiful decorations, the reception creates an elegant and festive ambiance.
+				</p>
+				<br/>
+				<p className="indent-8">
+					The bride and groom don their finest attire, with the bride often wearing a stunning saree or lehenga and the groom in a sherwani or suit. The evening begins with a warm welcome and greetings, followed by performances. Guests offer their congratulations and blessings to the couple, enjoying a sumptuous feast. The reception is also a time for speeches, toasts, and numerous photo sessions, capturing the joyous memories of the day.
+				</p>
+				<br/>
+				<p className="indent-8">
+					Beyond the festivities, the reception holds deep significance. It celebrates the union of the couple, introduces them to the extended community, and serves as an expression of joy and togetherness.
+				</p>
+				<br/>
+				<p className="indent-8">
+					Join us in celebrating this grand occasion, as we come together to honor the love and union of the newlyweds!
+				</p>
+			</div>
 		</div>
 	)
+	// return (
+	// 	<div className="flex flex-col items-center justify-center text-2xl border rounded-lg border-8 border-darksakura">
+	// 		<h1 className="">SHINZENSHIKI & HIROEN (Reception)</h1>
+	// 		<h1 className="text-pretty">Date: November 30<sup>th</sup>, 2024 in Fukui Prefecture.</h1>
+	// 		<article className="text-pretty">We appreciation your patience as we work out accomodation details and schedule for the ceremonies.</article>
+	// 	</div>
+	// )
+}
+
+export function HiroenEventBlock () {
+	return (
+		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
+			<div className="hidden items-center justify-center h-full sm:flex">
+				<Image
+					src="/events/hiroen.png"
+					width={700}
+					height={700}
+					className="styles.imagehidden sm:flex"
+					alt="Illustration of each wedding event."
+				/>
+			</div>
+			<div className="space-y-10 p-8 sm:px-20 text-2xl">
+				<h2 className="text-4xl ">HIROEN (Reception)</h2>
+				<p>
+					<a className="text-bold text-suedeboots">Date: </a>
+					Saturday Novemver 30<sup>th</sup> at 4:30pm
+				</p>
+				<p><a className="text-bold text-suedeboots">Location: </a>
+					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+						1 Chome-8-25 Asuwa, Fukui, 918-8007
+					</a>
+				</p>
+				<div>
+					<p className="text-suedeboots">Program:</p>
+					<br/>
+					<div className="grid grid-cols-2">
+						<p>4:30pm</p>
+						<p>Opening Movie</p>
+						<p></p>
+						<p>Entrance of Bride and Groom</p>
+						<p></p>
+						<p>Opening address</p>
+						<p></p>
+						<p>Opening the lid of a sake barrel</p>
+						<p></p>
+						<p>Welcome Speech & Cheers</p>
+						<p>5:00pm</p>
+						<p>Photo Shoot</p>
+						<p></p>
+						<p>Temporarily leaving of Bride</p>
+						<p></p>
+						<p>Temporarily leaving of Groom</p>
+						<p>5:30pm</p>
+						<p>Dessert buffet starts</p>
+						<p>6:00pm</p>
+						<p>Bride and Groom Re-entry</p>
+						<p></p>
+						<p>Thank you performance</p>
+						<p></p>
+						<p>Photo Shoot</p>
+						<p></p>
+						<p>Biography DVD</p>
+						<p>6:30pm</p>
+						<p>Letter from Bride and Groom</p>
+						<p></p>
+						<p>Wedding Souvenirs for Parents</p>
+						<p></p>
+						<p>Groom&apos;s Acknowledgement</p>
+						<p></p>
+						<p>Leaving of Bride and Groom</p>
+
+					</div>
+				</div>
+				<p>
+					<a className="text-bold text-suedeboots">Attire</a>
+					<br/>
+					Kimono. Western attire. Optional Cocktail Sarees for women
+				</p>
+				<div>
+					<Link href="/wedding/rsvp"
+						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
+					>Link to RSVP</Link>
+				</div>
+			</div>
+			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
+				<p className="text-4xl ">Hiroen - Unveiling the newly married couple to their family and friends</p>
+				<br/>
+				<p className="indent-8">
+					A “Hiroen” is a special party to which the bride and groom invite those who have taken care of them and show off their happy married life. It is a wonderful opportunity for the bride and groom to express their heartfelt gratitude by entertaining guests with carefully selected Japanese cuisine, sake, and heartwarming performances.
+				</p>
+				<br/>
+				<p className="indent-8">
+				It is also a time for parents and friends to watch over the bride and groom and wish them a wonderful relationship in the future. The bride and groom, together with their closest friends and family, will spend an irreplaceable time laughing, sharing joy, and celebrating their new beginnings, thereby solidifying the bond between them.
+				</p>
+			</div>
+		</div>
+	)
+	// return (
+	// 	<div className="flex flex-col items-center justify-center text-2xl border rounded-lg border-8 border-darksakura">
+	// 		<h1 className="">SHINZENSHIKI & HIROEN (Reception)</h1>
+	// 		<h1 className="text-pretty">Date: November 30<sup>th</sup>, 2024 in Fukui Prefecture.</h1>
+	// 		<article className="text-pretty">We appreciation your patience as we work out accomodation details and schedule for the ceremonies.</article>
+	// 	</div>
+	// )
 }
 
 export function MehendiEventBlockSm() {
@@ -940,7 +1110,7 @@ export function ReceptionEventBlockSm() {
 	)
 }
 
-export function JapanPlaceholdersSm() {
+export function ShinzensikiEventBlockSm() {
 	return (
 		<div className="border rounded-lg border-8 border-darksakura">
 			<div className="flex justify-center text-center">

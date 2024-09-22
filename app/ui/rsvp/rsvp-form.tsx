@@ -12,11 +12,11 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
 
   const [state, dispatch] = useFormState(updateUserRSVPWithGuestId, initialState);
 
-  const mehendi = invites.all_events || invites.all_us_japan;
-  const haldi = invites.all_events || invites.all_us_japan;
-  const sangeet = invites.all_events || invites.all_us_japan || invites.sangeet_reception_only || invites.sanmuhrec;
-  const muhurtham = invites.all_events || invites.all_us_japan || invites.sanmuhrec;
-  const reception = invites.all_events || invites.all_us_japan || invites.reception_only || invites.sangeet_reception_only || invites.sanmuhrec;
+  // const mehendi = invites.all_events || invites.all_us_japan;
+  // const haldi = invites.all_events || invites.all_us_japan;
+  // const sangeet = invites.all_events || invites.all_us_japan || invites.sangeet_reception_only || invites.sanmuhrec;
+  // const muhurtham = invites.all_events || invites.all_us_japan || invites.sanmuhrec;
+  // const reception = invites.all_events || invites.all_us_japan || invites.reception_only || invites.sangeet_reception_only || invites.sanmuhrec;
   const shinzenshiki = invites.all_us_japan;
   const hiroen = invites.all_us_japan;
 
@@ -25,7 +25,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
       <div className="container rounded-md bg-sakura max-width mx-auto p-4 md:p-6">
 
         {/* Mehendi */}
-        {mehendi &&
+        {/* {mehendi &&
           <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block">
@@ -101,10 +101,10 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </div>
           </div>
-        }
+        } */}
 
         {/* Haldi */}
-        {haldi &&
+        {/* {haldi &&
           <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
@@ -180,10 +180,10 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </div>
           </div>
-        }
+        } */}
 
         {/* Sangeet */}
-        {sangeet &&
+        {/* {sangeet &&
           <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
@@ -259,10 +259,10 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </div>
           </div>
-        }
+        } */}
 
         {/* Muhurtham */}
-        {muhurtham &&
+        {/* {muhurtham &&
           <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
@@ -338,10 +338,10 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </div>
           </div>
-        }
+        } */}
 
         {/* Reception */}
-        {reception &&
+        {/* {reception &&
           <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
@@ -440,7 +440,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               </div>
             </div>
           </div>
-        }
+        } */}
 
         {/* Shinzenshiki */}
         {shinzenshiki &&

@@ -1,5 +1,5 @@
-import RSVPForm from '@/app/ui/rsvp/rsvp-form';
-import AnswerSummary from '@/app/ui/rsvp/rsvp-answers';
+import RSVPForm from '@/app/ui/rsvp/rsvp-form-jp';
+import AnswerSummary from '@/app/ui/rsvp/rsvp-answers-jp';
 import { getUserEmail } from '@/app/lib/actions';
 import { getInvitedEvents, getUserRSVPInfo } from '@/app/lib/data';
 import Image from 'next/image';

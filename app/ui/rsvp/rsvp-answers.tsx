@@ -19,31 +19,31 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 			<div className="grid grid-cols-3">
 				<div>
 					<p className="text-lg underline">Event</p>
-					{ mehendi && <p>Mehendi</p>}
+					{/* { mehendi && <p>Mehendi</p>}
 					{ haldi && <p>Haldi</p>}
 					{ sangeet && <p>Sangeet</p>}
 					{ muhurtham && <p>Muhurtham</p>}
-					{ reception && <p>Reception</p>}
+					{ reception && <p>Reception</p>} */}
 					{ shinzenshiki && <p>Shinzenshiki (Japanese Ceremony)</p>}
 					{ hiroen && <p>Hiroen (Japanese Reception)</p>}
 				</div>
 				<div>
 					<p className="text-lg underline">RSVP Status</p>
-					{ mehendi && <p>{rsvpResults.isattendingmehendi}</p>}
+					{/* { mehendi && <p>{rsvpResults.isattendingmehendi}</p>}
 					{ haldi && <p>{rsvpResults.isattendinghaldi}</p>}
 					{ sangeet && <p>{rsvpResults.isattendingsangeet}</p>}
 					{ muhurtham && <p>{rsvpResults.isattendingmuhurtham}</p>}
-					{ reception && <p>{rsvpResults.isattendingreception}</p>}
+					{ reception && <p>{rsvpResults.isattendingreception}</p>} */}
 					{ shinzenshiki && <p>{rsvpResults.isattendingshinzenshiki}</p>}
 					{ hiroen && <p>{rsvpResults.isattendinghiroen}</p>}
 				</div>
 				<div>
 					<p className="text-lg underline">Party Size</p>
-					{ mehendi && <p>{rsvpResults.mehendipartysize}</p>}
+					{/* { mehendi && <p>{rsvpResults.mehendipartysize}</p>}
 					{ haldi && <p>{rsvpResults.haldipartysize}</p>}
 					{ sangeet && <p>{rsvpResults.sangeetpartysize}</p>}
 					{ muhurtham && <p>{rsvpResults.muhurthampartysize}</p>}
-					{ reception && <p>{rsvpResults.receptionpartysize}</p>}
+					{ reception && <p>{rsvpResults.receptionpartysize}</p>} */}
 					{ shinzenshiki && <p>{rsvpResults.shinzenshikipartysize}</p>}
 					{ hiroen && <p>{rsvpResults.hiroenpartysize}</p>}
 				</div>
