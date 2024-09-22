@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import NavLinks from '@/app/ui/wedding/nav-links';
+import LanguageToggle from './language_toggle';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import { signOut } from '@/auth';
 import Image from 'next/image';
@@ -8,11 +9,15 @@ import { quicksand } from '../fonts';
 
 export default function SideNav() {
   return (
+    <div>
+      <div className="flex flex-row-reverse">
+        <LanguageToggle/>
+      </div>
     <div className={`${quicksand.className} flex h-full w-full flex-row items-center bg-white shadow-md md:px-3 md:py-1`}>
         <div className="justify-center">
           <Link
             className="hidden rounded-md flex-row xl:flex"
-            href="/"
+            href="/wedding/en/home"
           >
             <Image 
               src="/as_logo_white.png"
@@ -24,7 +29,7 @@ export default function SideNav() {
             <div className='flex items-center'>
               <div>
                 <h1 className="text-center">Avani & Shusuke</h1>
-                <h1 className="text-center">August 2024</h1>
+                <h1 className="text-center">2024年 11月</h1>
               </div>
             </div>
           </Link>
@@ -45,5 +50,6 @@ export default function SideNav() {
         </form>
       </div>
     </div>
+</div>
   );
 }

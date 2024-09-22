@@ -1,5 +1,5 @@
 import { sql } from '@vercel/postgres';
-import { InvitedEvents } from './definitions';
+import { InvitedEvents, RSVPResults } from './definitions';
 import { unstable_noStore as noStore } from 'next/cache';
 
 export async function getInvitedEvents(userEmail: string) {
@@ -24,6 +24,49 @@ export async function getInvitedEvents(userEmail: string) {
     
   } catch (error) {
     console.log('Database Error:', error);
+    throw error;
+  }
+
+}
+
+export async function getUserRSVPInfo(userEmail: string){
+  noStore();
+  try {
+    console.log("Fetching user's rsvp status and invitation information.")
+    const data = await sql<RSVPResults>`
+    SELECT guest_id,
+           receptiononly AS reception_only,
+           sangeetreceptiononly AS sangeet_reception_only,
+           sanmuhrec,
+           allevents AS all_events,
+           allusjapan AS all_us_japan,
+           hasrsvped,
+           isattendingmehendi,
+           mehendipartysize,
+           isattendinghaldi,
+           haldipartysize,
+           isattendingsangeet,
+           sangeetpartysize,
+           isattendingmuhurtham,
+           muhurthampartysize,
+           isattendingreception,	
+           receptionpartysize,
+           partymembers,
+           isattendingshinzenshiki,
+           shinzenshikipartysize,
+           isattendinghiroen,
+           hiroenpartysize,
+           allergies
+    FROM guests
+    WHERE email = ${userEmail};
+    `
+    console.log("Current User's Email", userEmail);
+
+    return data.rows[0]
+    
+
+  } catch (error) {
+    console.log('Database Error: ', error);
     throw error;
   }
 

@@ -16,6 +16,9 @@ export const authConfig = {
       }
       return true;
     },
+    redirect({url, baseUrl}){
+      return "/wedding/en/home";
+    }
   },
   providers: [], // Add providers with an empty array for now
 } satisfies NextAuthConfig;

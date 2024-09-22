@@ -24,9 +24,9 @@ export default function Page() {
                     <article className="text-pretty">The first is a honeymoon fund and the second is a charity fund. If you choose to make a contribution, you are more than welcome to pick one or the other or even split your contribution between the two funds.
                     </article>
                     <br/>
-                    <article className="text-yellow-900">Please enter the following password to view the regsitry page.</article>
+                    <article className="text-yellow-900">Please enter the following password to view the regsitry page. <a className="underline decoration-red-400">The password is now all lower-case.</a> </article>
                     <br/>
-                    <h2 className="text-bold">Password: Fionashome301</h2>
+                    <h2 className="text-bold">Password: fionashome301</h2>
                 </div>
 
                 <Link href="https://www.hitchd.com/bonvoyagesugirypai"
