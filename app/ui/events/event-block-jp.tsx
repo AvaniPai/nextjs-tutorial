@@ -14,7 +14,8 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 	return (
 		<div className="">
 			<div className="hidden xl:block">
-				{shinzenshiki && <JapanPlaceholders/>}
+				{shinzenshiki && <ShinzensikiEventBlock/>}
+				{shinzenshiki && <HiroenEventBlock/>}
 			</div>
 			<div className="block xl:hidden">
 				{shinzenshiki && <JapanPlaceholdersSm/>}
@@ -23,12 +24,137 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 	)
 }
 
-export function JapanPlaceholders () {
+export function ShinzensikiEventBlock () {
 	return (
-		<div className="flex flex-col items-center justify-center text-2xl border rounded-lg border-8 border-darksakura">
-			<h1 className="">神前式</h1>
-			<h1 className="text-pretty">Date: November 30<sup>th</sup>, 2024 in Fukui Prefecture.</h1>
-			<article className="text-pretty">We appreciation your patience as we work out accomodation details and schedule for the ceremonies.</article>
+		<div className={"grid grid-cols-2 gap-4 pb-12"}>
+			<div className="hidden items-center justify-center h-full sm:flex">
+				<Image
+					src="/events/shinzenshiki.png"
+					width={700}
+					height={700}
+					className="styles.imagehidden sm:flex"
+					alt="Illustration of each wedding event."
+				/>
+			</div>
+			<div className="space-y-10 p-8 sm:px-20 text-2xl">
+				<h2 className="text-4xl ">神前式</h2>
+				<p>
+					<a className="text-bold text-suedeboots">日時: </a>
+					11月30日（土）午後2時
+				</p>
+				<p><a className="text-bold text-suedeboots">場所: </a>
+					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+						足羽神社
+					</a>
+				</p>
+				<div>
+					<p className="text-suedeboots">スケジュール:</p>
+					<br/>
+					<div className="grid grid-cols-2">
+						<p>1:30pm</p>
+						<p>両家顔合わせ</p>
+						<p>2:00pm</p>
+						<p>挙式</p>
+						<p>2:40pm</p>
+						<p>写真撮影開始</p>
+					</div>
+				</div>
+				<p>
+					<a className="text-bold text-suedeboots">服装</a>
+					<br/>
+					洋装、和装
+				</p>
+				<div>
+					<Link href="/wedding/rsvp"
+						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
+					>招待状のお返事</Link>
+				</div>
+			</div>
+			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
+				<p className="text-4xl ">神前式 - 神様に誓いを立てて夫婦の契りを結ぶ</p>
+				<br/>
+				<p className="indent-8">
+					神道に則った神前式は、八百万の神に二人の結婚を報告し、両家の絆を深めることを目的としています。 新郎新婦は白無垢や紋付などを着用し、斎主の進行に沿って、神様の前で儀式を進めていきます。
+				</p>
+				<br/>
+				<p className="indent-8">
+				五世紀後半ごろ、男大迹王（後の継体天皇）が越前でお過ごしの間に越前平野の大治水事業をされますが、まずその初めに朝廷に祀られている大宮地之霊を足羽山に勧請し、諸事の安全を祈願したのが足羽神社の起源とされています。
+				</p>
+				<br/>
+				<p className="indent-8">
+				足羽神社は、山の上に位置しており、11月中旬から下旬にかけて周囲の紅葉が見頃を迎えます。足羽山からは福井を一望でき、その由緒の他に美しい風景にも魅力的に感じたため私たちはこの神社で神前式を挙げることに決めました。
+				</p>
+			</div>
+		</div>
+	)
+}
+
+export function HiroenEventBlock () {
+	return (
+		<div className={"grid grid-cols-2 gap-4"}>
+			<div className="hidden items-center justify-center h-full sm:flex">
+				<Image
+					src="/events/hiroen.png"
+					width={700}
+					height={700}
+					className="styles.imagehidden sm:flex"
+					alt="Illustration of each wedding event."
+				/>
+			</div>
+			<div className="space-y-10 p-8 sm:px-20 text-2xl">
+				<h2 className="text-4xl ">披露宴</h2>
+				<p>
+					<a className="text-bold text-suedeboots">日付: </a>
+						11月30日（土）午後4時30分
+				</p>
+				<p><a className="text-bold text-suedeboots">場所: </a>
+					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+						出雲記念館
+					</a>
+				</p>
+				<div>
+					<p className="text-suedeboots">スケジュール:</p>
+					<br/>
+					<div className="grid grid-cols-2">
+						<p>4:30pm</p>
+						<p>披露宴開始</p>
+						<p></p>
+						<p>鏡開き</p>
+						<p></p>
+						<p>乾杯</p>
+						<p>6:25pm</p>
+						<p>生い立ちムービー</p>
+						<p>6:30pm</p>
+						<p>新郎新婦からの手紙</p>
+						<p></p>
+						<p>新郎謝辞</p>
+						<p></p>
+						<p>新郎新婦退場</p>
+
+					</div>
+				</div>
+				<p>
+					<a className="text-bold text-suedeboots">Attire</a>
+					<br/>
+					Kimono. Western attire. Optional Cocktail Sarees for women
+				</p>
+				<div>
+					<Link href="/wedding/rsvp"
+						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
+					>招待状のお返事</Link>
+				</div>
+			</div>
+			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
+				<p className="text-4xl ">披露宴 - 新たな夫婦の門出</p>
+				<br/>
+				<p className="indent-8">
+					「披露宴」とは、新郎新婦がお世話になった方々をお招きし、幸せな結婚生活をお披露目する特別なパーティー。厳選された日本料理やお酒、心温まる演出でゲストをもてなし、新郎新婦が心からの感謝を伝える場です。
+				</p>
+				<br/>
+				<p className="indent-8">
+					また、両親や友人が新郎新婦を見守り、これからの二人の素晴らしい関係を祈る時間でもある。新郎新婦は、親しい友人や家族とともに、笑い、喜びを分かち合い、新たな門出を祝うかけがえのない時間を過ごすことで、ふたりの絆を確かなものにします。
+				</p>
+			</div>
 		</div>
 	)
 }

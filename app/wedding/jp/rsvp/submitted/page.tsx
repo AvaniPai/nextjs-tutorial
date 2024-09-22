@@ -1,4 +1,4 @@
-import AnswerSummary from '@/app/ui/rsvp/rsvp-answers';
+import AnswerSummary from '@/app/ui/rsvp/rsvp-answers-jp';
 import { getUserEmail } from '@/app/lib/actions';
 import { getUserRSVPInfo } from '@/app/lib/data';
 

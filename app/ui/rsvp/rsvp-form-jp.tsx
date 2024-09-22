@@ -447,7 +447,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-8 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
-                Will you and your party be attending the Shinzenshiki (Japanese Shinto Wedding) on Saturday, November 30<sup>th</sup> at 2:00pm JST?
+              11月30日（土）午後2時（日本時間）に行われる神前式にご出席されますか？
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -464,7 +464,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                       htmlFor="shinzenshiki-rsvp-no"
                       className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
-                      Regretfully, no
+                      No
                     </label>
                   </div>
                   <div className="flex items-center">
@@ -479,7 +479,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                       htmlFor="shinzenshiki-rsvp-yes"
                       className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
-                      Joyfully, yes
+                      Yes
                     </label>
                   </div>
                 </div>
@@ -495,7 +495,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
             </fieldset>
             <div className="mb-4">
               <label htmlFor="shinzenshiki_amount" className="mb-2 block ">
-                Please enter the number of guests in your party (including yourself), who will be attending the Shinzenshiki.
+                ご家族も参加する場合、ご自身を含めた参加人数を入力してください。
               </label>
               <div className="relative mt-2 rounded-md">
                 <input
@@ -526,7 +526,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-6 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
-                Will you and your party be attending the Hiroen (Japanese Wedding Reception) on Saturday, November 30<sup>th</sup> at 5:30pm JST?
+              11月30日（土）午後5時30分（日本時間）からの披露宴にご出席されますか？
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -543,7 +543,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                       htmlFor="hiroen-rsvp-no"
                       className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
-                      Regretfully, no
+                      No
                     </label>
                   </div>
                   <div className="flex items-center">
@@ -558,7 +558,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                       htmlFor="hiroen-rsvp-yes"
                       className="ml-2 flex cursor-pointer items-center gap-1.5 py-1.5  text-stone-600"
                     >
-                      Joyfully, yes
+                      Yes
                     </label>
                   </div>
                 </div>
@@ -574,7 +574,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
             </fieldset>
             <div className="mb-4">
               <label htmlFor="hiroen_amount" className="mb-2 block ">
-                Please enter the number of guests in your party (including yourself), who will be attending the Hiroen.
+              ご家族も参加する場合、ご自身を含めた参加人数を入力してください。
               </label>
               <div className="relative mt-2 rounded-md">
                 <input
@@ -603,14 +603,14 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
         {/* Allergies */}
         <div className="mb-6 text-sm md:text-xl">
           <label htmlFor="allergy_info" className="mb-2 block ">
-            If you have any food allergies, please enter them here. Note: We are not asking about food preferences, but about allergies that can put you at harm.<br /> Please refrain from answering this question if you do not have any food allergies.
+          食物アレルギーをお持ちの方は、こちらにご記入ください。
           </label>
           <div className="relative mt-2 rounded-md">
             <input
               id="allergy_info"
               name="allergies"
               type="text"
-              placeholder="example: shellfish, nuts, dairy, eggs ..."
+              placeholder="例: 乳製品、ナッツ、グルテン ..."
               className="peer block w-full rounded-md border-none py-2 outline-2 placeholder:text-stone-500"
               defaultValue=""
             />
@@ -636,9 +636,9 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           href="/wedding/events"
           className="flex h-10 items-center rounded-lg bg-stone-200 px-4 text-sm  text-stone-600 transition-colors hover:bg-gray-200"
         >
-          Cancel
+          キャンセル
         </Link>
-        <Button className="bg-emerald-600 hover:bg-emerald-500" type="submit">Submit RSVP</Button>
+        <Button className="bg-emerald-600 hover:bg-emerald-500" type="submit">提出</Button>
       </div>
     </form>
   );
