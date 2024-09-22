@@ -240,7 +240,7 @@ async function grabRSVPData(client) {
 		await client.end();
 
 		var fs = require('fs');
-		var file = fs.createWriteStream('/Users/avani/sandbox/0718_rsvp_data.tsv');
+		var file = fs.createWriteStream('C:/Users/ganes/sandbox/0806_rsvp_data.tsv');
 		file.on('error', function(err) { throw error;})
 		for( let i =0; i < data.rowCount; i++)	{
 			file.write(data.rows[i].join('\t')+ "\n");
@@ -259,8 +259,8 @@ async function main() {
 	//await removeTable(client);
 	//await seedUsers(client);
 	//await updateTable(client);
-	await addNewGuest(client);
-	//await grabRSVPData(client);
+	//await addNewGuest(client);
+	await grabRSVPData(client);
 
 	await client.end();
 }

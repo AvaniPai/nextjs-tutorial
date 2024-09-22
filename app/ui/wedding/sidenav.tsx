@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import NavLinks from '@/app/ui/wedding/nav-links';
+import LanguageToggle from './language_toggle';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import { signOut } from '@/auth';
 import Image from 'next/image';
@@ -8,6 +9,10 @@ import { quicksand } from '../fonts';
 
 export default function SideNav() {
   return (
+    <div>
+      <div className="flex flex-row-reverse">
+        <LanguageToggle/>
+      </div>
     <div className={`${quicksand.className} flex h-full w-full flex-row items-center bg-white shadow-md md:px-3 md:py-1`}>
         <div className="justify-center">
           <Link
@@ -45,5 +50,6 @@ export default function SideNav() {
         </form>
       </div>
     </div>
+</div>
   );
 }
