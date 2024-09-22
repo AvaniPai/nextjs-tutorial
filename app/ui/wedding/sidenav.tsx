@@ -17,7 +17,7 @@ export default function SideNav() {
         <div className="justify-center">
           <Link
             className="hidden rounded-md flex-row xl:flex"
-            href="/"
+            href="/wedding/en/home"
           >
             <Image 
               src="/as_logo_white.png"
@@ -29,7 +29,7 @@ export default function SideNav() {
             <div className='flex items-center'>
               <div>
                 <h1 className="text-center">Avani & Shusuke</h1>
-                <h1 className="text-center">August 2024</h1>
+                <h1 className="text-center">2024年 11月</h1>
               </div>
             </div>
           </Link>

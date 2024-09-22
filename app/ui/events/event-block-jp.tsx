@@ -486,7 +486,7 @@ export function JapanPlaceholdersSm() {
 	return (
 		<div className="border rounded-lg border-8 border-darksakura">
 			<div className="flex justify-center text-center">
-				<h1 className="">神前式 </h1>
+				<h1 className="">神前式</h1>
 			</div>
 			<p className="text-pretty text-sm">Date: November 30<sup>th</sup>, 2024 in Fukui Prefecture.</p>
 			<article className="text-pretty text-sm">We appreciation your patience as we work out accomodation details and schedule for the ceremonies.</article>
