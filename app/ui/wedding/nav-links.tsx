@@ -55,7 +55,7 @@ export default function NavLinks() {
   const pathname = usePathname();
 
   const lang = pathname.split('/')[2];
-  console.log(lang);
+  // console.log(lang);
 
   return (
     <>

@@ -10,26 +10,17 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 	const sangeet = invites.sangeet_reception_only || invites.sanmuhrec || invites.all_events || invites.all_us_japan;
 	const muhurtham = invites.sanmuhrec || invites.all_events || invites.all_us_japan;
 	const reception = invites.sangeet_reception_only || invites.sanmuhrec || invites.reception_only || invites.all_events || invites.all_us_japan;
-	const shinzenshiki = invites.all_us_japan;
+	const shinzenshiki = invites.all_us_japan; // TODO: update to include japanonly attribute
+	// add HiroenEventBlockSm
 
 	return (
 		<div className="">
 			<div className="hidden xl:block">
-				{mehendi && <MehendiEventBlock />}
-				{haldi && <HaldiEventBlock />}
-				{sangeet && <SangeetEventBlock />}
-				{muhurtham && <MuhurthamEventBlock />}
-				{reception && <ReceptionEventBlock />}
 				{shinzenshiki && <ShinzensikiEventBlock/>}
 				{shinzenshiki && <HiroenEventBlock/>}
 			</div>
 			<div className="block xl:hidden">
-				{mehendi && <MehendiEventBlockSm />}
-				{haldi && <HaldiEventBlockSm />}
-				{sangeet && <SangeetEventBlockSm />}
-				{muhurtham && <MuhurthamEventBlockSm />}
-				{reception && <ReceptionEventBlockSm />}
-				{/* {shinzenshiki && <HiroenEventBlockSm/>} */}
+				{shinzenshiki && <ShinzenshikiEventBlockSm/>}
 			</div>
 		</div>
 	)
@@ -492,7 +483,7 @@ export function ReceptionEventBlock() {
 	)
 }
 
-export function ShinzensikiEventBlock () {
+export function ShinzensikiEventBlock(){
 	return (
 		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
 			<div className="hidden items-center justify-center h-full sm:flex">
@@ -564,7 +555,7 @@ export function ShinzensikiEventBlock () {
 	// )
 }
 
-export function HiroenEventBlock () {
+export function HiroenEventBlock(){
 	return (
 		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
 			<div className="hidden items-center justify-center h-full sm:flex">
@@ -582,56 +573,37 @@ export function HiroenEventBlock () {
 					<a className="text-bold text-suedeboots">Date: </a>
 					Saturday Novemver 30<sup>th</sup> at 4:30pm
 				</p>
-				<p><a className="text-bold text-suedeboots">Location: </a>
-					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
-						1 Chome-8-25 Asuwa, Fukui, 918-8007
+				<p><a className="text-bold text-suedeboots">Location: </a>Izumo Kinenkan (出雲記念館)
+				 	<br/>
+					<a href="https://maps.app.goo.gl/2gYt9Jhi6MUZeiFT8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+						2 Chome-2001 Fuchi, Fukui, 918-8026
 					</a>
 				</p>
 				<div>
 					<p className="text-suedeboots">Program:</p>
 					<br/>
 					<div className="grid grid-cols-2">
+						<p>4:00pm</p>
+						<p>Guests Arrive and Check-in</p>
 						<p>4:30pm</p>
-						<p>Opening Movie</p>
-						<p></p>
-						<p>Entrance of Bride and Groom</p>
-						<p></p>
-						<p>Opening address</p>
-						<p></p>
-						<p>Opening the lid of a sake barrel</p>
-						<p></p>
-						<p>Welcome Speech & Cheers</p>
-						<p>5:00pm</p>
-						<p>Photo Shoot</p>
-						<p></p>
-						<p>Temporarily leaving of Bride</p>
-						<p></p>
-						<p>Temporarily leaving of Groom</p>
-						<p>5:30pm</p>
-						<p>Dessert buffet starts</p>
+						<p>Reception Begins</p>
+						<p>4:50pm</p>
+						<p>Opening Toast & Dinner Begins</p>
+						<p>5:35pm</p>
+						<p>Dessert Buffet Begins</p>
 						<p>6:00pm</p>
-						<p>Bride and Groom Re-entry</p>
-						<p></p>
-						<p>Thank you performance</p>
-						<p></p>
-						<p>Photo Shoot</p>
-						<p></p>
-						<p>Biography DVD</p>
-						<p>6:30pm</p>
-						<p>Letter from Bride and Groom</p>
-						<p></p>
-						<p>Wedding Souvenirs for Parents</p>
-						<p></p>
-						<p>Groom&apos;s Acknowledgement</p>
-						<p></p>
-						<p>Leaving of Bride and Groom</p>
+						<p>Performances, Videos, and Speeches</p>
+						<p>7:00pm</p>
+						<p>Reception Ends</p>
+						<p>8:30pm</p>
+						<p>After-party TBD</p>
 
 					</div>
 				</div>
 				<p>
 					<a className="text-bold text-suedeboots">Attire</a>
 					<br/>
-					Kimono. Western attire. Optional Cocktail Sarees for women
+					Kimono. Western attire.
 				</p>
 				<div>
 					<Link href="/wedding/rsvp"
@@ -640,7 +612,7 @@ export function HiroenEventBlock () {
 				</div>
 			</div>
 			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
-				<p className="text-4xl ">Hiroen - Unveiling the newly married couple to their family and friends</p>
+				<p className="text-4xl ">Hiroen - Japanese-style Wedding Reception</p>
 				<br/>
 				<p className="indent-8">
 					A “Hiroen” is a special party to which the bride and groom invite those who have taken care of them and show off their happy married life. It is a wonderful opportunity for the bride and groom to express their heartfelt gratitude by entertaining guests with carefully selected Japanese cuisine, sake, and heartwarming performances.
@@ -1110,7 +1082,7 @@ export function ReceptionEventBlockSm() {
 	)
 }
 
-export function ShinzensikiEventBlockSm() {
+export function ShinzenshikiEventBlockSm() {
 	return (
 		<div className="border rounded-lg border-8 border-darksakura">
 			<div className="flex justify-center text-center">
