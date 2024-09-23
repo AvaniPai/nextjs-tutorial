@@ -15,6 +15,7 @@ export type InvitedEvents = {
   sanmuhrec: boolean;
   all_events: boolean;
   all_us_japan: boolean;
+  japan_only: boolean;
 };
 
 export type RSVPResults = {
@@ -24,6 +25,7 @@ export type RSVPResults = {
 	sanmuhrec: boolean;
 	all_events: boolean;
 	all_us_japan: boolean;
+	japan_only: boolean;
 	hasrsvped: boolean;
 	isattendingmehendi: string;
 	mehendipartysize: number;

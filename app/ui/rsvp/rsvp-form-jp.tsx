@@ -3,12 +3,12 @@
 import { InvitedEvents } from '@/app/lib/definitions';
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
-import { updateUserRSVP } from '@/app/lib/actions';
+import { updateUserRSVPJapanese } from '@/app/lib/actions';
 import { useFormState } from 'react-dom';
 
 export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
   const initialState = { message: null, errors: {} };
-  const updateUserRSVPWithGuestId = updateUserRSVP.bind(null, invites.guest_id);
+  const updateUserRSVPWithGuestId = updateUserRSVPJapanese.bind(null, invites.guest_id);
 
   const [state, dispatch] = useFormState(updateUserRSVPWithGuestId, initialState);
 
@@ -17,12 +17,15 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
   // const sangeet = invites.all_events || invites.all_us_japan || invites.sangeet_reception_only || invites.sanmuhrec;
   // const muhurtham = invites.all_events || invites.all_us_japan || invites.sanmuhrec;
   // const reception = invites.all_events || invites.all_us_japan || invites.reception_only || invites.sangeet_reception_only || invites.sanmuhrec;
-  const shinzenshiki = invites.all_us_japan;
-  const hiroen = invites.all_us_japan;
+  const shinzenshiki = invites.japan_only || invites.all_us_japan;
+  const hiroen = invites.japan_only || invites.all_us_japan;
+
+  console.log(hiroen);
+  console.log(invites.japan_only);
 
   return (
     <form action={dispatch}>
-      <div className="container rounded-md bg-sakura max-width mx-auto p-4 md:p-6">
+      <div className="container rounded-md bg-orange-300 max-width mx-auto p-4 md:p-6">
 
         {/* Mehendi */}
         {/* {mehendi &&
@@ -526,7 +529,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-6 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
-              11月30日（土）午後5時30分（日本時間）からの披露宴にご出席されますか？
+              11月30日（土）午後4時30分（日本時間）からの披露宴にご出席されますか？
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -597,6 +600,29 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                   ))}
               </div>
             </div>
+            <div >
+              <label htmlFor="hiroen_guest_names" className="mb-2 block ">
+                ご家族のお名前をお教え下さい。
+              </label>
+              <div className="relative mt-2 rounded-md">
+                <input
+                  id="hiroen_guest_names"
+                  name="hiroen_party_names"
+                  type="text"
+                  placeholder="例：杉本脩介、杉本アバニ…"
+                  className="peer block w-full rounded-md py-2 outline-2 border-none placeholder:text-stone-500"
+                  defaultValue=""
+                />
+              </div>
+              <div id="party-member-error" aria-live="polite" aria-atomic="true">
+                {state.errors?.partyNames &&
+                  state.errors.partyNames.map((error: string) => (
+                    <p className="mt-2 text-sm text-red-500" key={error}>
+                      {error}
+                    </p>
+                  ))}
+              </div>
+            </div>
           </div>
         }
 
@@ -633,7 +659,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
       </div>
       <div className="mt-6 flex justify-end gap-4">
         <Link
-          href="/wedding/events"
+          href="/wedding/jp/events"
           className="flex h-10 items-center rounded-lg bg-stone-200 px-4 text-sm  text-stone-600 transition-colors hover:bg-gray-200"
         >
           キャンセル

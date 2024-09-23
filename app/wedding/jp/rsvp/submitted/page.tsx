@@ -10,8 +10,8 @@ export default async function Page(){
 		<div>
 			<AnswerSummary rsvpResults={rsvpInfo}></AnswerSummary>
 			<br/>
-			<h2>This summary will now be visible on the RSVP page as well.</h2>
-			<h2>Please revist the RSVP page if you wish to resubmit your response.</h2>
+			<h2>回答内容は「出席の返事」タブからいつでも確認できます。</h2>
+			<h2>回答内容の変更がご希望の方は、再び「出席の返事」に移動して回答して下さい。</h2>
 		</div>
 	)
 }

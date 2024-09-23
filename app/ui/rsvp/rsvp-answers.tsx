@@ -13,7 +13,7 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
   	const hiroen = rsvpResults.all_us_japan;
 
 	return (
-		<div className="container rounded-md bg-lightsage max-width mx-auto p-4 md:p-6">
+		<div className="container rounded-md max-width mx-auto p-4 md:p-6">
 			<h2>Thank you for submitting your RSVP! Here is a summary of your response.</h2>
 			<br></br>
 			<div className="grid grid-cols-3">
@@ -44,14 +44,14 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 					{ sangeet && <p>{rsvpResults.sangeetpartysize}</p>}
 					{ muhurtham && <p>{rsvpResults.muhurthampartysize}</p>}
 					{ reception && <p>{rsvpResults.receptionpartysize}</p>} */}
-					{ shinzenshiki && <p>{rsvpResults.shinzenshikipartysize}</p>}
-					{ hiroen && <p>{rsvpResults.hiroenpartysize}</p>}
+					{ shinzenshiki && <p>{rsvpResults.isattendingshinzenshiki != "yes" ? 0 : rsvpResults.shinzenshikipartysize}</p>}
+					{ hiroen && <p>{rsvpResults.isattendinghiroen != "yes" ? 0 : rsvpResults.hiroenpartysize}</p>}
 				</div>
 			</div>
 			<br/>
 			<p>Registered Allergies: {rsvpResults.allergies}</p>
 			<br/>
-			{rsvpResults.isattendingreception == "yes" &&
+			{rsvpResults.isattendinghiroen == "yes" &&
 				<div>
 					<p>Guests registered for the Reception: {rsvpResults.partymembers}</p>
 				</div>

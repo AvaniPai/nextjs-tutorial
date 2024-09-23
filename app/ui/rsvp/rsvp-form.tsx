@@ -17,12 +17,12 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
   // const sangeet = invites.all_events || invites.all_us_japan || invites.sangeet_reception_only || invites.sanmuhrec;
   // const muhurtham = invites.all_events || invites.all_us_japan || invites.sanmuhrec;
   // const reception = invites.all_events || invites.all_us_japan || invites.reception_only || invites.sangeet_reception_only || invites.sanmuhrec;
-  const shinzenshiki = invites.all_us_japan;
-  const hiroen = invites.all_us_japan;
+  const shinzenshiki = invites.all_us_japan || invites.japan_only;
+  const hiroen = invites.all_us_japan || invites.japan_only;
 
   return (
     <form action={dispatch}>
-      <div className="container rounded-md bg-sakura max-width mx-auto p-4 md:p-6">
+      <div className="container rounded-md bg-orange-300 max-width mx-auto p-4 md:p-6">
 
         {/* Mehendi */}
         {/* {mehendi &&
@@ -526,7 +526,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           <div className="mb-6 text-sm md:text-xl">
             <fieldset className="mb-2">
               <legend className="mb-2 block ">
-                Will you and your party be attending the Hiroen (Japanese Wedding Reception) on Saturday, November 30<sup>th</sup> at 5:30pm JST?
+                Will you and your party be attending the Hiroen (Japanese Wedding Reception) on Saturday, November 30<sup>th</sup> at 4:30pm JST?
               </legend>
               <div className="rounded-md bg-white px-[14px] py-3">
                 <div className="flex gap-8">
@@ -597,6 +597,29 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
                   ))}
               </div>
             </div>
+            <div >
+              <label htmlFor="hiroen_guest_names" className="mb-2 block ">
+                Please fill in the names for each member of your party.
+              </label>
+              <div className="relative mt-2 rounded-md">
+                <input
+                  id="hiroen_guest_names"
+                  name="hiroen_party_names"
+                  type="text"
+                  placeholder="example: Avani Pai, Shusuke Sugimoto ..."
+                  className="peer block w-full rounded-md py-2 outline-2 border-none placeholder:text-stone-500"
+                  defaultValue=""
+                />
+              </div>
+              <div id="party-member-error" aria-live="polite" aria-atomic="true">
+                {state.errors?.partyNames &&
+                  state.errors.partyNames.map((error: string) => (
+                    <p className="mt-2 text-sm text-red-500" key={error}>
+                      {error}
+                    </p>
+                  ))}
+              </div>
+            </div>
           </div>
         }
 
@@ -633,7 +656,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
       </div>
       <div className="mt-6 flex justify-end gap-4">
         <Link
-          href="/wedding/events"
+          href="/wedding/en/events"
           className="flex h-10 items-center rounded-lg bg-stone-200 px-4 text-sm  text-stone-600 transition-colors hover:bg-gray-200"
         >
           Cancel
