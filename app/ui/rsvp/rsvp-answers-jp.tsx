@@ -13,7 +13,7 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
   	const hiroen = rsvpResults.all_us_japan;
 
 	return (
-		<div className="container rounded-md bg-lightsage max-width mx-auto p-4 md:p-6">
+		<div className="container rounded-md max-width mx-auto p-4 md:p-6">
 			<h2>ご回答ありがとうございます! 回答内容は以下のとおりです。</h2>
 			<br></br>
 			<div className="grid grid-cols-3">
@@ -44,14 +44,14 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 					{ sangeet && <p>{rsvpResults.sangeetpartysize}</p>}
 					{ muhurtham && <p>{rsvpResults.muhurthampartysize}</p>}
 					{ reception && <p>{rsvpResults.receptionpartysize}</p>} */}
-					{ shinzenshiki && <p>{rsvpResults.shinzenshikipartysize}</p>}
-					{ hiroen && <p>{rsvpResults.hiroenpartysize}</p>}
+					{ shinzenshiki && <p>{rsvpResults.isattendingshinzenshiki != "yes" ? 0 : rsvpResults.shinzenshikipartysize}</p>}
+					{ hiroen && <p>{rsvpResults.isattendinghiroen != "yes" ? 0 : rsvpResults.hiroenpartysize}</p>}
 				</div>
 			</div>
 			<br/>
 			<p>アレルギーの有無: {rsvpResults.allergies}</p>
 			<br/>
-			{rsvpResults.isattendingreception == "yes" &&
+			{rsvpResults.isattendinghiroen == "yes" &&
 				<div>
 					<p>パーティメンバー: {rsvpResults.partymembers}</p>
 				</div>

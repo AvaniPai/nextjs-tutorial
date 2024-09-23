@@ -12,13 +12,15 @@ export async function getInvitedEvents(userEmail: string) {
            sangeetreceptiononly AS sangeet_reception_only,
            sanmuhrec AS sanmuhrec,
            allevents AS all_events,
-           allusjapan AS all_us_japan
+           allusjapan AS all_us_japan,
+           japanonly AS japan_only
     FROM guests
     WHERE email = ${userEmail};
     `
     // above will return a QueryResult object with type InvitedEvents
     // referencing rows will result in a list of InvitedEvents objects
     console.log("Current User's Email", userEmail);
+    console.log("Invited to Japan Events", data.rows[0].japan_only)
 
     return data.rows[0];
     
@@ -40,6 +42,7 @@ export async function getUserRSVPInfo(userEmail: string){
            sanmuhrec,
            allevents AS all_events,
            allusjapan AS all_us_japan,
+           japanonly AS japan_only,
            hasrsvped,
            isattendingmehendi,
            mehendipartysize,

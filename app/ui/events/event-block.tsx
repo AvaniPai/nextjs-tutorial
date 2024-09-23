@@ -10,14 +10,14 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 	const sangeet = invites.sangeet_reception_only || invites.sanmuhrec || invites.all_events || invites.all_us_japan;
 	const muhurtham = invites.sanmuhrec || invites.all_events || invites.all_us_japan;
 	const reception = invites.sangeet_reception_only || invites.sanmuhrec || invites.reception_only || invites.all_events || invites.all_us_japan;
-	const shinzenshiki = invites.all_us_japan; // TODO: update to include japanonly attribute
-	// add HiroenEventBlockSm
+	const shinzenshiki = invites.all_us_japan || invites.japan_only;
+	const hiroen = invites.all_us_japan || invites.japan_only;
 
 	return (
 		<div className="">
 			<div className="hidden xl:block">
 				{shinzenshiki && <ShinzensikiEventBlock/>}
-				{shinzenshiki && <HiroenEventBlock/>}
+				{hiroen && <HiroenEventBlock/>}
 			</div>
 			<div className="block xl:hidden">
 				{shinzenshiki && <ShinzenshikiEventBlockSm/>}
