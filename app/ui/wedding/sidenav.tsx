@@ -29,7 +29,7 @@ export default function SideNav() {
             <div className='flex items-center'>
               <div>
                 <h1 className="text-center">Avani & Shusuke</h1>
-                <h1 className="text-center">2024年 11月</h1>
+                <h1 className="text-center">2024年11月30日</h1>
               </div>
             </div>
           </Link>

@@ -235,12 +235,12 @@ async function grabRSVPData(client) {
 	try {
 		const data = await client.query({
 			rowMode: 'array',
-			text: 'SELECT name, email, guest_id, hasrsvped, isattendingmehendi, mehendipartysize, isattendinghaldi, haldipartysize, isattendingsangeet, sangeetpartysize, isattendingmuhurtham, muhurthampartysize, isattendingreception, receptionpartysize, partymembers FROM guests; '
+			text: 'SELECT name, email, guest_id, hasrsvped, isattendingshinzenshiki, shinzenshikipartysize, isattendinghiroen, hiroenpartysize, partymembers, allergies, allusjapan, japanonly FROM guests;'
 		})
 		await client.end();
 
 		var fs = require('fs');
-		var file = fs.createWriteStream('C:/Users/ganes/sandbox/0806_rsvp_data.tsv');
+		var file = fs.createWriteStream('/Users/avani/sandbox/data/0923_guest_table.tsv');
 		file.on('error', function(err) { throw error;})
 		for( let i =0; i < data.rowCount; i++)	{
 			file.write(data.rows[i].join('\t')+ "\n");

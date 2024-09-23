@@ -3,19 +3,19 @@ import Image from 'next/image';
 import Link from "next/link";
 
 export default function EventBlock({ invites }: { invites: InvitedEvents }) {
-	var events = [];
 	const mehendi = invites.all_events || invites.all_us_japan;
 	const haldi = invites.all_events || invites.all_us_japan;
 	const sangeet = invites.sangeet_reception_only || invites.sanmuhrec || invites.all_events || invites.all_us_japan;
 	const muhurtham = invites.sanmuhrec || invites.all_events || invites.all_us_japan;
 	const reception = invites.sangeet_reception_only || invites.sanmuhrec || invites.reception_only || invites.all_events || invites.all_us_japan;
-	const shinzenshiki = invites.all_us_japan;
+	const shinzenshiki = invites.all_us_japan || invites.japan_only;
+	const hiroen = invites.all_us_japan || invites.japan_only;
 
 	return (
 		<div className="">
 			<div className="hidden xl:block">
 				{shinzenshiki && <ShinzensikiEventBlock/>}
-				{shinzenshiki && <HiroenEventBlock/>}
+				{hiroen && <HiroenEventBlock/>}
 			</div>
 			<div className="block xl:hidden">
 				{shinzenshiki && <JapanPlaceholdersSm/>}
@@ -51,11 +51,11 @@ export function ShinzensikiEventBlock () {
 					<p className="text-suedeboots">スケジュール:</p>
 					<br/>
 					<div className="grid grid-cols-2">
-						<p>1:30pm</p>
+						<p>13:00</p>
 						<p>両家顔合わせ</p>
-						<p>2:00pm</p>
+						<p>14:00</p>
 						<p>挙式</p>
-						<p>2:40pm</p>
+						<p>14:40</p>
 						<p>写真撮影開始</p>
 					</div>
 				</div>
@@ -107,36 +107,36 @@ export function HiroenEventBlock () {
 					<a className="text-bold text-suedeboots">日付: </a>
 						11月30日（土）午後4時30分
 				</p>
-				<p><a className="text-bold text-suedeboots">場所: </a>
-					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
-						出雲記念館
+				<p><a className="text-bold text-suedeboots">場所: </a>出雲記念館
+					<br/>
+					<a href="https://maps.app.goo.gl/2gYt9Jhi6MUZeiFT8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+						〒918-8026 福井県福井市渕２丁目2001番地	
 					</a>
 				</p>
 				<div>
 					<p className="text-suedeboots">スケジュール:</p>
 					<br/>
 					<div className="grid grid-cols-2">
-						<p>4:30pm</p>
+						<p>16:00</p>
+						<p>受付開始</p>
+						<p>16:30</p>
 						<p>披露宴開始</p>
-						<p></p>
-						<p>鏡開き</p>
-						<p></p>
-						<p>乾杯</p>
-						<p>6:25pm</p>
-						<p>生い立ちムービー</p>
-						<p>6:30pm</p>
-						<p>新郎新婦からの手紙</p>
-						<p></p>
-						<p>新郎謝辞</p>
-						<p></p>
-						<p>新郎新婦退場</p>
-
+						<p>16:50</p>
+						<p>乾杯とお食事開始</p>
+						<p>17:35</p>
+						<p>デザートビュッフェ開始</p>
+						<p>18:00</p>
+						<p>演奏、動画、や手紙など</p>
+						<p>19:00</p>
+						<p>終了</p>
+						<p>20:30</p>
+						<p>あわら温泉で二次会 (未決定)</p>
 					</div>
 				</div>
 				<p>
 					<a className="text-bold text-suedeboots">Attire</a>
 					<br/>
-					Kimono. Western attire. Optional Cocktail Sarees for women
+					洋装、和装
 				</p>
 				<div>
 					<Link href="/wedding/rsvp"
