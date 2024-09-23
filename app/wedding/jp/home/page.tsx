@@ -1,4 +1,4 @@
-import OurStory from '@/app/ui/home/our-story';
+import OurStory from '@/app/ui/home/our-story-jp';
 
 export default function Page() {
     return (

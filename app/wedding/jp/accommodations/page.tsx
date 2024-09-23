@@ -14,23 +14,30 @@ export default function Page() {
                     height={400}
                     alt="cute illustration of a blue hotel building"
                 />
-                <h1 className={`mt-4 text-xs sm:text-xl whitespace-pre`}>CHICAGO MARRIOTT NAPERVILLE </h1>
-                <h1 className="text-xs sm:text-xl">1801 N NAPER BLVD NAPERVILLE, IL 60565 USA</h1>
-                <h1 className="text-xs sm:text-xl">+1 (630) 505-4900</h1>
+                <h1 className={`mt-4 text-xs sm:text-xl whitespace-pre`}>披露宴後の宿</h1>
+                <a href="https://maps.app.goo.gl/LJVCfHy6YdV8Gm8u6" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+                    あわらの隠れ宿 湯楽
+				</a>
+                <a href="https://maps.app.goo.gl/ewCnCiM1zAWm1UfC8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+                    あわら温泉グランドホテル
+				</a>
+                <a href="https://maps.app.goo.gl/cbEoUy4nanFzQF9ZA" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+                    みのや泰平閣
+				</a>
                 <br />
-                <div className="max-w-md text-center mb-6 text-pretty sm:text-xl">
-                    <article>Wedding Guest Special Rate:<br className="sm:hidden"/> $139-$159/night</article><br />
-                    <article>We have secured a room block at the Chicago Marriott Naperville in Naperville, IL.
-                        Rooms are available starting from Tuesday, August 27<sup>th</sup> until Monday, September 2<sup>nd</sup>.
+                <div className="max-w-xl text-center mb-6 text-pretty sm:text-xl">
+                    <article></article><br />
+                    <article>
+                        遠方の県外や海外からお越しくださるご友人の皆様にとって、日帰りでの参加は難しいかと思い、新郎の地元である芦原温泉の旅館を仮予約いたしました。
                     </article>
-                    <br/>
-                    <article>The hotel is about a 5 minute drive (or a 30 minute walk if you&apos;re up for it!) from The Crawford, where the Muhurtham and Reception will be held.
-                        We will also be arranging transport between the hotel and the respective venues for wedding events taking place on Friday, August 30<sup>th</sup> and Saturday, August 31<sup>st</sup>.
+                    <article>
+                        （11月30日(土)チェックイン - 12月1日(日)チェックアウト）
                     </article>
                     <br/>
                     <article>
-                        If you choose to book a room at the Marriott, please visit our affiliate link by clicking on the button below.
+                        披露宴にご参加いただく人数が確定次第、3つのうちいずれかの温泉旅館のどちらに宿泊していただくかを連絡いたします。
                     </article>
+                    <br/>
                 </div>
 
                 <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1715624267227&key=GRP&app=resvlink"
@@ -38,22 +45,10 @@ export default function Page() {
                     target="_blank" rel="noopener noreferrer"
                 >Book a Room</a>
                 <div className="hidden sm:block">
-                    <GoogleMapsEmbed
-                        apiKey="AIzaSyAnvgcJPM0khBrQhHEyDDA1LGbFVbGSd60"
-                        width={600}
-                        height={250}
-                        mode="place"
-                        q="Chicago+Marriott+Naperville+Naperville,Illinois,USA"
-                    />
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fsrZ02KjHOMuKCt7FZpJHFnC4aX-3z8&ehbc=2E312F" width="640" height="480"></iframe>
                 </div>
                 <div className="block sm:hidden">
-                    <GoogleMapsEmbed
-                        apiKey="AIzaSyAnvgcJPM0khBrQhHEyDDA1LGbFVbGSd60"
-                        width={300}
-                        height={250}
-                        mode="place"
-                        q="Chicago+Marriott+Naperville+Naperville,Illinois,USA"
-                    />
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fsrZ02KjHOMuKCt7FZpJHFnC4aX-3z8&ehbc=2E312F" width="640" height="480"></iframe>
                 </div>
             </div>
         </main>

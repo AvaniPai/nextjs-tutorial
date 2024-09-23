@@ -134,7 +134,7 @@ export function HiroenEventBlock () {
 					</div>
 				</div>
 				<p>
-					<a className="text-bold text-suedeboots">Attire</a>
+					<a className="text-bold text-suedeboots">服装</a>
 					<br/>
 					洋装、和装
 				</p>

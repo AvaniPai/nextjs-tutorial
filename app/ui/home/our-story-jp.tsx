@@ -50,17 +50,16 @@ export function OurStoryBlock1() {
 				/>
 			</div>
 			<div className="text-center bg-white md:p-5">
-				<article>A sizeable current of students flowed from every corner of Nagoya University&apos;s campus towards the subway station, under the sleepy gaze of the sun just barely peering over the horizon.</article>
+				<article>地平線からわずかに顔をのぞかせた太陽が眠気を誘う中、名古屋大学のキャンパスの隅々から地下鉄の駅に向かって学生たちが流れてきた。</article>
 				<br/>
-				<article className="text-pretty">&quot;Hey, they&apos;re speaking English! Wanna join them?&quot;</article>
+				<article className="text-pretty">&quot;シュウスケ、英語喋りたい？前の二人が英語喋ってるよ！&quot;</article>
 				<br/>
-				<article className="text-pretty">Avani, who was mid-conversation with a fellow cross-country club teammate, looked back and recognized the speaker. He was another teammate she had met earlier that month.</article>
+				<article className="text-pretty">陸上部のチームメイトと会話をしていたアバニは、振り返って話し手に気づいた。彼は、彼女がその月の初めに会った別のチームメイトだった。</article>
 				<br/>
-				<article className="text-pretty">&quot;Oh, you&#39;re that person who asked me if I was Indian, and then ran away after I said &apos;Yes&apos;. What&apos;s your name, by the way? &quot;</article>
+				<article className="text-pretty">&quot;Oh, you&#39;re that person who asked me if I was Indian, and then ran away after I said &apos;Yes&apos;. What&apos;s your name, by the way? （ああ、あなたは私にインド人かと尋ねてきて、私がそうだよと言ったらどこかへ走って行った人だね。ところで二人の名前はなんて言うの？）&quot;</article>
 				<br/>
-				<article className="text-pretty">Avani learned that the teammate&apos;s name was Shingo and his eager, well-tanned friend standing beside him was named Shusuke. Shingo explained in English that Shusuke was
-					excited to meet international students and was wondering how he can become friends with them. Shusuke periodically chimed in with a &quot;yeah!&quot; and an exuberant high-five, much to Avani&apos;s amusement.
-					Avani, herself eager to make friends with local Japanese students while she was studying abroad, invited them to join her and the other exchange students for lunch later that week, and the three of them exchanged phone numbers.
+				<article className="text-pretty">アバニは、そのチームメイトの名前がシンゴであること、そして彼の横に立っている熱心でよく日焼けした友人の名前がシュウスケであることを知った。 慎悟は英語で、脩介が大学で留学生に会うのを楽しみにしていて、どうしたら留学生と友達になれるか悩んでいると説明した。 シュウスケは英語があまり分からなかったようで定期的に「イエーイ！」とハイタッチをして、アバニを楽しませた。
+					アバニ自身、留学中に現地の日本人学生と友達になりたいと思っていたので、その週の後半に彼らを交換留学生達のランチに誘い、3人はLINEを交換した。
 				</article>
 			</div>
 		</div>
@@ -87,30 +86,31 @@ export function OurStoryBlock2() {
 			</div>
 			<div className="text-center bg-white  md:p-5">
 				<article className="text-pretty">
-					Fast-forward to a month later. Shusuke and Avani have become good friends (😉), often having lunch together in addition to hanging out during cross-country club and dance club a few times a week.
-					Avani&apos;s friends in the dance club began insisting that Shusuke had a crush on her, but she always scoffed in return. &quot;Me? The foreign girl who is going back to her far-away country by the end
-					of the summer? No way! &quot;
+					それから１ヶ月が経つとシュウスケとアバニは良い友達になった (😉)、週に数回、陸上部やダンスサークルで一緒に活動するだけでなく、二人で昼食を取ることが多くなっていった。
+					ダンスサークルのアバニの友達はシュウスケがアバニに片思いしていると主張し始めたが、彼女はありえないと思っていた。 &quot;Me? The foreign girl who is going back to her far-away country by the end
+					of the summer? No way! （夏が終わる頃には遠い国へ帰ってしまう外国人の私が？まさか！）&quot;
 				</article>
 				<br />
 				<article className="text-pretty">
-					But on May 23<sup>rd</sup> 2017, Avani realized that her friends had been right.
+					しかし2017年5月23日、アバニは友人たちが正しかったことに気づいた。
+				</article>
+				<article className="text-pretty">
+					陸上部からの帰り道、シュウスケはアバニとの別れ際に呼び止めた。
 				</article>
 				<br />
 				<article>
-					<a className={` ${noto_serif_japanese.className}`}>「ちょっと待って下さい。心の準備をします。」</a> 
-					said Shusuke &#40;translation: Please wait a moment, I need to prepare myself&#41;.
-					</article>
+					<a className={` ${noto_serif_japanese.className}`}>「ちょっと待って下さい。心の準備をします。」</a> .
+				</article>
 				<br />
-				<article className="text-pretty">&quot;I love you,&quot; he said confidently.</article>
+				<article className="text-pretty">&quot;I love you,&quot; 彼は自信満々に言った。</article>
 				<br />
-				<article className="text-pretty italic">Ohhhhhmmmmyyyyygo-</article>
+				<article className="text-pretty italic">オーマイガーーー！！</article>
 				<br />
-				<article className="text-pretty">&quot;Did you mean &apos;I like you?&apos;&quot;Avani blurted out. &quot;Because &apos;I love you&apos; means <article className={` ${noto_serif_japanese.className} inline`}>愛していますよ</article>
+				<article className="text-pretty">&quot;Did you mean &apos;I like you?&apos;&quot;私は小さな声で聞き返した。 &quot;Because &apos;I love you&apos; means <article className={` ${noto_serif_japanese.className} inline`}>愛していますよ</article>
 					and &apos;I like you&apos; means <p className={` ${noto_serif_japanese.className} inline`}>好きだよ</p>.&quot;
 				</article>
 				<br />
-				<article className="text-pretty">You might be thinking, an English lesson?! Now?! Avani, you&#39;ve completely ruined the moment! Which she might have, but that didn&#39;t stop Shusuke. He quickly amended his
-					confessionary statement and asked if Avani would be his girlfriend, to which she agreed.
+				<article className="text-pretty">もしかしたらシュウスケは, &quot;英語のレッスン?! 今?! アバニ、せっかくの時間が台無しだよ!&quot;と思ったかもしれない。 それでもシュウスケは止まらなかった、彼はすぐに告白の言葉を訂正し、アバニがガールフレンドになってくれるかと尋ね、彼女は承諾した。
 				</article>
 			</div>
 			<div className="hidden flex-col items-center justify-start space-y-4 md:flex">
@@ -154,13 +154,11 @@ export function OurStoryBlock3() {
 				/>
 			</div>
 			<div className="text-center bg-white  md:p-5">
-				<article className="text-pretty">That summer was one of the happiest summers they had ever experienced. Who could imagine that two people born in different parts of the world and experiencing life in so many fundamentally
-					different ways could connect with each other so seamlessly? The love they shared for each other was indeed special, because it weathered them through the difficulties of long-distance dating
-					for six years and convinced them that they want to spend the rest of their many years to come, together. In one country, in one home.
+				<article className="text-pretty">その夏は、二人が経験した中で最も幸せな夏のひとつだった。世界の異なる地域で生まれ、多くの点で全く異なる道で人生を経験してきた二人が、これほど垣根なく心を通わせることができると誰が想像できただろうか。二人が分かち合った愛は本当に特別だった、遠距離恋愛の困難な6年間を乗り切り、これからの長い年月を一緒に過ごしたいと確信したのだから。ひとつの国で、ひとつの家で。
 				</article>
 				<br />
-				<article className="text-pretty">So please, join us as we celebrate the beginning of our new life together 😊</article>
-				<article className={` ${noto_serif_japanese.className}`}>さて、祝いましょう！</article>
+				<article className={` ${noto_serif_japanese.className}`}>私たちの新たな門出の祝宴が始まります 😊</article>
+				<article className={` ${noto_serif_japanese.className}`}>是非ご参加ください！</article>
 			</div>
 		</div>
 	)
