@@ -9,10 +9,10 @@ export default function Page() {
         <main>
             <div className="flex items-center flex-col">
                 <Image
-                    src="/hotel_illus_one.png"
+                    src="/building_ryokan.png"
                     width={400}
                     height={400}
-                    alt="cute illustration of a blue hotel building"
+                    alt="hydrangea watercolor"
                 />
                 <h1 className={`mt-4 text-xs sm:text-xl whitespace-pre`}>CHICAGO MARRIOTT NAPERVILLE </h1>
                 <h1 className="text-xs sm:text-xl">1801 N NAPER BLVD NAPERVILLE, IL 60565 USA</h1>
@@ -33,10 +33,10 @@ export default function Page() {
                     </article>
                 </div>
 
-                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1715624267227&key=GRP&app=resvlink"
+                {/* <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1715624267227&key=GRP&app=resvlink"
                     className="flex h-10 items-center rounded-lg bg-teal-600 px-4 text-md font-medium text-white transition-colors hover:bg-teal-500 mb-4"
                     target="_blank" rel="noopener noreferrer"
-                >Book a Room</a>
+                >Book a Room</a> */}
                 <div className="hidden sm:block">
                     <GoogleMapsEmbed
                         apiKey="AIzaSyAnvgcJPM0khBrQhHEyDDA1LGbFVbGSd60"

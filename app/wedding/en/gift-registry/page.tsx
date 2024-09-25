@@ -7,9 +7,10 @@ export default function Page() {
         <main>
             <div className="flex items-center flex-col">
                 <Image
-                    src="/valley_ill_ss.png"
-                    width={600}
-                    height={600}
+                    className="pl-15"
+                    src="/shukuhaku.png"
+                    width={800}
+                    height={800}
                     alt="hydrangea watercolor"
                 />
                 <div className="max-w-md text-center mb-6 sm:text-xl">

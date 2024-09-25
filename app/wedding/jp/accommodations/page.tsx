@@ -9,9 +9,17 @@ export default function Page() {
         <main>
             <div className="flex items-center flex-col">
                 <Image
-                    src="/hotel_illus_one.png"
+                    className="hidden sm:block"
+                    src="/building_ryokan.png"
                     width={400}
                     height={400}
+                    alt="cute illustration of a blue hotel building"
+                />
+                <Image
+                    className="block sm:hidden"
+                    src="/building_ryokan.png"
+                    width={200}
+                    height={200}
                     alt="cute illustration of a blue hotel building"
                 />
                 <h1 className={`mt-4 text-xs sm:text-xl whitespace-pre`}>披露宴後の宿</h1>
@@ -40,15 +48,15 @@ export default function Page() {
                     <br/>
                 </div>
 
-                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1715624267227&key=GRP&app=resvlink"
+                {/* <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1715624267227&key=GRP&app=resvlink"
                     className="flex h-10 items-center rounded-lg bg-teal-600 px-4 text-md font-medium text-white transition-colors hover:bg-teal-500 mb-4"
                     target="_blank" rel="noopener noreferrer"
-                >Book a Room</a>
+                >Book a Room</a> */}
                 <div className="hidden sm:block">
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fsrZ02KjHOMuKCt7FZpJHFnC4aX-3z8&ehbc=2E312F" width="640" height="480"></iframe>
                 </div>
                 <div className="block sm:hidden">
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fsrZ02KjHOMuKCt7FZpJHFnC4aX-3z8&ehbc=2E312F" width="640" height="480"></iframe>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fsrZ02KjHOMuKCt7FZpJHFnC4aX-3z8&ehbc=2E312F" width="320" height="240"></iframe>
                 </div>
             </div>
         </main>
