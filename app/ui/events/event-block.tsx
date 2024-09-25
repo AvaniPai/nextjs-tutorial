@@ -14,13 +14,144 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 	const hiroen = invites.all_us_japan || invites.japan_only;
 
 	return (
-		<div className="">
-			<div className="hidden xl:block">
-				{shinzenshiki && <ShinzensikiEventBlock/>}
-				{hiroen && <HiroenEventBlock/>}
+		<div>
+			{shinzenshiki && <ShinzensikiEventBlock/>}
+			{hiroen && <HiroenEventBlock/>}
+		</div>
+	)
+}
+
+export function ShinzensikiEventBlock () {
+	return (
+		<div className={"sm:grid sm:grid-cols-2 sm:gap-4 sm:pb-12"}>
+			<div className="m-auto">
+				<Image
+					src="/events/shinzenshiki.png"
+					width={700}
+					height={700}
+					className="styles.imagehidden"
+					alt="Illustration of each wedding event."
+				/>
 			</div>
-			<div className="block xl:hidden">
-				{shinzenshiki && <ShinzenshikiEventBlockSm/>}
+			<div className="sm:block sm:space-y-10 sm:text-2xl flex flex-col text-center space-y-4 p-8">
+				<h2 className="sm:text-4xl text-xl">SHINZENSHIKI</h2>
+				<p>
+					<a className="text-bold text-suedeboots">Date: </a>
+					Saturday Novemver 30<sup>th</sup> at 2:00pm
+				</p>
+				<p>
+					<a className="text-bold text-suedeboots">
+						Location:
+					</a>
+					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+						Asuwa-Shrine(1 Chome-8-25 Asuwa, Fukui, 918-8007)
+					</a>
+				</p>
+				<div>
+					<p className="text-suedeboots">Program:</p>
+					<div className="grid grid-cols-2 max-w-sm mx-auto">
+						<p>13:00</p>
+						<p>Family gathering</p>
+						<p>14:00</p>
+						<p>Celemony begins</p>
+						<p>14:40</p>
+						<p>Photo shoot</p>
+					</div>
+				</div>
+				<p>
+					<a className="text-bold text-suedeboots">Attire: </a>
+					Western attire. Optional Cocktail Sarees for women
+				</p>
+				<div>
+					<Link href="/wedding/en/rsvp"
+						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
+					>Link to RSVP</Link>
+				</div>
+			</div>
+			<div className="col-span-2 sm:text-2xl text-md overflow-y-auto text-center mt-6">
+				<p className="sm:text-4xl text-xl text-center">Shinzenshiki - Make vows to the gods and seal marriage.</p>
+				<br/>
+				<p className="indent-8">
+					The purpose of the Shinzenshiki, which follows Shintoism, is to inform the couple&apos;s marriage to the Gods and to strengthen the bond between the two families. The bride and groom wear white kimono or montsuki, and the ceremony proceeds in front of the gods as the Saishu (master of ceremonies) proceeds.
+				</p>
+				<br/>
+				<p className="indent-8">
+					The origin of Asuwa Shrine dates back to the late 5th century. At that time, when the 26th emperor was staying in Echizen, he carried out a large-scale flood control project in Fukui. In doing so, he first invoked the Gods, a deity enshrined at the Imperial Court, to Mt. Asuwa to pray for safety in various matters.
+				</p>
+				<br/>
+				<p className="indent-8">
+					Mt.Asuwa, autumn leaves are at its best from mid to late November. The shrine offers a panoramic view of Fukui, and we decided to hold our Shinto ceremony at this shrine because we were attracted by the beautiful scenery as well as the shrine&apos;s history.
+				</p>
+			</div>
+		</div>
+	)
+}
+
+export function HiroenEventBlock () {
+	return (
+		<div className={"sm:grid sm:grid-cols-2 sm:gap-4 sm:pb-12"}>
+			<div className="m-auto">
+				<Image
+					src="/events/hiroen.png"
+					width={700}
+					height={700}
+					className="styles.imagehidden sm:flex"
+					alt="Illustration of each wedding event."
+				/>
+			</div>
+			<div className="sm:block sm:space-y-10 xl:text-2xl sm:text-xl flex flex-col text-center space-y-4 sm:p-8">
+				<h2 className="sm:text-4xl text-xl">Hiroen(Reception)</h2>
+				<p>
+					<a className="text-bold text-suedeboots">date: </a>
+					Saturday Novemver 30<sup>th</sup> at 4:30pm
+				</p>
+				<p>
+					<a className="text-bold text-suedeboots">
+						Location: 
+					</a>
+					<a href="https://maps.app.goo.gl/2gYt9Jhi6MUZeiFT8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+						Izumo Kinenkan (出雲記念館)
+					</a>
+				</p>
+				<div>
+					<p className="text-suedeboots">Program:</p>
+					<div className="grid grid-cols-2 max-w-2xl mx-auto text-left sm:text-center xl:text-xl sm:text-base text-sm">
+						<p>4:00pm</p>
+						<p>Guests Arrive and Check-in</p>
+						<p>4:30pm</p>
+						<p>Reception Begins</p>
+						<p>4:50pm</p>
+						<p>Opening Toast & Dinner Begins</p>
+						<p>5:35pm</p>
+						<p>Dessert Buffet Begins</p>
+						<p>6:00pm</p>
+						<p>Performances, Videos, and Speeches</p>
+						<p>7:00pm</p>
+						<p>Reception Ends</p>
+						<p>8:30pm</p>
+						<p>After-party TBD</p>
+					</div>
+				</div>
+				<p>
+					<a className="text-bold text-suedeboots">Attire: </a>
+					Kimono. Western attire.
+				</p>
+				<div>
+					<Link href="/wedding/en/rsvp"
+						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
+					>Link to RSVP</Link>
+				</div>
+			</div>
+			<div className="col-span-2 sm:text-2xl text-md overflow-y-auto text-center mt-6">
+				<p className="sm:text-4xl text-xl text-center">Hiroen - Japanese-style Wedding Reception</p>
+				<br/>
+				<p className="indent-8">
+					A “Hiroen” is a special party to which the bride and groom invite those who have taken care of them and show off their happy married life. It is a wonderful opportunity for the bride and groom to express their heartfelt gratitude by entertaining guests with carefully selected Japanese cuisine, sake, and heartwarming performances.
+				</p>
+				<br/>
+				<p className="indent-8">
+					It is also a time for parents and friends to watch over the bride and groom and wish them a wonderful relationship in the future. The bride and groom, together with their closest friends and family, will spend an irreplaceable time laughing, sharing joy, and celebrating their new beginnings, thereby solidifying the bond between them.
+				</p>
 			</div>
 		</div>
 	)
@@ -71,7 +202,7 @@ export function MehendiEventBlock() {
 					Traditional Indian attire in shades of green
 				</p>
 				<div>
-					<Link href="/wedding/rsvp"
+					<Link href="/wedding/en/rsvp"
 						className="py-4 items-center rounded-lg bg-darksage px-4 text-md font-medium text-white transition-colors hover:bg-sage mb-4"
 					>Link to RSVP</Link>
 				</div>
@@ -143,7 +274,7 @@ export function HaldiEventBlock() {
 					Traditional Indian attire in shades of yellow & white combination
 				</p>
 				<div>
-					<Link href="/wedding/rsvp"
+					<Link href="/wedding/en/rsvp"
 						className="py-4 items-center rounded-lg bg-amber-500 px-4 text-md font-medium text-white transition-colors hover:bg-amber-400 mb-4"
 					>Link to RSVP</Link>
 				</div>
@@ -246,7 +377,7 @@ export function SangeetEventBlock() {
 					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
 				</div>
 				<div>
-					<Link href="/wedding/rsvp"
+					<Link href="/wedding/en/rsvp"
 						className="py-3 items-center rounded-lg bg-blue-600 px-3 text-md font-medium text-white transition-colors hover:bg-blue-400 mb-4"
 					>Link to RSVP</Link>
 				</div>
@@ -344,7 +475,7 @@ export function MuhurthamEventBlock() {
 					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
 				</div>
 				<div>
-					<Link href="/wedding/rsvp"
+					<Link href="/wedding/en/rsvp"
 						className="py-3 items-center rounded-lg bg-darkmaroon px-3 text-md font-medium text-white transition-colors hover:bg-maroon mb-4"
 					>Link to RSVP</Link>
 				</div>
@@ -455,7 +586,7 @@ export function ReceptionEventBlock() {
 					<a className="text-lg"> There will be a large coach bus, waiting in the parking lot, with a sign saying &quot;Pai-Sugimoto Wedding&quot;.</a>
 				</div>
 				<div>
-					<Link href="/wedding/rsvp"
+					<Link href="/wedding/en/rsvp"
 						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
 					>Link to RSVP</Link>
 				</div>
@@ -481,156 +612,6 @@ export function ReceptionEventBlock() {
 			</div>
 		</div>
 	)
-}
-
-export function ShinzensikiEventBlock(){
-	return (
-		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
-			<div className="hidden items-center justify-center h-full sm:flex">
-				<Image
-					src="/events/shinzenshiki.png"
-					width={700}
-					height={700}
-					className="styles.imagehidden sm:flex"
-					alt="Illustration of each wedding event."
-				/>
-			</div>
-			<div className="space-y-10 p-8 sm:px-20 text-2xl">
-				<h2 className="text-4xl ">SHINZENSHIKI</h2>
-				<p>
-					<a className="text-bold text-suedeboots">Date: </a>
-					Saturday Novemver 30<sup>th</sup> at 2:00pm
-				</p>
-				<p><a className="text-bold text-suedeboots">Location: </a>
-					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
-						1 Chome-8-25 Asuwa, Fukui, 918-8007
-					</a>
-				</p>
-				<div>
-					<p className="text-suedeboots">Program:</p>
-					<br/>
-					<div className="grid grid-cols-2">
-						<p>6:00 to 6:15pm</p>
-						<p>Arrival of Guests</p>
-					</div>
-				</div>
-				<p>
-					<a className="text-bold text-suedeboots">Attire</a>
-					<br/>
-					Western attire. Optional Cocktail Sarees for women
-				</p>
-				<div>
-					<Link href="/wedding/rsvp"
-						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
-					>Link to RSVP</Link>
-				</div>
-			</div>
-			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
-				<p className="text-4xl ">Reception - A Grand Celebration of Matrimonial Union</p>
-				<br/>
-				<p className="indent-8">
-					The wedding reception is the highlight of Indian weddings, held in the evening of the wedding day. This grand event marks the culmination of the wedding festivities, bringing together family, friends, and acquaintances from both sides to celebrate the newlywed couple. Set in a lavish venue adorned with beautiful decorations, the reception creates an elegant and festive ambiance.
-				</p>
-				<br/>
-				<p className="indent-8">
-					The bride and groom don their finest attire, with the bride often wearing a stunning saree or lehenga and the groom in a sherwani or suit. The evening begins with a warm welcome and greetings, followed by performances. Guests offer their congratulations and blessings to the couple, enjoying a sumptuous feast. The reception is also a time for speeches, toasts, and numerous photo sessions, capturing the joyous memories of the day.
-				</p>
-				<br/>
-				<p className="indent-8">
-					Beyond the festivities, the reception holds deep significance. It celebrates the union of the couple, introduces them to the extended community, and serves as an expression of joy and togetherness.
-				</p>
-				<br/>
-				<p className="indent-8">
-					Join us in celebrating this grand occasion, as we come together to honor the love and union of the newlyweds!
-				</p>
-			</div>
-		</div>
-	)
-	// return (
-	// 	<div className="flex flex-col items-center justify-center text-2xl border rounded-lg border-8 border-darksakura">
-	// 		<h1 className="">SHINZENSHIKI & HIROEN (Reception)</h1>
-	// 		<h1 className="text-pretty">Date: November 30<sup>th</sup>, 2024 in Fukui Prefecture.</h1>
-	// 		<article className="text-pretty">We appreciation your patience as we work out accomodation details and schedule for the ceremonies.</article>
-	// 	</div>
-	// )
-}
-
-export function HiroenEventBlock(){
-	return (
-		<div className={"grid grid-cols-2 grid-rows-2 gap-4"}>
-			<div className="hidden items-center justify-center h-full sm:flex">
-				<Image
-					src="/events/hiroen.png"
-					width={700}
-					height={700}
-					className="styles.imagehidden sm:flex"
-					alt="Illustration of each wedding event."
-				/>
-			</div>
-			<div className="space-y-10 p-8 sm:px-20 text-2xl">
-				<h2 className="text-4xl ">HIROEN (Reception)</h2>
-				<p>
-					<a className="text-bold text-suedeboots">Date: </a>
-					Saturday Novemver 30<sup>th</sup> at 4:30pm
-				</p>
-				<p><a className="text-bold text-suedeboots">Location: </a>Izumo Kinenkan (出雲記念館)
-				 	<br/>
-					<a href="https://maps.app.goo.gl/2gYt9Jhi6MUZeiFT8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
-						2 Chome-2001 Fuchi, Fukui, 918-8026
-					</a>
-				</p>
-				<div>
-					<p className="text-suedeboots">Program:</p>
-					<br/>
-					<div className="grid grid-cols-2">
-						<p>4:00pm</p>
-						<p>Guests Arrive and Check-in</p>
-						<p>4:30pm</p>
-						<p>Reception Begins</p>
-						<p>4:50pm</p>
-						<p>Opening Toast & Dinner Begins</p>
-						<p>5:35pm</p>
-						<p>Dessert Buffet Begins</p>
-						<p>6:00pm</p>
-						<p>Performances, Videos, and Speeches</p>
-						<p>7:00pm</p>
-						<p>Reception Ends</p>
-						<p>8:30pm</p>
-						<p>After-party TBD</p>
-
-					</div>
-				</div>
-				<p>
-					<a className="text-bold text-suedeboots">Attire</a>
-					<br/>
-					Kimono. Western attire.
-				</p>
-				<div>
-					<Link href="/wedding/rsvp"
-						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
-					>Link to RSVP</Link>
-				</div>
-			</div>
-			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
-				<p className="text-4xl ">Hiroen - Japanese-style Wedding Reception</p>
-				<br/>
-				<p className="indent-8">
-					A “Hiroen” is a special party to which the bride and groom invite those who have taken care of them and show off their happy married life. It is a wonderful opportunity for the bride and groom to express their heartfelt gratitude by entertaining guests with carefully selected Japanese cuisine, sake, and heartwarming performances.
-				</p>
-				<br/>
-				<p className="indent-8">
-				It is also a time for parents and friends to watch over the bride and groom and wish them a wonderful relationship in the future. The bride and groom, together with their closest friends and family, will spend an irreplaceable time laughing, sharing joy, and celebrating their new beginnings, thereby solidifying the bond between them.
-				</p>
-			</div>
-		</div>
-	)
-	// return (
-	// 	<div className="flex flex-col items-center justify-center text-2xl border rounded-lg border-8 border-darksakura">
-	// 		<h1 className="">SHINZENSHIKI & HIROEN (Reception)</h1>
-	// 		<h1 className="text-pretty">Date: November 30<sup>th</sup>, 2024 in Fukui Prefecture.</h1>
-	// 		<article className="text-pretty">We appreciation your patience as we work out accomodation details and schedule for the ceremonies.</article>
-	// 	</div>
-	// )
 }
 
 export function MehendiEventBlockSm() {
@@ -696,7 +677,7 @@ export function MehendiEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/en/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-darksage px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -769,7 +750,7 @@ export function HaldiEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/en/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-amber-500 px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -866,7 +847,7 @@ export function SangeetEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/en/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-blue-600 px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -969,7 +950,7 @@ export function MuhurthamEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/en/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-darkmaroon px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -1074,7 +1055,7 @@ export function ReceptionEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/en/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-suedeboots px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>

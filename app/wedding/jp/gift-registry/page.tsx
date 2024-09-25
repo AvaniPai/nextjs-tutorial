@@ -86,36 +86,33 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="py-2">
-                        <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
-                        二次会会場(あわら湯のまち)→芦原温泉駅
-                        </div>
-                        <div className="flex justify-center mt-1 xl:text-2xl">
-                            <table className="w-4/5 table-auto  border-4 border-orange-200 text-center">
-                                <thead>
-                                    <tr>
-                                        
-                                        <th className="w-40 xl:w-96">乗車場所</th>
-                                        <th className="w-12 xl:w-16">時間</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>二次会会場</td>
-                                        <td>22:40</td>
-                                    </tr>
-                                    <tr>
-                                        <td>芦原温泉駅</td>
-                                        <td>22:50</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
+                            二次会会場(あわら湯のまち)→芦原温泉駅
+                            </div>
+                            <div className="flex justify-center mt-1 xl:text-2xl">
+                                <table className="w-4/5 table-auto  border-4 border-orange-200 text-center">
+                                    <thead>
+                                        <tr>
+                                            
+                                            <th className="w-40 xl:w-96">乗車場所</th>
+                                            <th className="w-12 xl:w-16">時間</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>二次会会場</td>
+                                            <td>22:40</td>
+                                        </tr>
+                                        <tr>
+                                            <td>芦原温泉駅</td>
+                                            <td>22:50</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-  
-                </div>
-                
             </div>
         </main>
     );

@@ -61,7 +61,7 @@ export function ShinzensikiEventBlock () {
 					洋装、和装
 				</p>
 				<div>
-					<Link href="/wedding/rsvp"
+					<Link href="/wedding/jp/rsvp"
 						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
 					>招待状のお返事</Link>
 				</div>
@@ -74,11 +74,11 @@ export function ShinzensikiEventBlock () {
 				</p>
 				<br/>
 				<p className="indent-8">
-				五世紀後半ごろ、男大迹王（後の継体天皇）が越前でお過ごしの間に越前平野の大治水事業をされますが、まずその初めに朝廷に祀られている大宮地之霊を足羽山に勧請し、諸事の安全を祈願したのが足羽神社の起源とされています。
+					神前式会場の起源は、5世紀後半にさかのぼります。当時、男大迹王（後の継体天皇）が越前に滞在していた際、越前平野で大規模な治水事業を行いました。その際、まず朝廷に祀られている大宮地之霊を足羽山に勧請し、さまざまな事の安全を祈願したことが始まりです。
 				</p>
 				<br/>
 				<p className="indent-8">
-				足羽神社は、山の上に位置しており、11月中旬から下旬にかけて周囲の紅葉が見頃を迎えます。足羽山からは福井を一望でき、その由緒の他に美しい風景にも魅力的に感じたため私たちはこの神社で神前式を挙げることに決めました。
+					足羽山では、11月中旬から下旬にかけて周囲の紅葉が見頃を迎えます。境内からは福井を一望でき、その由緒の他に美しい風景にも魅力的に感じたため私たちはこの神社で神前式を挙げることに決めました。
 				</p>
 			</div>
 		</div>
@@ -135,7 +135,7 @@ export function HiroenEventBlock () {
 					洋装、和装
 				</p>
 				<div>
-					<Link href="/wedding/rsvp"
+					<Link href="/wedding/jp/rsvp"
 						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
 					>招待状のお返事</Link>
 				</div>
@@ -217,7 +217,7 @@ export function MehendiEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-darksage px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -290,7 +290,7 @@ export function HaldiEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-amber-500 px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -387,7 +387,7 @@ export function SangeetEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-blue-600 px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -490,7 +490,7 @@ export function MuhurthamEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-darkmaroon px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -595,7 +595,7 @@ export function ReceptionEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-suedeboots px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
