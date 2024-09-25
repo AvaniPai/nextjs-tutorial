@@ -12,45 +12,42 @@ export default function EventBlock({ invites }: { invites: InvitedEvents }) {
 	const hiroen = invites.all_us_japan || invites.japan_only;
 
 	return (
-		<div className="">
-			<div className="hidden xl:block">
-				{shinzenshiki && <ShinzensikiEventBlock/>}
-				{hiroen && <HiroenEventBlock/>}
-			</div>
-			<div className="block xl:hidden">
-				{shinzenshiki && <JapanPlaceholdersSm/>}
-			</div>
+		<div>
+			{shinzenshiki && <ShinzensikiEventBlock/>}
+			{hiroen && <HiroenEventBlock/>}
 		</div>
 	)
 }
 
 export function ShinzensikiEventBlock () {
 	return (
-		<div className={"grid grid-cols-2 gap-4 pb-12"}>
-			<div className="hidden items-center justify-center h-full sm:flex">
+		<div className={"sm:grid sm:grid-cols-2 sm:gap-4 sm:pb-12"}>
+			<div className="m-auto">
 				<Image
 					src="/events/shinzenshiki.png"
 					width={700}
 					height={700}
-					className="styles.imagehidden sm:flex"
+					className="styles.imagehidden"
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="space-y-10 p-8 sm:px-20 text-2xl">
-				<h2 className="text-4xl ">神前式</h2>
+			<div className="sm:block sm:space-y-10 sm:text-2xl flex flex-col text-center space-y-4 p-8">
+				<h2 className="sm:text-4xl text-xl">神前式</h2>
 				<p>
 					<a className="text-bold text-suedeboots">日時: </a>
 					11月30日（土）午後2時
 				</p>
-				<p><a className="text-bold text-suedeboots">場所: </a>
+				<p>
+					<a className="text-bold text-suedeboots">
+						場所: 
+					</a>
 					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
 						足羽神社
 					</a>
 				</p>
 				<div>
 					<p className="text-suedeboots">スケジュール:</p>
-					<br/>
-					<div className="grid grid-cols-2">
+					<div className="grid grid-cols-2 max-w-sm mx-auto">
 						<p>13:00</p>
 						<p>両家顔合わせ</p>
 						<p>14:00</p>
@@ -60,29 +57,28 @@ export function ShinzensikiEventBlock () {
 					</div>
 				</div>
 				<p>
-					<a className="text-bold text-suedeboots">服装</a>
-					<br/>
+					<a className="text-bold text-suedeboots">服装: </a>
 					洋装、和装
 				</p>
 				<div>
-					<Link href="/wedding/rsvp"
+					<Link href="/wedding/jp/rsvp"
 						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
 					>招待状のお返事</Link>
 				</div>
 			</div>
-			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
-				<p className="text-4xl ">神前式 - 神様に誓いを立てて夫婦の契りを結ぶ</p>
+			<div className="col-span-2 sm:text-2xl text-md overflow-y-auto text-left mt-6">
+				<p className="sm:text-4xl text-xl text-center">神前式 - 神様に誓いを立てて夫婦の契りを結ぶ</p>
 				<br/>
 				<p className="indent-8">
 					神道に則った神前式は、八百万の神に二人の結婚を報告し、両家の絆を深めることを目的としています。 新郎新婦は白無垢や紋付などを着用し、斎主の進行に沿って、神様の前で儀式を進めていきます。
 				</p>
 				<br/>
 				<p className="indent-8">
-				五世紀後半ごろ、男大迹王（後の継体天皇）が越前でお過ごしの間に越前平野の大治水事業をされますが、まずその初めに朝廷に祀られている大宮地之霊を足羽山に勧請し、諸事の安全を祈願したのが足羽神社の起源とされています。
+					神前式会場の起源は、5世紀後半にさかのぼります。当時、男大迹王（後の継体天皇）が越前に滞在していた際、越前平野で大規模な治水事業を行いました。その際、まず朝廷に祀られている大宮地之霊を足羽山に勧請し、さまざまな事の安全を祈願したことが始まりです。
 				</p>
 				<br/>
 				<p className="indent-8">
-				足羽神社は、山の上に位置しており、11月中旬から下旬にかけて周囲の紅葉が見頃を迎えます。足羽山からは福井を一望でき、その由緒の他に美しい風景にも魅力的に感じたため私たちはこの神社で神前式を挙げることに決めました。
+					足羽山では、11月中旬から下旬にかけて周囲の紅葉が見頃を迎えます。境内からは福井を一望でき、その由緒の他に美しい風景にも魅力的に感じたため私たちはこの神社で神前式を挙げることに決めました。
 				</p>
 			</div>
 		</div>
@@ -91,8 +87,8 @@ export function ShinzensikiEventBlock () {
 
 export function HiroenEventBlock () {
 	return (
-		<div className={"grid grid-cols-2 gap-4"}>
-			<div className="hidden items-center justify-center h-full sm:flex">
+		<div className={"sm:grid sm:grid-cols-2 sm:gap-4 sm:pb-12"}>
+			<div className="m-auto">
 				<Image
 					src="/events/hiroen.png"
 					width={700}
@@ -101,22 +97,23 @@ export function HiroenEventBlock () {
 					alt="Illustration of each wedding event."
 				/>
 			</div>
-			<div className="space-y-10 p-8 sm:px-20 text-2xl">
-				<h2 className="text-4xl ">披露宴</h2>
+			<div className="sm:block sm:space-y-10 xl:text-2xl sm:text-xl flex flex-col text-center space-y-4 sm:p-8">
+				<h2 className="sm:text-4xl text-xl">披露宴</h2>
 				<p>
-					<a className="text-bold text-suedeboots">日付: </a>
+					<a className="text-bold text-suedeboots">日時: </a>
 						11月30日（土）午後4時30分
 				</p>
-				<p><a className="text-bold text-suedeboots">場所: </a>出雲記念館
-					<br/>
+				<p>
+					<a className="text-bold text-suedeboots">
+						場所: 
+					</a>
 					<a href="https://maps.app.goo.gl/2gYt9Jhi6MUZeiFT8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
-						〒918-8026 福井県福井市渕２丁目2001番地	
+						出雲記念館	
 					</a>
 				</p>
 				<div>
 					<p className="text-suedeboots">スケジュール:</p>
-					<br/>
-					<div className="grid grid-cols-2">
+					<div className="grid grid-cols-2 max-w-2xl mx-auto text-left sm:text-center xl:text-xl sm:text-base text-sm">
 						<p>16:00</p>
 						<p>受付開始</p>
 						<p>16:30</p>
@@ -126,7 +123,7 @@ export function HiroenEventBlock () {
 						<p>17:35</p>
 						<p>デザートビュッフェ開始</p>
 						<p>18:00</p>
-						<p>演奏、動画、や手紙など</p>
+						<p>演奏、動画、手紙</p>
 						<p>19:00</p>
 						<p>終了</p>
 						<p>20:30</p>
@@ -134,18 +131,17 @@ export function HiroenEventBlock () {
 					</div>
 				</div>
 				<p>
-					<a className="text-bold text-suedeboots">Attire</a>
-					<br/>
+					<a className="text-bold text-suedeboots">服装: </a>
 					洋装、和装
 				</p>
 				<div>
-					<Link href="/wedding/rsvp"
+					<Link href="/wedding/jp/rsvp"
 						className="py-4 items-center rounded-lg bg-suedeboots px-4 text-md font-medium text-white transition-colors hover:bg-harvestmoon mb-4"
 					>招待状のお返事</Link>
 				</div>
 			</div>
-			<div className="col-span-2 text-2xl overflow-y-auto text-center mt-6">
-				<p className="text-4xl ">披露宴 - 新たな夫婦の門出</p>
+			<div className="col-span-2 sm:text-2xl text-md overflow-y-auto text-left mt-6">
+				<p className="sm:text-4xl text-xl text-center">披露宴 - 新たな夫婦の門出</p>
 				<br/>
 				<p className="indent-8">
 					「披露宴」とは、新郎新婦がお世話になった方々をお招きし、幸せな結婚生活をお披露目する特別なパーティー。厳選された日本料理やお酒、心温まる演出でゲストをもてなし、新郎新婦が心からの感謝を伝える場です。
@@ -200,7 +196,6 @@ export function MehendiEventBlockSm() {
 				</div>
 				<p> 
 					<a className="text-bold text-darksage">Attire</a>
-					<br/>
 					Traditional Indian attire in shades of green
 				</p>
 			</div>
@@ -222,7 +217,7 @@ export function MehendiEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-darksage px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -295,7 +290,7 @@ export function HaldiEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-amber-500 px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -392,7 +387,7 @@ export function SangeetEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-blue-600 px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -495,7 +490,7 @@ export function MuhurthamEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-darkmaroon px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>
@@ -600,7 +595,7 @@ export function ReceptionEventBlockSm() {
 				</p>
 			</div>
 			<div>
-				<Link href="/wedding/rsvp"
+				<Link href="/wedding/jp/rsvp"
 					className="flex mt-3 text-center justify-center items-center rounded-lg bg-suedeboots px-4 text-md text-white transition-colors hover:bg-sage mb-4"
 				>Link to RSVP</Link>
 			</div>

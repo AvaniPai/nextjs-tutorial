@@ -650,14 +650,27 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
               ))}
           </div>
         </div>
-
+        <div aria-live="polite" aria-atomic="true">
+          {state.message ? (
+            <p className="mt-2 text-sm text-red-500">{state.message}</p>
+          ) : null}
+        </div>
+        <div className="mt-6 flex justify-end xl:px-128 gap-4">
+          <Link
+            href="/wedding/jp/events"
+            className="flex h-10 items-center rounded-lg bg-stone-200 px-4 text-sm  text-stone-600 transition-colors hover:bg-gray-200"
+          >
+            キャンセル
+          </Link>
+          <Button className="bg-emerald-600 hover:bg-emerald-500" type="submit">提出</Button>
+        </div>
       </div>
-      <div aria-live="polite" aria-atomic="true">
+      {/* <div aria-live="polite" aria-atomic="true">
         {state.message ? (
           <p className="mt-2 text-sm text-red-500">{state.message}</p>
         ) : null}
       </div>
-      <div className="mt-6 flex justify-end gap-4">
+      <div className="mt-6 flex justify-end xl:px-128 px-10 gap-4">
         <Link
           href="/wedding/jp/events"
           className="flex h-10 items-center rounded-lg bg-stone-200 px-4 text-sm  text-stone-600 transition-colors hover:bg-gray-200"
@@ -665,7 +678,7 @@ export default function RSVPForm({ invites }: { invites: InvitedEvents }) {
           キャンセル
         </Link>
         <Button className="bg-emerald-600 hover:bg-emerald-500" type="submit">提出</Button>
-      </div>
+      </div> */}
     </form>
   );
 }

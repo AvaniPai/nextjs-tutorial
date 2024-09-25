@@ -38,8 +38,8 @@ const links = [
     jp_href: '/wedding/jp/accommodations',
   },
   {
-    en_name: 'GIFT REGISTRY', 
-    jp_name: '贈り物',
+    en_name: 'How to get to the venue', 
+    jp_name: '臨時バス',
     en_href: '/wedding/en/gift-registry',
     jp_href: '/wedding/jp/gift-registry',
   },
