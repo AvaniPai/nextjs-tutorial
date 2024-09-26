@@ -6,13 +6,13 @@ export default function Page() {
     return (
         <main className="items-center justify-center mx-auto xl:w-4/5 h-auto xl:text-xl">
             <div className="xl:w-2/3 xl:mx-auto text-center mb-6 text-pretty xl:text-3xl text-sm">
-                <article className="xl:text-5xl text-xl">Transportation Details</article><br />
+                <article className="xl:text-5xl text-xl">Chartered Bus Details</article><br />
                 <article>
-                We have arranged a bus to ferry our guests to and from Awara Onsen and Fukui City. For our overseas and out-of-state guests who may be arriving early for the wedding (i.e. the previous night or Saturday morning) please note that the bus will be waiting at Awara Yunomachi Station to take you to Asuwa Jinja, on Saturday afternoon.
+                We have arranged a bus to ferry our guests to and from Awara Onsen and Fukui City. For our overseas and out-of-state guests who may be arriving early for the wedding (i.e. the previous night or Saturday morning) please note that the bus will be waiting at Awara Yunomachi Station to take you to Asuwa Shrine, on Saturday afternoon.
                 </article>
                 <br/>
                 <article>
-                    Once the Shinzenshiki finishes, the bus will transport guests between Asuwa Jinja and Izumo Kinenkan, where the reception will be held. After the reception, the bus will head back to Awara Onsen and will make a pit stop at Fukui Station for those who are planning to return home immediately. Please note that in the evening, the bus will drop everyone off at the after party location, not at Awara Yumoachi station.
+                    Once the Shinzenshiki finishes, the bus will transport guests between Asuwa Shrine and Izumo Kinenkan, where the reception will be held. After the reception, the bus will head back to Awara Onsen and will make a pit stop at Fukui Station for those who are planning to return home immediately. Please note that in the evening when heading back to Awara Onsen, the bus will drop everyone off at the after party location, not at Awara-Yunomoachi Station.
                 </article>
             </div>
             <div className="flex flex-col xl:flex-row xl:justify-self-center">
@@ -22,7 +22,7 @@ export default function Page() {
                         src="/shukuhaku.png"
                         width={1200}
                         height={800}
-                        alt="hydrangea watercolor"
+                        alt="illustration of a Japanese ryokan"
                     />                    
                 </div>
                 <div className="pt-6 xl:w-1/2">
@@ -45,11 +45,11 @@ export default function Page() {
                                             <td>12:55</td>
                                         </tr>
                                         <tr>
-                                            <td>JR Fukui station east exit</td>
+                                            <td>JR Fukui Station (East Exit)</td>
                                             <td>13:35</td>
                                         </tr>
                                         <tr>
-                                            <td>Asuwa Shirine</td>
+                                            <td>Asuwa Shrine</td>
                                             <td>13:50</td>
                                         </tr>
                                     </tbody>
@@ -58,8 +58,8 @@ export default function Page() {
                         </div>
                         <div className="py-2">
                             <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
-                                Reception hall→
-                                After-party venue(close to Awara-Yunomachi Station)
+                                Reception Hall→
+                                After-party Venue (close to Awara-Yunomachi Station)
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
                                 <table className="w-4/5 table-auto text-center  border-4 border-orange-200">
@@ -71,7 +71,7 @@ export default function Page() {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Izumo-Kinen-Kan</td>
+                                            <td>Izumo Kinenkan</td>
                                             <td>19:15</td>
                                         </tr>
                                         <tr>
@@ -84,7 +84,7 @@ export default function Page() {
                         </div>
                         <div className="py-2">
                             <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
-                            After-party venue(close to Awara-Yunomachi Station)
+                            After-party Venue→ Awara Onsen Station
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
                                 <table className="w-4/5 table-auto  border-4 border-orange-200 text-center">
@@ -101,7 +101,7 @@ export default function Page() {
                                             <td>22:40</td>
                                         </tr>
                                         <tr>
-                                            <td>Awara-Onsen Station</td>
+                                            <td>Awara Onsen Station</td>
                                             <td>22:50</td>
                                         </tr>
                                     </tbody>

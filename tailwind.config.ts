@@ -26,6 +26,8 @@ const config: Config = {
         'maroon': '#800E13',
         'harvestmoon': '#EACBAB',
         'suedeboots': '#BD9774',
+        'mediumbrown': '#8b6c5c',
+        'lightbrown': '#d8cbc4',
       },
     },
     keyframes: {

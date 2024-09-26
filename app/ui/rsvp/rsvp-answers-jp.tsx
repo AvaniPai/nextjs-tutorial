@@ -13,13 +13,13 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
   	const hiroen = rsvpResults.all_us_japan;
 
 	return (
-		<div className="container rounded-md max-width mx-auto md:p-6">
+		<div className="container rounded-md border-4 border-amber-700 max-width mx-auto md:p-6">
 			<h2>回答内容は以下のとおりです。</h2>
 			<br></br>
-			<div className="sm:border-none border-4 border-orange-300 p-4">
+			<div className="sm:border-none border-4 border-amber-700 p-4">
 				<div className="grid grid-cols-3 sm:text-lg text-sm">
 					<div>
-						<p>イベント</p>
+						<p className="text-amber-700">イベント</p>
 						{/* { mehendi && <p>Mehendi</p>}
 						{ haldi && <p>Haldi</p>}
 						{ sangeet && <p>Sangeet</p>}
@@ -29,7 +29,7 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 						{ hiroen && <p>披露宴</p>}
 					</div>
 					<div>
-						<p>出席</p>
+						<p className="text-amber-700">出席</p>
 						{/* { mehendi && <p>{rsvpResults.isattendingmehendi}</p>}
 						{ haldi && <p>{rsvpResults.isattendinghaldi}</p>}
 						{ sangeet && <p>{rsvpResults.isattendingsangeet}</p>}
@@ -39,7 +39,7 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 						{ hiroen && <p>{rsvpResults.isattendinghiroen}</p>}
 					</div>
 					<div>
-						<p>パーティサイズ</p>
+						<p className="text-amber-700">パーティサイズ</p>
 						{/* { mehendi && <p>{rsvpResults.mehendipartysize}</p>}
 						{ haldi && <p>{rsvpResults.haldipartysize}</p>}
 						{ sangeet && <p>{rsvpResults.sangeetpartysize}</p>}
@@ -50,11 +50,11 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 					</div>
 				</div>
 				<br/>
-				<p className="sm:text-lg text-sm">アレルギーの有無: {rsvpResults.allergies}</p>
+				<p className="sm:text-lg text-sm"><a className="text-amber-700">アレルギーの有無:</a> {rsvpResults.allergies}</p>
 				<br/>
 				{rsvpResults.isattendinghiroen == "yes" &&
 					<div>
-						<p>パーティメンバー: {rsvpResults.partymembers}</p>
+						<p ><a className="text-amber-700">パーティメンバー:</a> {rsvpResults.partymembers}</p>
 					</div>
 				}		
 			</div>

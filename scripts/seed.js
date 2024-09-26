@@ -173,6 +173,7 @@ async function addNewGuest(client) {
 						SanMuhRec,
 						AllEvents,
 						AllUSJapan,
+						JapanOnly,
 						isAttendingMehendi, 
 						mehendiPartySize, 
 						isAttendingHaldi, 
@@ -201,6 +202,7 @@ async function addNewGuest(client) {
 						${user.SanMuhRec},
 						${user.AllEvents},
 						${user.AllUSJapan},
+						${user.JapanOnly},
 						${user.isAttendingMehendi}, 
 						${user.mehendiPartySize},
 						${user.isAttendingHaldi}, 
@@ -259,8 +261,8 @@ async function main() {
 	//await removeTable(client);
 	//await seedUsers(client);
 	//await updateTable(client);
-	//await addNewGuest(client);
-	await grabRSVPData(client);
+	await addNewGuest(client);
+	//await grabRSVPData(client);
 
 	await client.end();
 }

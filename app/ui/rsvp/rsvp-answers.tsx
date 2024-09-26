@@ -13,13 +13,13 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
   	const hiroen = rsvpResults.all_us_japan;
 
 	return (
-		<div className="container rounded-md max-width mx-auto md:p-6 sm:text-lg text:sm">
+		<div className="container rounded-md border-4 border-amber-700 max-width mx-auto md:p-6 sm:text-lg text:sm">
 			<h2>Thank you for submitting your RSVP! Here is a summary of your response.</h2>
 			<br></br>
-			<div className="sm:border-none border-4 border-orange-300 p-4">
+			<div className="sm:border-none border-4 border-amber-700 p-4">
 				<div className="grid grid-cols-3 sm:text-lg text-sm">
 					<div>
-						<p className="underline">Event</p>
+						<p className="text-amber-700 underline">Event</p>
 						{/* { mehendi && <p>Mehendi</p>}
 						{ haldi && <p>Haldi</p>}
 						{ sangeet && <p>Sangeet</p>}
@@ -29,7 +29,7 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 						{ hiroen && <p>Reception</p>}
 					</div>
 					<div>
-						<p className="underline">RSVP Status</p>
+						<p className="text-amber-700 underline">RSVP Status</p>
 						{/* { mehendi && <p>{rsvpResults.isattendingmehendi}</p>}
 						{ haldi && <p>{rsvpResults.isattendinghaldi}</p>}
 						{ sangeet && <p>{rsvpResults.isattendingsangeet}</p>}
@@ -39,7 +39,7 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 						{ hiroen && <p>{rsvpResults.isattendinghiroen}</p>}
 					</div>
 					<div>
-						<p className="underline">Party Size</p>
+						<p className="text-amber-700 underline">Party Size</p>
 						{/* { mehendi && <p>{rsvpResults.mehendipartysize}</p>}
 						{ haldi && <p>{rsvpResults.haldipartysize}</p>}
 						{ sangeet && <p>{rsvpResults.sangeetpartysize}</p>}
@@ -50,11 +50,11 @@ export default function AnswerSummary({ rsvpResults }: { rsvpResults: RSVPResult
 					</div>
 				</div>
 				<br/>
-				<p>Registered Allergies: {rsvpResults.allergies}</p>
+				<p><a className="text-amber-700">Registered Allergies:</a> {rsvpResults.allergies}</p>
 				<br/>
 				{rsvpResults.isattendinghiroen == "yes" &&
 					<div>
-						<p>Guests registered for the Reception: {rsvpResults.partymembers}</p>
+						<p><a className="text-amber-700">Guests registered for the Reception:</a> {rsvpResults.partymembers}</p>
 					</div>
 				}	
 			</div>

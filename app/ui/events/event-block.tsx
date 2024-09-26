@@ -37,30 +37,32 @@ export function ShinzensikiEventBlock () {
 				<h2 className="sm:text-4xl text-xl">SHINZENSHIKI</h2>
 				<p>
 					<a className="text-bold text-suedeboots">Date: </a>
-					Saturday Novemver 30<sup>th</sup> at 2:00pm
+					Saturday, November 30<sup>th</sup> at 2:00pm
 				</p>
 				<p>
 					<a className="text-bold text-suedeboots">
 						Location:
 					</a>
 					<a href="https://maps.app.goo.gl/gHiegt7BCNWUvGBa9" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
-						Asuwa-Shrine(1 Chome-8-25 Asuwa, Fukui, 918-8007)
+						Asuwa Shrine (足羽神社)
 					</a>
 				</p>
 				<div>
 					<p className="text-suedeboots">Program:</p>
 					<div className="grid grid-cols-2 max-w-sm mx-auto">
-						<p>13:00</p>
-						<p>Family gathering</p>
-						<p>14:00</p>
-						<p>Celemony begins</p>
-						<p>14:40</p>
+						<p>1:00pm</p>
+						<p>Family arrives</p>
+						<p>1:30pm</p>
+						<p>Guests arrive</p>
+						<p>2:00pm</p>
+						<p>Ceremony begins</p>
+						<p>2:40pm</p>
 						<p>Photo shoot</p>
 					</div>
 				</div>
 				<p>
 					<a className="text-bold text-suedeboots">Attire: </a>
-					Western attire. Optional Cocktail Sarees for women
+					Kimono. Western formal attire.
 				</p>
 				<div>
 					<Link href="/wedding/en/rsvp"
@@ -72,7 +74,7 @@ export function ShinzensikiEventBlock () {
 				<p className="sm:text-4xl text-xl text-center">Shinzenshiki - Make vows to the gods and seal marriage.</p>
 				<br/>
 				<p className="indent-8">
-					The purpose of the Shinzenshiki, which follows Shintoism, is to inform the couple&apos;s marriage to the Gods and to strengthen the bond between the two families. The bride and groom wear white kimono or montsuki, and the ceremony proceeds in front of the gods as the Saishu (master of ceremonies) proceeds.
+					The purpose of the Shinzenshiki, which follows Shintoism, is to inform the couple&apos;s marriage to the Gods and to strengthen the bond between the two families. The bride wears a white kimono called &quot;shiromuku&quot; and the groom wears a hakama called &quot;montsuki&quot;, and the ceremony proceeds in front of the gods as the Saishu (master of ceremonies) proceeds.
 				</p>
 				<br/>
 				<p className="indent-8">
@@ -80,7 +82,7 @@ export function ShinzensikiEventBlock () {
 				</p>
 				<br/>
 				<p className="indent-8">
-					Mt.Asuwa, autumn leaves are at its best from mid to late November. The shrine offers a panoramic view of Fukui, and we decided to hold our Shinto ceremony at this shrine because we were attracted by the beautiful scenery as well as the shrine&apos;s history.
+					Mt.Asuwa, whose summit is where Asuwa Shrine is located, experiences peak fall colors from mid to late November. The shrine offers a panoramic view of Fukui, and we decided to hold our Shinto ceremony at this shrine because we were attracted by the beautiful scenery as well as the shrine&apos;s history.
 				</p>
 			</div>
 		</div>
@@ -100,10 +102,10 @@ export function HiroenEventBlock () {
 				/>
 			</div>
 			<div className="sm:block sm:space-y-10 xl:text-2xl sm:text-xl flex flex-col text-center space-y-4 sm:p-8">
-				<h2 className="sm:text-4xl text-xl">Hiroen(Reception)</h2>
+				<h2 className="sm:text-4xl text-xl">HIROEN</h2>
 				<p>
-					<a className="text-bold text-suedeboots">date: </a>
-					Saturday Novemver 30<sup>th</sup> at 4:30pm
+					<a className="text-bold text-suedeboots">Date: </a>
+					Saturday, November 30<sup>th</sup> at 4:30pm
 				</p>
 				<p>
 					<a className="text-bold text-suedeboots">
@@ -129,12 +131,12 @@ export function HiroenEventBlock () {
 						<p>7:00pm</p>
 						<p>Reception Ends</p>
 						<p>8:30pm</p>
-						<p>After-party TBD</p>
+						<p>After-party TBD, (optional attendance)</p>
 					</div>
 				</div>
 				<p>
 					<a className="text-bold text-suedeboots">Attire: </a>
-					Kimono. Western attire.
+					Kimono. Western formal attire.
 				</p>
 				<div>
 					<Link href="/wedding/en/rsvp"
