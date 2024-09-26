@@ -43,7 +43,7 @@ export default function SideNav() {
             await signOut();
           }}
         >
-          <button className="flex-none h-[40px] md:h-[100px] w-full grow items-center justify-center gap-2 rounded-md md:p-3 text-xs md:text-xl xl:text-2xl font-semibold hover:bg-rose-100 hover:text-rose-600 md:flex-none md:justify-start p-3 md:px-3 text-darksakura">
+          <button className="flex-none h-[40px] md:h-[100px] w-full grow items-center justify-center gap-2 rounded-md md:p-3 text-xs md:text-xl xl:text-2xl font-semibold hover:bg-red-100 hover:text-maroon md:flex-none md:justify-start p-3 md:px-3 text-maroon">
                           {/* flex grow items-center justify-center md:gap-2 rounded-md md:p-3 text-2xl font-medium h-[40px] hover:bg-emerald-100 hover:text-emerald-600 md:h-[100px] md:flex-none md:p-2 md:px-3' */}
             <div className="block">SIGN OUT</div>
           </button>
