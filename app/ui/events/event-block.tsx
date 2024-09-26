@@ -74,7 +74,7 @@ export function ShinzensikiEventBlock () {
 				<p className="sm:text-4xl text-xl text-center">Shinzenshiki - Make vows to the gods and seal marriage.</p>
 				<br/>
 				<p className="indent-8">
-					The purpose of the Shinzenshiki, which follows Shintoism, is to inform the couple&apos;s marriage to the Gods and to strengthen the bond between the two families. The bride wears a white kimono called "shiromuku" and the groom wears a hakama called "montsuki", and the ceremony proceeds in front of the gods as the Saishu (master of ceremonies) proceeds.
+					The purpose of the Shinzenshiki, which follows Shintoism, is to inform the couple&apos;s marriage to the Gods and to strengthen the bond between the two families. The bride wears a white kimono called &quot;shiromuku&quot; and the groom wears a hakama called &quot;montsuki&quot;, and the ceremony proceeds in front of the gods as the Saishu (master of ceremonies) proceeds.
 				</p>
 				<br/>
 				<p className="indent-8">
