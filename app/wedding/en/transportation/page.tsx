@@ -41,16 +41,25 @@ export default function Page() {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Awara-Yunomachi Station</td>
-                                            <td>12:55</td>
+                                            <td>Yuraku</td>
+                                            <td>12:40</td>
                                         </tr>
                                         <tr>
+                                            <td>Minoroya Taihei Pavilion</td>
+                                            <td>12:45</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Awara Onsen Grand Hotel</td>
+                                            <td>12:50</td>
+                                        </tr>                                           
+                                        <tr>
                                             <td>JR Fukui Station (East Exit)</td>
-                                            <td>13:35</td>
+                                            <td>13:30</td>
                                         </tr>
                                         <tr>
                                             <td>Asuwa Shrine</td>
-                                            <td>13:50</td>
+                                            <td>13:45</td>
                                         </tr>
                                     </tbody>
                                 </table>
