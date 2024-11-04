@@ -44,17 +44,29 @@ export default function Page() {
                                         </tr>
                                     </thead>
                                     <tbody>
+
                                         <tr>
-                                            <td>あわら湯のまち駅</td>
-                                            <td>12:55</td>
+                                            
+                                            <td>ゆ楽</td>
+                                            <td>12:40</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>みのや太平閣</td>
+                                            <td>12:45</td>
+                                        </tr>                                        
+                                        <tr>
+                                            
+                                            <td>あわらグランドホテル</td>
+                                            <td>12:50</td>
                                         </tr>
                                         <tr>
                                             <td>JR福井駅東口</td>
-                                            <td>13:35</td>
+                                            <td>13:20</td>
                                         </tr>
                                         <tr>
                                             <td>足羽神社</td>
-                                            <td>13:50</td>
+                                            <td>13:35</td>
                                         </tr>
                                     </tbody>
                                 </table>
