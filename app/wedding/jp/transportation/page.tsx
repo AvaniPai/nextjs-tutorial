@@ -62,11 +62,11 @@ export default function Page() {
                                         </tr>
                                         <tr>
                                             <td>JR福井駅東口</td>
-                                            <td>13:20</td>
+                                            <td>13:30</td>
                                         </tr>
                                         <tr>
                                             <td>足羽神社</td>
-                                            <td>13:35</td>
+                                            <td>13:45</td>
                                         </tr>
                                     </tbody>
                                 </table>
