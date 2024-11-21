@@ -126,8 +126,12 @@ export function HiroenEventBlock () {
 						<p>演奏、動画、手紙</p>
 						<p>19:00</p>
 						<p>終了</p>
-						<p>20:30</p>
-						<p>あわら温泉で二次会 (未決定)</p>
+						<p>21:00</p>
+						<Link href="https://maps.app.goo.gl/hEdfUvPMQbnmaLCU8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+							<p>二次会(途中参加、途中抜け可)</p>
+						</Link>
+						<p>23:00</p>
+						<p>二次会終了</p>
 					</div>
 				</div>
 				<p>

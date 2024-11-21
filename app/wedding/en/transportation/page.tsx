@@ -41,34 +41,63 @@ export default function Page() {
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>Oedo Onsen Monogatari Awara</td>
+                                            <td>12:10</td>
+                                        </tr>                                        
+                                        <tr>
                                             <td>Yuraku</td>
-                                            <td>12:40</td>
+                                            <td>12:15</td>
                                         </tr>
                                         <tr>
-                                            <td>Minoroya Taihei Pavilion</td>
-                                            <td>12:45</td>
+                                            <td>Awara Onsen Minoya Taiheikan</td>
+                                            <td>12:20</td>
                                         </tr>
 
                                         <tr>
                                             <td>Awara Onsen Grand Hotel</td>
-                                            <td>12:50</td>
+                                            <td>12:25</td>
                                         </tr>                                           
                                         <tr>
                                             <td>JR Fukui Station (East Exit)</td>
-                                            <td>13:30</td>
+                                            <td>13:10</td>
                                         </tr>
                                         <tr>
                                             <td>Asuwa Shrine</td>
-                                            <td>13:45</td>
+                                            <td>13:25</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>                   
+                            </div>
+                        </div>
+                        <div className="py-2">
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
+                                Shrine → Reception Hall
+                            </div>
+                            <div className="flex justify-center mt-1 xl:text-2xl">
+                                <table className="w-4/5 table-auto text-center  border-4 border-orange-200">
+                                    <thead>
+                                        <tr>
+                                            <th className="w-3/4 xl:w-96">Location</th>
+                                            <th className="w-1/4 xl:w-24">Arrival Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Asuwa Shrine</td>
+                                            <td>15:10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Izumo Kinenkan</td>
+                                            <td>15:25</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div className="py-2">
                             <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
                                 Reception Hall→
-                                After-party Venue (close to Awara-Yunomachi Station)
+                                Hotel(For check-in)
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
                                 <table className="w-4/5 table-auto text-center  border-4 border-orange-200">
@@ -84,8 +113,24 @@ export default function Page() {
                                             <td>19:15</td>
                                         </tr>
                                         <tr>
-                                            <td>After-party venue(close to Awara-Yunomachi Station)</td>
-                                            <td>20:00</td>
+                                            <td>Fukui Station</td>
+                                            <td>19:30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Awara Onsen Grand Hotel</td>
+                                            <td>20:10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Awara Onsen Minoya Taiheikan</td>
+                                            <td>20:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yuraku</td>
+                                            <td>20:25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oedo Onsen Monogatari Awara</td>
+                                            <td>20:30</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -93,7 +138,7 @@ export default function Page() {
                         </div>
                         <div className="py-2">
                             <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
-                            After-party Venue→ Awara Onsen Station
+                            Hotel → After-party venue
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
                                 <table className="w-4/5 table-auto  border-4 border-orange-200 text-center">
@@ -106,12 +151,26 @@ export default function Page() {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>After-party venue(close to Awara-Yunomachi Station)</td>
-                                            <td>22:40</td>
+                                            <td>Awara Onsen Grand Hotel</td>
+                                            <td>20:40</td>
                                         </tr>
                                         <tr>
-                                            <td>Awara Onsen Station</td>
-                                            <td>22:50</td>
+                                            <td>Awara Onsen Minoya Taiheikan</td>
+                                            <td>20:45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yuraku</td>
+                                            <td>20:50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oedo Onsen Monogatari Awara</td>
+                                            <td>20:55</td>
+                                        </tr>
+                                        <tr>
+                                            <Link href="https://maps.app.goo.gl/hEdfUvPMQbnmaLCU8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+							                    <td>After Party Venue</td>
+						                    </Link>
+                                            <td>21:10</td>
                                         </tr>
                                     </tbody>
                                 </table>

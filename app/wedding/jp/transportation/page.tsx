@@ -44,37 +44,63 @@ export default function Page() {
                                         </tr>
                                     </thead>
                                     <tbody>
-
                                         <tr>
-                                            
-                                            <td>ゆ楽</td>
-                                            <td>12:40</td>
-                                        </tr>
-                                        <tr>
-                                            
-                                            <td>みのや太平閣</td>
-                                            <td>12:45</td>
+                                            <td>大江戸温泉あわら</td>
+                                            <td>12:10</td>
                                         </tr>                                        
                                         <tr>
-                                            
-                                            <td>あわらグランドホテル</td>
-                                            <td>12:50</td>
+                                            <td>あわら隠れ宿ゆ楽</td>
+                                            <td>12:15</td>
                                         </tr>
                                         <tr>
-                                            <td>JR福井駅東口</td>
-                                            <td>13:30</td>
+                                            <td>みのや泰平閣</td>
+                                            <td>12:20</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>あわら温泉グランドホテル</td>
+                                            <td>12:25</td>
+                                        </tr>                                           
+                                        <tr>
+                                            <td>福井駅東口</td>
+                                            <td>13:10</td>
                                         </tr>
                                         <tr>
                                             <td>足羽神社</td>
-                                            <td>13:45</td>
+                                            <td>13:25</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>                   
+                            </div> 
                         </div>
                         <div className="py-2">
                             <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
-                                披露宴会場→二次会会場(あわら湯のまち)
+                                神前式会場 → 披露宴会場
+                            </div>
+                            <div className="flex justify-center mt-1 xl:text-2xl">
+                                <table className="w-4/5 table-auto text-center  border-4 border-orange-200">
+                                    <thead>
+                                        <tr>
+                                            <th className="w-3/4 xl:w-96">Location</th>
+                                            <th className="w-1/4 xl:w-24">Arrival Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>足羽神社</td>
+                                            <td>15:10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>出雲記念館</td>
+                                            <td>15:25</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>                        
+                        <div className="py-2">
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
+                                披露宴会場→各旅館(チェックインのため)
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
                                 <table className="w-4/5 table-auto text-center  border-4 border-orange-200">
@@ -90,16 +116,32 @@ export default function Page() {
                                             <td>19:15</td>
                                         </tr>
                                         <tr>
-                                            <td>二次会会場(あわら湯のまち)</td>
-                                            <td>20:00</td>
+                                            <td>福井駅東口</td>
+                                            <td>19:30</td>
                                         </tr>
+                                        <tr>
+                                            <td>あわら温泉グランドホテル</td>
+                                            <td>20:10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>みのや泰平閣</td>
+                                            <td>20:20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>あわら隠れ宿ゆ楽</td>
+                                            <td>20:25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>大江戸温泉あわら</td>
+                                            <td>20:30</td>
+                                        </tr>                                        
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                         <div className="py-2">
                             <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
-                            二次会会場(あわら湯のまち)→芦原温泉駅
+                            各旅館→二次会会場
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
                                 <table className="w-4/5 table-auto  border-4 border-orange-200 text-center">
@@ -112,13 +154,27 @@ export default function Page() {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>二次会会場</td>
-                                            <td>22:40</td>
+                                            <td>あわら温泉グランドホテル</td>
+                                            <td>20:40</td>
                                         </tr>
                                         <tr>
-                                            <td>芦原温泉駅</td>
-                                            <td>22:50</td>
+                                            <td>みのや泰平閣</td>
+                                            <td>20:45</td>
                                         </tr>
+                                        <tr>
+                                            <td>あわら隠れ宿ゆ楽</td>
+                                            <td>20:50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>大江戸温泉あわら</td>
+                                            <td>20:55</td>
+                                        </tr>
+                                        <tr>
+                                            <Link href="https://maps.app.goo.gl/hEdfUvPMQbnmaLCU8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+							                    <td>二次会「夢」</td>
+						                    </Link>
+                                            <td>21:10</td>
+                                        </tr>                                        
                                     </tbody>
                                 </table>
                             </div>

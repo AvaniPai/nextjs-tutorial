@@ -130,8 +130,12 @@ export function HiroenEventBlock () {
 						<p>Performances, Videos, and Speeches</p>
 						<p>7:00pm</p>
 						<p>Reception Ends</p>
-						<p>8:30pm</p>
-						<p>After-party TBD, (optional attendance)</p>
+						<p>9:00pm</p>
+						<Link href="https://maps.app.goo.gl/hEdfUvPMQbnmaLCU8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
+							<p>After-party TBD, (optional attendance)</p>
+						</Link>
+						<p>11:00pm</p>
+						<p>End of party</p>
 					</div>
 				</div>
 				<p>
