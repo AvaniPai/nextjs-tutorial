@@ -19,11 +19,11 @@ export default function Page() {
                     披露宴後にバスは福井駅経由であわら温泉に戻り、皆様をあわら湯のまち駅周辺の二次会会場までお送りします。
                 </article>
             </div>
-            <div className="flex xl:flex-row justify-center">
+            <div className="flex xl:flex-row justify-center text-sm">
                 <div className="pt-6 xl:w-1/2">
                     <div className="border-4 border-orange-300">
                         <div className="py-2">
-                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-xl">
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl">
                                 あわら湯のまち→足羽神社
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
@@ -65,7 +65,7 @@ export default function Page() {
                             </div> 
                         </div>
                         <div className="py-2">
-                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl  ">
                                 神前式会場 → 披露宴会場
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
@@ -90,7 +90,7 @@ export default function Page() {
                             </div>
                         </div>                        
                         <div className="py-2">
-                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl  text-xs">
                                 披露宴会場→各旅館(チェックインのため)
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
@@ -131,7 +131,7 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="py-2">
-                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl  ">
                             各旅館→夢（二次会会場）
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
