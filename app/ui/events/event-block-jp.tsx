@@ -114,7 +114,7 @@ export function HiroenEventBlock () {
 				<div>
 					<p className="text-suedeboots">スケジュール:</p>
 					<div className="grid grid-cols-2 max-w-2xl mx-auto text-left sm:text-center xl:text-xl sm:text-base text-sm">
-						<p>16:00</p>
+						<p>15:45</p>
 						<p>受付開始</p>
 						<p>16:30</p>
 						<p>披露宴開始</p>

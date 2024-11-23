@@ -118,7 +118,7 @@ export function HiroenEventBlock () {
 				<div>
 					<p className="text-suedeboots">Program:</p>
 					<div className="grid grid-cols-2 max-w-2xl mx-auto text-left sm:text-center xl:text-xl sm:text-base text-sm">
-						<p>4:00pm</p>
+						<p>3:45pm</p>
 						<p>Guests Arrive and Check-in</p>
 						<p>4:30pm</p>
 						<p>Reception Begins</p>
@@ -132,7 +132,7 @@ export function HiroenEventBlock () {
 						<p>Reception Ends</p>
 						<p>9:00pm</p>
 						<Link href="https://maps.app.goo.gl/hEdfUvPMQbnmaLCU8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
-							<p>After-party TBD, (optional attendance)</p>
+							<p>After-party at Yume, (optional attendance)</p>
 						</Link>
 						<p>11:00pm</p>
 						<p>End of party</p>

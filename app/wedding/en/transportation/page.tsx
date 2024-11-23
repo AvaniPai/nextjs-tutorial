@@ -15,20 +15,11 @@ export default function Page() {
                     Once the Shinzenshiki finishes, the bus will transport guests between Asuwa Shrine and Izumo Kinenkan, where the reception will be held. After the reception, the bus will head back to Awara Onsen and will make a pit stop at Fukui Station for those who are planning to return home immediately. Please note that in the evening when heading back to Awara Onsen, the bus will drop everyone off at the after party location, not at Awara-Yunomoachi Station.
                 </article>
             </div>
-            <div className="flex flex-col xl:flex-row xl:justify-self-center">
-                <div className="xl:pr-2 flex justify-center items-center xl:w-1/2">
-                    <Image
-                        className=""
-                        src="/shukuhaku.png"
-                        width={1200}
-                        height={800}
-                        alt="illustration of a Japanese ryokan"
-                    />                    
-                </div>
+            <div className="flex xl:flex-row justify-center text-sm">
                 <div className="pt-6 xl:w-1/2">
                     <div className="border-4 border-orange-300">
                         <div className="py-2">
-                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-xl">
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl ">
                                 Awara-Yunomachi Station → Asuwa Shrine
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
@@ -69,8 +60,13 @@ export default function Page() {
                                 </table>
                             </div>
                         </div>
+                        <div>
+                            <div className="pt-10"/>
+                            <div className="flex justify-center xl:text-xl">Shinzenshiki 14:00-14:30</div>
+                            <div className="flex justify-center xl:text-xl">Photos & Mingling 14:30-15:00</div>
+                        </div>
                         <div className="py-2">
-                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl ">
                                 Shrine → Reception Hall
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
@@ -94,8 +90,13 @@ export default function Page() {
                                 </table>
                             </div>
                         </div>
+                        <div>
+                            <div className="pt-10"></div>
+                            <div className="flex justify-center text-xl">Reception Check-in  15:45</div>
+                            <div className="flex justify-center text-xl">Reception 16:30-19:00</div>
+                        </div>
                         <div className="py-2">
-                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl">
                                 Reception Hall→
                                 Hotel(For check-in)
                             </div>
@@ -137,8 +138,8 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="py-2">
-                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl xl:text-3xl text-md">
-                            Hotel → After-party venue
+                            <div className="flex justify-center xl:mt-8 mt-4 xl:text-2xl">
+                            Hotel → Yume (After-party venue)
                             </div>
                             <div className="flex justify-center mt-1 xl:text-2xl">
                                 <table className="w-4/5 table-auto  border-4 border-orange-200 text-center">
@@ -168,7 +169,7 @@ export default function Page() {
                                         </tr>
                                         <tr>
                                             <Link href="https://maps.app.goo.gl/hEdfUvPMQbnmaLCU8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
-							                    <td>After Party Venue</td>
+							                    <td>Yume</td>
 						                    </Link>
                                             <td>21:10</td>
                                         </tr>
