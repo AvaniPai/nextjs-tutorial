@@ -8,11 +8,11 @@ export default function Page() {
             <div className="xl:w-2/3 xl:mx-auto text-center mb-6 text-pretty xl:text-3xl text-sm">
                 <article className="xl:text-5xl text-xl">Chartered Bus Details</article><br />
                 <article>
-                We have arranged a bus to ferry our guests to and from Awara Onsen and Fukui City. For our overseas and out-of-state guests who may be arriving early for the wedding (i.e. the previous night or Saturday morning) please note that the bus will be waiting at Awara Yunomachi Station to take you to Asuwa Shrine, on Saturday afternoon.
+                We have arranged a bus to ferry our guests to and from Awara Onsen and Fukui City. For our overseas and out-of-state guests who may be arriving early for the wedding (i.e. the previous night or Saturday morning) please note that the bus will pick you up from your hotel and take you to Asuwa Shrine.
                 </article>
                 <br/>
                 <article>
-                    Once the Shinzenshiki finishes, the bus will transport guests between Asuwa Shrine and Izumo Kinenkan, where the reception will be held. After the reception, the bus will head back to Awara Onsen and will make a pit stop at Fukui Station for those who are planning to return home immediately. Please note that in the evening when heading back to Awara Onsen, the bus will drop everyone off at the after party location, not at Awara-Yunomoachi Station.
+                    Once the Shinzenshiki finishes, the bus will transport guests between Asuwa Shrine and Izumo Kinenkan, where the reception will be held. After the reception, the bus will head back to Awara Onsen, stopping at each ryokan to give guests a chance to check-in and drop off any belongings, then will take guests to Yume, the after party venue.
                 </article>
             </div>
             <div className="flex xl:flex-row justify-center text-sm">
