@@ -41,16 +41,7 @@ export default function Page() {
                                         </tr>                                        
                                         <tr>
                                             <td>あわら隠れ宿ゆ楽</td>
-                                            <td>12:15</td>
-                                        </tr>
-                                        <tr>
-                                            <td>みのや泰平閣</td>
                                             <td>12:20</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>あわら温泉グランドホテル</td>
-                                            <td>12:25</td>
                                         </tr>                                           
                                         <tr>
                                             <td>福井駅東口</td>
