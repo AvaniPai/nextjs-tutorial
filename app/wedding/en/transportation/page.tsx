@@ -33,20 +33,15 @@ export default function Page() {
                                     <tbody>
                                         <tr>
                                             <td>Oedo Onsen Monogatari Awara</td>
-                                            <td>12:10</td>
-                                        </tr>                                        
+                                            <td>11:55</td>
+                                        </tr>
+					<tr>
+						<td>Mimatsu</td>
+						<td>12:10</td>
+					</tr>
                                         <tr>
                                             <td>Yuraku</td>
-                                            <td>12:15</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Awara Onsen Minoya Taiheikan</td>
                                             <td>12:20</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Awara Onsen Grand Hotel</td>
-                                            <td>12:25</td>
                                         </tr>                                           
                                         <tr>
                                             <td>JR Fukui Station (East Exit)</td>
@@ -54,7 +49,7 @@ export default function Page() {
                                         </tr>
                                         <tr>
                                             <td>Asuwa Shrine</td>
-                                            <td>13:25</td>
+                                            <td>13:35</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -84,7 +79,7 @@ export default function Page() {
                                         </tr>
                                         <tr>
                                             <td>Izumo Kinenkan</td>
-                                            <td>15:25</td>
+                                            <td>15:30</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -92,7 +87,7 @@ export default function Page() {
                         </div>
                         <div>
                             <div className="pt-10"></div>
-                            <div className="flex justify-center text-xl">Reception Check-in  15:45</div>
+                            <div className="flex justify-center text-xl">Reception Check-in 15:45</div>
                             <div className="flex justify-center text-xl">Reception 16:30-19:00</div>
                         </div>
                         <div className="py-2">
@@ -114,24 +109,24 @@ export default function Page() {
                                             <td>19:15</td>
                                         </tr>
                                         <tr>
-                                            <td>Fukui Station</td>
-                                            <td>19:30</td>
-                                        </tr>
-                                        <tr>
                                             <td>Awara Onsen Grand Hotel</td>
-                                            <td>20:10</td>
+                                            <td>20:00</td>
                                         </tr>
                                         <tr>
                                             <td>Awara Onsen Minoya Taiheikan</td>
-                                            <td>20:20</td>
+                                            <td>20:15</td>
                                         </tr>
                                         <tr>
                                             <td>Yuraku</td>
                                             <td>20:25</td>
                                         </tr>
+					<tr>
+						<td>Mimatsu</td>
+						<td>20:40</td>
+					</tr>
                                         <tr>
                                             <td>Oedo Onsen Monogatari Awara</td>
-                                            <td>20:30</td>
+                                            <td>20:45</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -153,25 +148,21 @@ export default function Page() {
                                     <tbody>
                                         <tr>
                                             <td>Awara Onsen Grand Hotel</td>
-                                            <td>20:40</td>
+                                            <td>20:55</td>
                                         </tr>
                                         <tr>
                                             <td>Awara Onsen Minoya Taiheikan</td>
-                                            <td>20:45</td>
+                                            <td>21:05</td>
                                         </tr>
                                         <tr>
                                             <td>Yuraku</td>
-                                            <td>20:50</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Oedo Onsen Monogatari Awara</td>
-                                            <td>20:55</td>
+                                            <td>21:15</td>
                                         </tr>
                                         <tr>
                                             <Link href="https://maps.app.goo.gl/hEdfUvPMQbnmaLCU8" className="underline decoration-sky-700" target="_blank" rel="noopener noreferrer">
 							                    <td>Yume</td>
 						                    </Link>
-                                            <td>21:10</td>
+                                            <td>21:30</td>
                                         </tr>
                                     </tbody>
                                 </table>
